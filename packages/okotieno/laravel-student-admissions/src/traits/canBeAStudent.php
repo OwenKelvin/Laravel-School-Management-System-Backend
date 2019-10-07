@@ -10,10 +10,37 @@ namespace Okotieno\StudentAdmissions\Traits;
 
 
 use App\User;
+use Carbon\Carbon;
 use Okotieno\StudentAdmissions\Models\Student;
 
 trait canBeAStudent
 {
+    public static function updateStudent($student, $request)
+    {
+        $user = $student->user;
+        $user->first_name = $request->first_name;
+        $user->last_name = $request->last_name;
+        $user->middle_name = $request->middle_name;
+        $user->other_names = $request->other_names;
+        $user->birth_cert_number = $request->birth_cert_number;
+        $user->date_of_birth = new Carbon($request->date_of_birth);
+        $user->save();
+        return [
+            'id' => $user->id,
+            'first_name' => $user->first_name,
+            'last_name' => $user->last_name,
+            'middle_name' => $user->middle_name,
+            'other_names' => $user->other_names,
+            'birth_cert_number' => $user->birth_cert_number,
+            'date_of_birth' => $user->date_of_birth,
+            'email' => $user->email,
+            'phone' => $user->phone,
+            'name_prefix_id' => $user->name_prefix_prefix,
+            'student_id' => $user->student->student_school_id_number
+        ];
+
+    }
+
     /**
      * @param $request
      * @return \Illuminate\Http\JsonResponse
@@ -24,7 +51,9 @@ trait canBeAStudent
             'first_name' => $request->first_name,
             'last_name' => $request->last_name,
             'middle_name' => $request->middle_name,
-            'other_names' => $request->other_names
+            'other_names' => $request->other_names,
+            'birth_cert_number' => $request->birth_cert_number,
+            'date_of_birth' => new Carbon($request->date_of_birth),
         ]);
 
         if ($request->student_school_id_number != null && $request->student_school_id_number != '') {

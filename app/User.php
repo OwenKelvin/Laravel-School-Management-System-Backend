@@ -35,7 +35,8 @@ class User extends Authenticatable
         'other_names',
         'gender_id',
         'religion_id',
-        'date_of_birth'
+        'date_of_birth',
+        'birth_cert_number'
     ];
 
     /**

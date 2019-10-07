@@ -56,13 +56,34 @@ trait AppUser
     {
         return $this->user->date_of_birth;
     }
-    public function getPhoneAttribute(){
+
+    public function getBirthCertNumberAttribute()
+    {
+        return $this->user->birth_cert_number;
+    }
+
+    public function getPhoneAttribute()
+    {
         return $this->user->phone;
     }
-    public function getEmailAttribute(){
+
+    public function getEmailAttribute()
+    {
         return $this->user->email;
     }
-    public function getNamePrefixPrefixAttribute(){
+
+    public function getNamePrefixPrefixAttribute()
+    {
         return $this->user->namePrefix->prefix;
     }
+
+    public function getNamePrefixIdAttribute()
+    {
+        if ($this->user->namePrefix == null) {
+            return null;
+        }
+        return $this->user->namePrefix->id;
+
+    }
+
 }

@@ -2,6 +2,7 @@
 
 namespace Okotieno\StudentAdmissions\Controllers;
 use App\Http\Controllers\Controller;
+use Okotieno\StudentAdmissions\Models\Student;
 use Okotieno\StudentAdmissions\Requests\User\CreateStudentRequest;
 use App\User;
 use Illuminate\Http\Request;
@@ -68,8 +69,11 @@ class StudentAdmissionIdentificationController extends Controller
      * @param LibraryBookAuthor $libraryBookAuthor
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request)
+    public function update(Request $request, $student_id)
     {
+        $student = Student::where('id', $student_id)->first();
+        $user = User::updateStudent($student, $request);
+        return response()->json($user);
     }
 
     /**

@@ -13,7 +13,13 @@ Route::middleware(['auth:api', 'bindings'])->group(function () {
             'Okotieno\\StudentAdmissions\\Controllers\\StudentAdmissionIdentificationController'
         );
         Route::prefix('student')->group(function () {
-            Route::get('id-number', 'Okotieno\\StudentAdmissions\\Controllers\\StudentIdNumberController@get');
+            Route::prefix('id-number')->group(function () {
+                Route::get('/', 'Okotieno\\StudentAdmissions\\Controllers\\StudentIdNumberController@get');
+                Route::get(
+                    '/identification-details',
+                    'Okotieno\\StudentAdmissions\\Controllers\\StudentIdNumberController@getIdentificationDetails'
+                );
+            });
         });
     });
 });
