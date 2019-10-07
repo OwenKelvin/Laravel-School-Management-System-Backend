@@ -1,0 +1,16 @@
+{
+    "name": "okotieno/laravel-student-admissions",
+    "description": "Laravel Package for Student Admissions",
+    "authors": [
+        {
+            "name": "okotieno",
+            "email": "okotieno@yahoo.com"
+        }
+    ],
+    "require": {},
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}

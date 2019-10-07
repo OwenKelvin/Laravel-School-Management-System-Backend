@@ -1,0 +1,33 @@
+{
+    "name": "okotieno/laravel-lms",
+    "description": "This is a Laravel Package that will install a Laravel Management System for your application",
+    "authors": [
+        {
+            "name": "okotieno",
+            "email": "okotieno@yahoo.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require-dev": {
+        "orchestra/testbench": "^3.7",
+        "phpunit/phpunit": "^7.5"
+    },
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Okotieno\\LaravelLMS\\LaravelLMSServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Okotieno\\LaravelLMS\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Okotieno\\LaravelLMS\\Test\\": "tests/"
+        }
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "name": "okotieno/laravel-data-sync",
+    "description": "This is a Laravel Package that helps i Syncing 2 unrelated databases from different Servers",
+    "authors": [
+        {
+            "name": "okotieno",
+            "email": "okotieno@yahoo.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require-dev": {
+        "orchestra/testbench": "^3.7",
+        "phpunit/phpunit": "^7.5"
+    },
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Okotieno\\LaravelDataSync\\LaravelDataSyncProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Okotieno\\LaravelDataSync\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Okotieno\\LaravelDataSync\\Test\\": "tests/"
+        }
+    }
+}

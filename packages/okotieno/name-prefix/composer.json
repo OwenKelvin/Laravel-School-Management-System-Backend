@@ -1,0 +1,16 @@
+{
+    "name": "okotieno/laravel-name-prefix",
+    "description": "Laravel Package for Name Prefix Functionality",
+    "authors": [
+        {
+            "name": "okotieno",
+            "email": "okotieno@yahoo.com"
+        }
+    ],
+    "require": {},
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}
