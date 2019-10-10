@@ -37,11 +37,13 @@
         "psr-4": {
             "App\\": "app/",
             "Okotieno\\StudentAdmissions\\": "packages/okotieno/laravel-student-admissions/src/",
+            "Okotieno\\GuardianAdmissions\\": "packages/okotieno/laravel-guardian-admissions/src/",
             "Okotieno\\DataSync\\": "packages/okotieno/laravel-data-sync/src/",
             "Okotieno\\LMS\\": "packages/okotieno/laravel-lms/src/",
             "Okotieno\\NamePrefix\\": "packages/okotieno/name-prefix/src/",
             "Okotieno\\Phone\\": "packages/okotieno/phone/src/",
-            "Okotieno\\Gender\\": "packages/okotieno/Gender/src/"
+            "Okotieno\\Gender\\": "packages/okotieno/gender/src/",
+            "Okotieno\\Religion\\": "packages/okotieno/religion/src/"
         },
         "classmap": [
             "database/seeds",

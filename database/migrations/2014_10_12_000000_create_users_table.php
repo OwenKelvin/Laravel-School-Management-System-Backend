@@ -20,7 +20,6 @@ class CreateUsersTable extends Migration
             $table->string('middle_name')->nullable();
             $table->integer('verified_by_id')->nullable();
             $table->integer('creator_id')->nullable();
-            $table->integer('religion_id')->nullable();
             $table->timestamp('verified_at')->nullable();
             $table->string('birth_cert_number')->nullable();
             $table->string('other_names')->nullable();

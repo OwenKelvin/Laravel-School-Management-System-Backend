@@ -8,10 +8,18 @@
 
 Route::middleware(['auth:api', 'bindings'])->group(function () {
     Route::prefix('api')->group(function () {
-        Route::resource(
-            'admissions/students/identification',
-            'Okotieno\\StudentAdmissions\\Controllers\\StudentAdmissionIdentificationController'
-        );
+        Route::prefix('admissions')->group(function () {
+            Route::prefix('students')->group(function () {
+                Route::resource(
+                    'identification',
+                    'Okotieno\\StudentAdmissions\\Controllers\\StudentAdmissionIdentificationController'
+                );
+                Route::resource(
+                    'guardians',
+                    'Okotieno\\GuardianAdmissions\\Controllers\\StudentGuardianController'
+                );
+            });
+        });
         Route::prefix('student')->group(function () {
             Route::prefix('id-number')->group(function () {
                 Route::get('/', 'Okotieno\\StudentAdmissions\\Controllers\\StudentIdNumberController@get');

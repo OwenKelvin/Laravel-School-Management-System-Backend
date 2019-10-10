@@ -6,17 +6,16 @@
  * Time: 10:15 PM
  */
 
-namespace Okotieno\StudentAdmissions\Models;
+namespace Okotieno\GuardianAdmissions\Models;
 
 
 use App\Traits\AppUser;
 use Illuminate\Database\Eloquent\Model;
-use Okotieno\GuardianAdmissions\Traits\hasGuardians;
 
-class Student extends Model
+class Guardian extends Model
 {
-    use AppUser, hasGuardians;
-    protected $fillable = ['student_school_id_number'];
+    use AppUser;
+    protected $fillable = ['guardian_id_number'];
     public static function generateIdNumber()
     {
         return self::count() + 1;

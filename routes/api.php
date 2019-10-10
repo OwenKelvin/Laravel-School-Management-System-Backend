@@ -16,7 +16,7 @@ use Laravel\Passport\Passport;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
-
+Route::middleware('auth:api')->get('/users/email', 'User\\UserApiController@getUserByEmail');
 // Passport::routes();
 // Route::middleware('api')->post('oauth/token', 'Auth\\AuthController@login');
 // Route::post();
@@ -24,7 +24,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 // Route::group([
 //     'prefix' => 'auth'
 // ], function () {
-    
+
 //     Route::group([
 //       'middleware' => 'auth:api'
 //     ], function() {

@@ -1,0 +1,16 @@
+{
+    "name": "okotieno/gender",
+    "description": "Laravel Package for Religion Functionality",
+    "authors": [
+        {
+            "name": "okotieno",
+            "email": "okotieno@yahoo.com"
+        }
+    ],
+    "require": {},
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}

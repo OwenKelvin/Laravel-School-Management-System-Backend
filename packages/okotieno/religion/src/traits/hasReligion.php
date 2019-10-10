@@ -6,14 +6,14 @@
  * Time: 11:04 AM
  */
 
-namespace Okotieno\Gender\Traits;
+namespace Okotieno\Religion\Traits;
 
 
-use Okotieno\Gender\Models\Religion;
+use Okotieno\Religion\Models\Religion;
 
-trait hasGender
+trait hasReligion
 {
-    public function gender()
+    public function religion()
     {
         return $this->belongsto(Religion::class);
     }

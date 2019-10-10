@@ -22,6 +22,7 @@ trait canBeAStudent
         $user->last_name = $request->last_name;
         $user->middle_name = $request->middle_name;
         $user->other_names = $request->other_names;
+        $user->gender_id = $request->gender_id;
         $user->birth_cert_number = $request->birth_cert_number;
         $user->date_of_birth = new Carbon($request->date_of_birth);
         $user->save();
@@ -35,7 +36,9 @@ trait canBeAStudent
             'date_of_birth' => $user->date_of_birth,
             'email' => $user->email,
             'phone' => $user->phone,
-            'name_prefix_id' => $user->name_prefix_prefix,
+            'name_prefix_id' => $user->name_prefix_id,
+            'gender_id' => $user->gender_id,
+            'religion_id' => $user->religion_id,
             'student_id' => $user->student->student_school_id_number
         ];
 
@@ -54,6 +57,8 @@ trait canBeAStudent
             'other_names' => $request->other_names,
             'birth_cert_number' => $request->birth_cert_number,
             'date_of_birth' => new Carbon($request->date_of_birth),
+            'religion_id' => $request->religion_id,
+            'gender_id' => $request->religion_id
         ]);
 
         if ($request->student_school_id_number != null && $request->student_school_id_number != '') {
@@ -75,7 +80,9 @@ trait canBeAStudent
             'date_of_birth' => $user->date_of_birth,
             'email' => $user->email,
             'phone' => $user->phone,
-            'name_prefix_id' => $user->name_prefix_prefix,
+            'name_prefix_id' => $user->name_prefix_id,
+            'gender_id' => $user->gender_id,
+            'religion_id' => $user->religion_id,
             'student_id' => $user->student->student_school_id_number
         ]);
     }

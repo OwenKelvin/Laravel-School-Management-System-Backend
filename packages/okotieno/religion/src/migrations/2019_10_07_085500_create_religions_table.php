@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateGendersTable extends Migration
+class CreateReligionsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,16 @@ class CreateGendersTable extends Migration
      */
     public function up()
     {
-        Schema::create('genders', function (Blueprint $table) {
+        Schema::create('religions', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('prefix');
             $table->boolean('active')->default(true);
         });
-        DB::table('genders')->insert([
-            ['name'=>'Male', 'prefix' => 'M'],
-            ['name'=>'Female', 'prefix' => 'F'],
+        DB::table('religions')->insert([
+            ['name' => 'Christianity'],
+            ['name' => 'Islam'],
+            ['name' => 'Hinduism'],
+            ['name' => 'Judaism']
         ]);
     }
 
@@ -32,6 +33,6 @@ class CreateGendersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('genders');
+        Schema::dropIfExists('religions');
     }
 }

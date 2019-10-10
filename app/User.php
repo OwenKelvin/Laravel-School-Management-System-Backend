@@ -7,7 +7,9 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Laravel\Passport\HasApiTokens;
 use Okotieno\Gender\Traits\hasGender;
+use Okotieno\Religion\Traits\hasReligion;
 use Okotieno\NamePrefix\Traits\hasNamePrefix;
+use Okotieno\GuardianAdmissions\Traits\canBeAGuardian;
 use Spatie\Permission\Traits\HasRoles;
 use Okotieno\StudentAdmissions\Traits\canBeAStudent;
 
@@ -17,8 +19,10 @@ class User extends Authenticatable
         Notifiable,
         HasRoles,
         canBeAStudent,
+        canBeAGuardian,
         hasNamePrefix,
-        hasGender
+        hasGender,
+        hasReligion
         ;
 
     /**
@@ -36,7 +40,8 @@ class User extends Authenticatable
         'gender_id',
         'religion_id',
         'date_of_birth',
-        'birth_cert_number'
+        'birth_cert_number',
+        'phone'
     ];
 
     /**

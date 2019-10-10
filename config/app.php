@@ -167,11 +167,13 @@ return [
          */
         Spatie\Permission\PermissionServiceProvider::class,
         Okotieno\StudentAdmissions\StudentAdmissionsServicesProvider::class,
+        Okotieno\GuardianAdmissions\GuardiansAdmissionServiceProvider::class,
         Okotieno\LMS\LMSServiceProvider::class,
         Okotieno\DataSync\DataSyncProvider::class,
         Okotieno\NamePrefix\NamePrefixServiceProvider::class,
         Okotieno\Phone\PhoneServiceProvider::class,
         Okotieno\Gender\GenderServiceProvider::class,
+        Okotieno\Religion\ReligionServiceProvider::class,
 
         /*
          * Application Service Providers...

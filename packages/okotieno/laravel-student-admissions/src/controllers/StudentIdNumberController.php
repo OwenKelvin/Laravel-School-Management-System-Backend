@@ -31,6 +31,8 @@ class StudentIdNumberController extends Controller
             'date_of_birth' => $student->date_of_birth,
             'birth_cert_number' => $student->birth_cert_number,
             'name_prefix_id' => $student->name_prefix_id,
+            'gender_id' => $student->gender_id,
+            'religion_id' => $student->gender_id,
         ]);
     }
 }
