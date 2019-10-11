@@ -174,6 +174,8 @@ return [
         Okotieno\Phone\PhoneServiceProvider::class,
         Okotieno\Gender\GenderServiceProvider::class,
         Okotieno\Religion\ReligionServiceProvider::class,
+        Okotieno\AcademicYear\AcademicYearServiceProvider::class,
+        Okotieno\SchoolCurriculum\SchoolCurriculumServiceProvider::class,
 
         /*
          * Application Service Providers...

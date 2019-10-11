@@ -1,0 +1,16 @@
+{
+    "name": "okotieno/academic-year",
+    "description": "Laravel Package for Academic Year Functionality",
+    "authors": [
+        {
+            "name": "okotieno",
+            "email": "okotieno@yahoo.com"
+        }
+    ],
+    "require": {},
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}

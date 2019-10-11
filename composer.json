@@ -43,7 +43,9 @@
             "Okotieno\\NamePrefix\\": "packages/okotieno/name-prefix/src/",
             "Okotieno\\Phone\\": "packages/okotieno/phone/src/",
             "Okotieno\\Gender\\": "packages/okotieno/gender/src/",
-            "Okotieno\\Religion\\": "packages/okotieno/religion/src/"
+            "Okotieno\\Religion\\": "packages/okotieno/religion/src/",
+            "Okotieno\\AcademicYear\\": "packages/okotieno/academic-year/src/",
+            "Okotieno\\SchoolCurriculum\\": "packages/okotieno/laravel-school-curriculum/src/"
         },
         "classmap": [
             "database/seeds",

@@ -12,10 +12,11 @@ namespace Okotieno\StudentAdmissions\Models;
 use App\Traits\AppUser;
 use Illuminate\Database\Eloquent\Model;
 use Okotieno\GuardianAdmissions\Traits\hasGuardians;
+use Okotieno\SchoolCurriculum\traits\takesCourses;
 
 class Student extends Model
 {
-    use AppUser, hasGuardians;
+    use AppUser, hasGuardians, takesCourses;
     protected $fillable = ['student_school_id_number'];
     public static function generateIdNumber()
     {

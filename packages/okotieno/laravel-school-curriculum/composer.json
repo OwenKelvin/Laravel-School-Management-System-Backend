@@ -1,0 +1,16 @@
+{
+    "name": "okotieno/laravel-school-curriculum",
+    "description": "Laravel Package for School Curriculum Functionality",
+    "authors": [
+        {
+            "name": "okotieno",
+            "email": "okotieno@yahoo.com"
+        }
+    ],
+    "require": {},
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}
