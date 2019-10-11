@@ -4,8 +4,10 @@ namespace Okotieno\SchoolCurriculum\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Okotieno\SchoolCurriculum\Requests\CreateUnitCategoryRequest;
+use Okotieno\SchoolCurriculum\UnitCategory;
 
-class SchoolCurriculumController extends Controller
+class UnitCategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -33,9 +35,14 @@ class SchoolCurriculumController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CreateUnitCategoryRequest $request)
     {
-
+        $curriculum = UnitCategory::create([
+            'name' => $request->name,
+            'active' =>  $request->active,
+            'description' =>  $request->description
+        ]);
+        return response()->json($curriculum);
     }
 
     /**
@@ -69,7 +76,11 @@ class SchoolCurriculumController extends Controller
      */
     public function update(Request $request, $id)
     {
-
+        $unitCategory = UnitCategory::find($id);
+        $unitCategory->name = $request->name;
+        $unitCategory->active = $request->active;
+        $unitCategory->save();
+        return $unitCategory;
     }
 
     /**
@@ -80,6 +91,7 @@ class SchoolCurriculumController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $unitCategory = UnitCategory::find($id);
+        $unitCategory->delete();
     }
 }

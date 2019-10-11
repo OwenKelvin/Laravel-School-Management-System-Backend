@@ -17,6 +17,8 @@ class CreateUnitCategoriesTable extends Migration
             $table->increments('id');
             $table->boolean('active')->default(true);
             $table->string('name');
+            $table->string('description')->nullable();
+            $table->softDeletes();
         });
     }
 
