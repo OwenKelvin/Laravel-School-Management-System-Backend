@@ -14,6 +14,10 @@ class ClassLevelCategory extends Model
     public $timestamps = false;
     protected $hidden = ['deleted_at'];
 
+    public function classLevels() {
+        return $this->hasMany(ClassLevel::class);
+    }
+
     public static function createClassLevelCategory(CreateClassLevelCategoryRequest $request)
     {
         $classLevelCategory = self::create($request->all());

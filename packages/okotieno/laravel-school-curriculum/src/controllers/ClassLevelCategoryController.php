@@ -49,6 +49,9 @@ class ClassLevelCategoryController extends Controller
      */
     public function show(ClassLevelCategory $classLevelCategory, Request $request)
     {
+        if ($request->class_level == 1) {
+             $classLevelCategory->classLevels;
+        }
         return response()->json($classLevelCategory);
     }
 

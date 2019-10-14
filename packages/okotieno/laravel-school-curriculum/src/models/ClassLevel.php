@@ -16,7 +16,7 @@ class ClassLevel extends Model
     public static function createClassLevel(CreateClassLevelRequest $request)
     {
         $classLevelCategory = ClassLevelCategory::find($request->class_level_category_id);
-        $classLevel = $classLevelCategory->create([
+        $classLevel = $classLevelCategory->classLevels()->create([
             'abbreviation' => $request->abbr,
             'name' => $request->name,
             'active' => $request->active,
