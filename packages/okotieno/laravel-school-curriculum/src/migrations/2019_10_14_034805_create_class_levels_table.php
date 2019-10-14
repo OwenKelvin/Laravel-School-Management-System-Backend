@@ -18,7 +18,7 @@ class CreateClassLevelsTable extends Migration
             $table->integer('class_level_category_id');
             $table->boolean('active');
             $table->string('name');
-            $table->string('prefix');
+            $table->string('abbreviation');
             $table->softDeletes();
         });
     }

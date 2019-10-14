@@ -25,14 +25,16 @@ class CreateClassLevelRequest extends FormRequest
     {
         return [
             'name' => 'required',
-            'abbr' => 'required'
+            'class_level_category_id' => 'required',
+            'abbr' => 'required',
         ];
     }
     public function messages()
     {
         return [
             'name.required'=> 'The name field is required',
-            'abbr.required' => 'The Abbreviation field required'
+            'abbr.required' => 'The Abbreviation field required',
+            'class_level_category_id' => 'The class level category field is required'
         ];
     }
 }

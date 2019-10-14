@@ -16,7 +16,7 @@ class ClassLevelCategoryController extends Controller
      */
     public function index()
     {
-        //
+        return response()->json(ClassLevelCategory::all());
     }
 
     /**
@@ -70,9 +70,9 @@ class ClassLevelCategoryController extends Controller
      * @param ClassLevelCategory $unit
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, ClassLevelCategory $unit)
+    public function update(Request $request, ClassLevelCategory $classLevelCategory)
     {
-        return response()->json(ClassLevelCategory::updateClassLevelCategory($unit, $request));
+        return response()->json(ClassLevelCategory::updateClassLevelCategory($classLevelCategory, $request));
     }
 
     /**
@@ -82,8 +82,8 @@ class ClassLevelCategoryController extends Controller
      * @return void
      * @throws \Exception
      */
-    public function destroy(ClassLevelCategory $unit)
+    public function destroy(ClassLevelCategory $classLevelCategory)
     {
-        $unit->delete();
+        $classLevelCategory->delete();
     }
 }

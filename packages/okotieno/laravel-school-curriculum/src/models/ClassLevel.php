@@ -9,13 +9,19 @@ use Okotieno\SchoolCurriculum\Requests\CreateClassLevelRequest;
 class ClassLevel extends Model
 {
     use softDeletes;
-    protected $fillable = ['name', 'abbr'];
+    protected $fillable = ['name', 'abbreviation', 'active'];
     public $timestamps = false;
     protected $hidden = ['deleted_at'];
+
     public static function createClassLevel(CreateClassLevelRequest $request)
     {
-        $classLevel = self::create($request->all() );
-       return $classLevel;
+        $classLevelCategory = ClassLevelCategory::find($request->class_level_category_id);
+        $classLevel = $classLevelCategory->create([
+            'abbreviation' => $request->abbr,
+            'name' => $request->name,
+            'active' => $request->active,
+        ]);
+        return $classLevel;
     }
 
 }

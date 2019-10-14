@@ -4,6 +4,7 @@ namespace Okotieno\SchoolCurriculum\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Http\Request;
 use Okotieno\SchoolCurriculum\Requests\CreateClassLevelCategoryRequest;
 
 class ClassLevelCategory extends Model
@@ -16,6 +17,14 @@ class ClassLevelCategory extends Model
     public static function createClassLevelCategory(CreateClassLevelCategoryRequest $request)
     {
         $classLevelCategory = self::create($request->all());
+        return $classLevelCategory;
+    }
+    public static function updateClassLevelCategory(ClassLevelCategory $classLevelCategory, Request $request)
+    {
+        $classLevelCategory->name = $request->name;
+        $classLevelCategory->active = $request->active;
+        $classLevelCategory->save();
+
         return $classLevelCategory;
     }
 

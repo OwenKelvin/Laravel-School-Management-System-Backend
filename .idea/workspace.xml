@@ -3,23 +3,24 @@
   <component name="ChangeListManager">
     <list default="true" id="d24542b1-fa1b-4036-bb90-74cddc9e2d40" name="Default" comment="">
       <change afterPath="$PROJECT_DIR$/app/Traits/canBeActive.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/ClassLevelCategoryController.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/ClassLevelController.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/UnitApiController.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/UnitController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/ClassLevel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/ClassLevelCategory.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/UnitLevel.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/requests/CreateClassLevelCategoryRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/requests/CreateClassLevelRequest.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/requests/CreateUnitRequest.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/requests/EditUnitCategoryRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/ClassLevelCategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/ClassLevelCategoryController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/SchoolCurriculumApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/SchoolCurriculumApiController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/UnitCategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/UnitCategoryController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/migrations/2019_10_10_104427_create_units_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/migrations/2019_10_10_104427_create_units_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/migrations/2019_10_14_034805_create_class_levels_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/migrations/2019_10_14_034805_create_class_levels_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/ClassLevel.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/ClassLevel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/ClassLevelCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/ClassLevelCategory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/Unit.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/Unit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/UnitCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/UnitCategory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/requests/CreateClassLevelRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/requests/CreateClassLevelRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/requests/CreateUnitCategoryRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/requests/CreateUnitCategoryRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/routes.php" afterDir="false" />
     </list>
@@ -39,7 +40,7 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
+            <state relative-caret-position="216">
               <caret line="18" column="110" selection-start-line="18" selection-start-column="110" selection-end-line="18" selection-end-column="110" />
             </state>
           </provider>
@@ -48,8 +49,8 @@
       <file leaf-file-name="ClassLevelCategoryController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/ClassLevelCategoryController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1488">
-              <caret line="74" column="75" selection-start-line="74" selection-start-column="75" selection-end-line="74" selection-end-column="75" />
+            <state relative-caret-position="182">
+              <caret line="74" column="96" selection-start-line="74" selection-start-column="96" selection-end-line="74" selection-end-column="96" />
               <folding>
                 <element signature="e#57#93#0#PHP" expanded="true" />
               </folding>
@@ -57,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClassLevelCategory.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ClassLevelCategory.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/ClassLevelCategory.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="240">
+              <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
               <folding>
                 <element signature="e#52#91#0#PHP" expanded="true" />
               </folding>
@@ -69,20 +70,47 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2019_10_14_034805_create_class_levels_table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/migrations/2019_10_14_034805_create_class_levels_table.php">
+      <file leaf-file-name="CreateClassLevelRequest.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/requests/CreateClassLevelRequest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="15" column="68" selection-start-line="15" selection-start-column="68" selection-end-line="15" selection-end-column="68" />
+            <state relative-caret-position="85">
+              <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2019_10_14_034634_create_class_level_categories_table.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/migrations/2019_10_14_034634_create_class_level_categories_table.php">
+      <file leaf-file-name="2019_10_14_034805_create_class_levels_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/migrations/2019_10_14_034805_create_class_levels_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="20" column="40" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClassLevel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/ClassLevel.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
-              <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+              <caret line="11" column="58" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2019_10_12_201248_create_unit_levels_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/migrations/2019_10_12_201248_create_unit_levels_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2019_10_14_034634_create_class_level_categories_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/migrations/2019_10_14_034634_create_class_level_categories_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -189,15 +217,15 @@
         <option value="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/UnitLevel.php" />
         <option value="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/UnitCategoryController.php" />
         <option value="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/UnitCategory.php" />
-        <option value="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/requests/CreateClassLevelRequest.php" />
-        <option value="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/ClassLevel.php" />
         <option value="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/routes.php" />
         <option value="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/ClassLevelController.php" />
         <option value="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/requests/CreateClassLevelCategoryRequest.php" />
+        <option value="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/migrations/2019_10_14_034634_create_class_level_categories_table.php" />
+        <option value="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/requests/CreateClassLevelRequest.php" />
+        <option value="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/migrations/2019_10_14_034805_create_class_levels_table.php" />
+        <option value="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/ClassLevel.php" />
         <option value="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/ClassLevelCategoryController.php" />
         <option value="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/ClassLevelCategory.php" />
-        <option value="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/migrations/2019_10_14_034805_create_class_levels_table.php" />
-        <option value="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/migrations/2019_10_14_034634_create_class_level_categories_table.php" />
       </list>
     </option>
   </component>
@@ -382,7 +410,25 @@
               <item name="okotieno" type="462c0819:PsiDirectoryNode" />
               <item name="laravel-school-curriculum" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fsms_backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fsms_backend" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="okotieno" type="462c0819:PsiDirectoryNode" />
+              <item name="laravel-school-curriculum" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fsms_backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fsms_backend" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="okotieno" type="462c0819:PsiDirectoryNode" />
+              <item name="laravel-school-curriculum" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="requests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -508,7 +554,7 @@
       <window_info id="npm" order="2" sideWeight="0.5044843" side_tool="true" weight="0.4130106" />
       <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.33233532" />
       <window_info id="Designer" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4955157" visible="true" weight="0.4130106" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4955157" weight="0.4130106" />
       <window_info anchor="bottom" id="Atlassian " order="8" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -805,13 +851,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/migrations/2019_10_12_201248_create_unit_levels_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/requests/CreateUnitRequest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
@@ -905,27 +944,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/requests/CreateClassLevelRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="34" column="54" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/ClassLevel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="18" column="110" selection-start-line="18" selection-start-column="110" selection-end-line="18" selection-end-column="110" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/ClassLevelController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2040">
@@ -943,42 +961,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/migrations/2019_10_13_194354_create_class_level_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-312" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/migrations/2019_10_12_201248_create_unit_levels_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/migrations/2019_10_14_034634_create_class_level_categories_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="18" column="110" selection-start-line="18" selection-start-column="110" selection-end-line="18" selection-end-column="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/requests/CreateClassLevelRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/ClassLevel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="11" column="58" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/migrations/2019_10_14_034805_create_class_levels_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="20" column="40" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/ClassLevelCategoryController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1488">
-          <caret line="74" column="75" selection-start-line="74" selection-start-column="75" selection-end-line="74" selection-end-column="75" />
+        <state relative-caret-position="182">
+          <caret line="74" column="96" selection-start-line="74" selection-start-column="96" selection-end-line="74" selection-end-column="96" />
           <folding>
             <element signature="e#57#93#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/migrations/2019_10_13_194354_create_class_level_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-312" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/ClassLevelCategory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="240">
+          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
           <folding>
             <element signature="e#52#91#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/migrations/2019_10_14_034805_create_class_levels_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="15" column="68" selection-start-line="15" selection-start-column="68" selection-end-line="15" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/migrations/2019_10_14_034634_create_class_level_categories_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
         </state>
       </provider>
     </entry>
