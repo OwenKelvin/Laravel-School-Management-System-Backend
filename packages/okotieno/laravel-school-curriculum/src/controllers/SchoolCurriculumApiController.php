@@ -10,7 +10,6 @@ use Okotieno\SchoolCurriculum\UnitCategory;
 
 class SchoolCurriculumApiController extends Controller
 {
-    use canBeActive;
     public function get(Request $request)
     {
         if ($request->active == 1) {

@@ -12,11 +12,19 @@ class UnitCategoryController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
+        if ($request->active == 1) {
+            return response()->json(UnitCategory::active()->get());
+        }
+        if ($request->id) {
+            $unitCategory = response()->json(UnitCategory::find($request->id));
+            return $unitCategory;
+        }
+        return response()->json(UnitCategory::all());
     }
 
     /**
@@ -37,23 +45,22 @@ class UnitCategoryController extends Controller
      */
     public function store(CreateUnitCategoryRequest $request)
     {
-        $curriculum = UnitCategory::create([
-            'name' => $request->name,
-            'active' =>  $request->active,
-            'description' =>  $request->description
-        ]);
-        return response()->json($curriculum);
+        return response()->json(UnitCategory::createCategory($request));
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @param UnitCategory $unitCategory
+     * @param Request $request
+     * @return UnitCategory
      */
-    public function show($id)
+    public function show(UnitCategory $unitCategory, Request $request)
     {
-        //
+        if ($request->units == 1){
+            $unitCategory->units;
+        }
+        return $unitCategory;
     }
 
     /**

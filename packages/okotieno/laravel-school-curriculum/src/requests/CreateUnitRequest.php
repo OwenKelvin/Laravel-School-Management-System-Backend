@@ -4,7 +4,7 @@ namespace Okotieno\SchoolCurriculum\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class CreateUnitCategoryRequest extends FormRequest
+class CreateUnitRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,14 +24,16 @@ class CreateUnitCategoryRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|unique:unit_categories,deleted_at'
+            'name' => 'required',
+            'unit_category_id' => 'required',
+            'abbr' => 'required'
         ];
     }
     public function messages()
     {
         return [
-            'name.unique' => 'The Unit/Subject category name already exists',
-            'name.required'=> 'The Unit/Subject category is required'
+            'name.required'=> 'The Unit/Subject is required',
+            'unit_category_id.required' => 'The unit category field is required'
         ];
     }
 }
