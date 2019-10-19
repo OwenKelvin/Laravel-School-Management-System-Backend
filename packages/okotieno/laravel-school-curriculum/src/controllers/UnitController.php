@@ -13,11 +13,18 @@ class UnitController extends Controller
     /**
      * Display a listing of the resource.
      *
+     * @param Request $request
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
+        $units = Unit::all();
+        if ($request->unit_levels) {
+            foreach ($units as $index => $unit) {
+                $units[$index]->unitLevels;
+            }
+        }
+        return response()->json($units);
     }
 
     /**
@@ -60,7 +67,7 @@ class UnitController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)

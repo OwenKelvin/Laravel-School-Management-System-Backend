@@ -4,7 +4,11 @@ namespace Okotieno\SchoolCurriculum\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Http\Request;
+use Okotieno\SchoolCurriculum\Requests\UpdateClassLevelRequest;
 use Okotieno\SchoolCurriculum\Requests\CreateClassLevelRequest;
+use Okotieno\SchoolCurriculum\Unit;
+use Okotieno\SchoolCurriculum\UnitLevel;
 
 class ClassLevel extends Model
 {
@@ -20,8 +24,22 @@ class ClassLevel extends Model
             'abbreviation' => $request->abbr,
             'name' => $request->name,
             'active' => $request->active,
+
         ]);
         return $classLevel;
     }
 
+    public static function updateClassLevel(ClassLevel $classLevel, UpdateClassLevelRequest $request)
+    {
+        $classLevel->update([
+            'class_level_category_id' => $request-> class_level_category_id,
+            'name' => $request->name,
+            'active' => $request->active,
+            'abbr' => $request->abbreviation
+        ]);
+        return $classLevel;
+    }
+    public function subjectLevels() {
+        return $this->belongsToMany(UnitLevel::class);
+    }
 }

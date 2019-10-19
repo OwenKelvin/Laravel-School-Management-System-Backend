@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Okotieno\SchoolCurriculum\Requests\CreateClassLevelRequest;
 use Okotieno\SchoolCurriculum\Models\ClassLevel;
+use Okotieno\SchoolCurriculum\Requests\UpdateClassLevelRequest;
 use Okotieno\SchoolCurriculum\UnitCategory;
 
 class ClassLevelController extends Controller
@@ -15,9 +16,17 @@ class ClassLevelController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
+
+        $classLevels = ClassLevel::all();
+        if ($request->units) {
+            foreach ($classLevels as $classLevel) {
+                $classLevel->units;
+            }
+        }
+
+        return response()->json($classLevels);
     }
 
     /**
@@ -33,7 +42,7 @@ class ClassLevelController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param CreateUnitRequest $request
+     * @param CreateClassLevelRequest $request
      * @return Request|CreateUnitRequest
      */
     public function store(CreateClassLevelRequest $request)
@@ -44,7 +53,7 @@ class ClassLevelController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param Unit $unit
+     * @param ClassLevel $classLevel
      * @param Request $request
      * @return \Illuminate\Http\Response
      */
@@ -56,7 +65,7 @@ class ClassLevelController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
@@ -67,24 +76,24 @@ class ClassLevelController extends Controller
     /**
      * Update the specified resource in storage.
      *
+     * @param ClassLevel $classLevel
      * @param  \Illuminate\Http\Request $request
-     * @param Unit $unit
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, ClassLevel $unit)
+    public function update(ClassLevel $classLevel, UpdateClassLevelRequest $request)
     {
-        return response()->json(ClassLevel::updateClassLevel($unit, $request));
+        return response()->json(ClassLevel::updateClassLevel($classLevel, $request));
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param Unit $unit
+     * @param ClassLevel $classLevel
      * @return void
      * @throws \Exception
      */
-    public function destroy(ClassLevel $unit)
+    public function destroy(ClassLevel $classLevel)
     {
-        $unit->delete();
+        $classLevel->delete();
     }
 }
