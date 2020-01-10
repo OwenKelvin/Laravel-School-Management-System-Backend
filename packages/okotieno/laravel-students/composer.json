@@ -1,0 +1,16 @@
+{
+    "name": "okotieno/students",
+    "description": "Laravel Package for Student",
+    "authors": [
+        {
+            "name": "okotieno",
+            "email": "okotieno@yahoo.com"
+        }
+    ],
+    "require": {},
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}

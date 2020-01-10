@@ -24,7 +24,7 @@ class CreateAcademicYearRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required',
+            'name' => 'required|unique:academic_years',
             'start_date' => 'required',
             'end_date' => 'required',
         ];
@@ -34,7 +34,8 @@ class CreateAcademicYearRequest extends FormRequest
         return [
             'name.required'=> 'The name field is required',
             'start_date.required' => 'The start date field required',
-            'end_date.required' => 'The start date field required'
+            'end_date.required' => 'The start date field required',
+            'name.unique' => 'Academic year already exists'
         ];
     }
 }

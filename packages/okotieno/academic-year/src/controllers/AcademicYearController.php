@@ -7,6 +7,9 @@ use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Okotieno\AcademicYear\Models\AcademicYear;
 use Okotieno\AcademicYear\Requests\CreateAcademicYearRequest;
+use Okotieno\SchoolCurriculum\Models\ClassLevel;
+use Okotieno\SchoolCurriculum\Unit;
+use Okotieno\SchoolCurriculum\UnitLevel;
 
 class AcademicYearController extends Controller
 {
@@ -50,13 +53,44 @@ class AcademicYearController extends Controller
      */
     public function show(AcademicYear $academicYear, Request $request)
     {
-        return response()->json($academicYear);
+        $returnAcademicYear = [
+            'id' => $academicYear->id,
+            'name' => $academicYear->name,
+            'start_date' => $academicYear->start_date,
+            'end_date' => $academicYear->end_date,
+            'class_level_allocations' => []
+        ];
+        if ($request->class_levels == 1) {
+            $classLevels = [];
+            foreach ($academicYear->classAllocations->groupBy('class_level_id')->toArray() as $key => $classAllocation) {
+
+                $classLevel = ClassLevel::find($key);
+                $units = [];
+                foreach ($classAllocation as $_classAllocation) {
+                    $unitLevel = UnitLevel::find($_classAllocation['unit_level_id']);
+                    $unit = [
+                        'id' => $_classAllocation['id'],
+                        'name' => $unitLevel->unit->name,
+                        'level' => $unitLevel->name 
+                    ];
+                    $units[] = $unit;
+                }
+                $classLevels[] = [
+                    'id' => $classLevel->id,
+                    'name' => $classLevel->name,
+                    'abbreviation' => $classLevel->abbreviation,
+                    'units' => $units
+                ];
+            }
+            $returnAcademicYear['class_level_allocations'] = $classLevels;
+        }
+        return response()->json($returnAcademicYear);
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)

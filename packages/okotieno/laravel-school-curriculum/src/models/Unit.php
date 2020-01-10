@@ -34,11 +34,14 @@ class Unit extends Model
                 'description' => $request->description,
                 'active' => $request->active,
             ]);
-        foreach ($request->subjectLevels as $level){
-            $unit->unitLevels()->create([
-                'name' => $level['name']
-            ]);
+        if ($subjectLevels = $request->subjectLevels !== null){
+            foreach ($request->subjectLevels as $level){
+                $unit->unitLevels()->create([
+                    'name' => $level['name']
+                ]);
+            }
         }
+
         $unit->unitLevels;
         return $unit;
 

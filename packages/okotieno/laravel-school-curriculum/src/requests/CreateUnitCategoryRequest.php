@@ -24,7 +24,8 @@ class CreateUnitCategoryRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|unique:unit_categories,deleted_at'
+            // TODO Check if unique:unit_categories,name,deleted_at is okay
+            'name' => 'required|unique:unit_categories,name,deleted_at'
         ];
     }
     public function messages()

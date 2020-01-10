@@ -41,6 +41,7 @@ class UnitCategory extends Model
                         ]);
                     }
                 }
+                $unitCategory = UnitCategory::find($unitCategory->id);
                 $unitCategory->units[$key]->unitLevels;
             }
             $unitCategory->units;
