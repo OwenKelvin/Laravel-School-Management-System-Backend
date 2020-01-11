@@ -8,12 +8,13 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^7.1.3",
+        "php": "^7.4.0",
         "barryvdh/laravel-cors": "^0.11.3",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "5.8.*",
         "laravel/passport": "^7.4",
-        "laravel/tinker": "^1.0"
+        "laravel/tinker": "^1.0",
+        "spatie/laravel-permission": "^3.3"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
@@ -45,7 +46,9 @@
             "Okotieno\\Gender\\": "packages/okotieno/gender/src/",
             "Okotieno\\Religion\\": "packages/okotieno/religion/src/",
             "Okotieno\\AcademicYear\\": "packages/okotieno/academic-year/src/",
-            "Okotieno\\SchoolCurriculum\\": "packages/okotieno/laravel-school-curriculum/src/"
+            "Okotieno\\SchoolCurriculum\\": "packages/okotieno/laravel-school-curriculum/src/",
+            "Okotieno\\Students\\": "packages/okotieno/laravel-students/src/",
+            "Okotieno\\Procurement\\": "packages/okotieno/laravel-procurements/src/"
         },
         "classmap": [
             "database/seeds",

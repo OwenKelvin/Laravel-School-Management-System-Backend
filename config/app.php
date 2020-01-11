@@ -176,6 +176,8 @@ return [
         Okotieno\Religion\ReligionServiceProvider::class,
         Okotieno\AcademicYear\AcademicYearServiceProvider::class,
         Okotieno\SchoolCurriculum\SchoolCurriculumServiceProvider::class,
+        Okotieno\Students\StudentsServiceProvider::class,
+        Okotieno\Procurement\ProcurementServiceProvider::class,
 
         /*
          * Application Service Providers...

@@ -16,11 +16,12 @@ class CreateUnitsTable extends Migration
         Schema::create('units', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('unit_category_id');
-            $table->boolean('active');
+            $table->boolean('active')->default(true);
             $table->boolean('default')->default(true);
             $table->string('name');
-            $table->string('prefix');
+            $table->string('abbreviation');
             $table->longText('essence_statement')->nullable();
+            $table->softDeletes();
         });
     }
 

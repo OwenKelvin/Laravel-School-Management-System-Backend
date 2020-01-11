@@ -1304,6 +1304,40 @@ class PermissionAndRolesSeeder extends Seeder
                     'dean of students',
                 ]
             ],
+            [
+                'permission' => 'make procurement request',
+                'roles' => [
+                    'super admin',
+                    'admin',
+                    'maker admissions',
+                    'verifier admissions',
+                    'head teacher',
+                    'deputy head teacher',
+                    'accountant',
+                    'head accountant',
+                    'teacher',
+                    'class teacher',
+                    'dean of students',
+                    'finance officer',
+                    'head of finance',
+                    'school bursar',
+                    'school board',
+                    'school board secretary',
+                    'librarian',
+                    'laboratory assistant',
+                ]
+            ],
+            [
+                'permission' => 'approve procurement request',
+                'roles' => [
+                    'super admin',
+                    'admin',
+                    'head teacher',
+                    'deputy head teacher',
+                    'dean of students',
+                    'head of finance',
+                ]
+            ],
         ];
 
         foreach ($permissions as $permission) {
