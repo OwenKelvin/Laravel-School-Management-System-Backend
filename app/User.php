@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Okotieno\Procurement\Traits\canProcure;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -22,7 +23,8 @@ class User extends Authenticatable
         canBeAGuardian,
         hasNamePrefix,
         hasGender,
-        hasReligion
+        hasReligion,
+        canProcure
         ;
 
     /**

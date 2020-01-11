@@ -8,12 +8,10 @@
       <change afterPath="$PROJECT_DIR$/packages/okotieno/academic-year/src/migrations/2019_10_19_165423_create_academic_year_unit_allocations_table.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/packages/okotieno/academic-year/src/models/AcademicYearUnitAllocation.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Controllers/ProcurementItemsCategoryController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Controllers/ProcurementRequestApiController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Controllers/ProcurementRequestController.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Models/ProcurementItemsCategory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Models/ProcurementRequest.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Request/ProcurementItemsCategoryCreateRequest.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Request/ProcurementRequestCreateRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Traits/canProcure.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-students/composer.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-students/src/StudentsServiceProvider.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-students/src/controllers/StudentGuardiansController.php" afterDir="false" />
@@ -23,6 +21,7 @@
       <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-students/tests/Unit/ExampleTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
@@ -33,6 +32,11 @@
       <change beforePath="$PROJECT_DIR$/packages/okotieno/academic-year/src/controllers/AcademicYearController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/academic-year/src/controllers/AcademicYearController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/okotieno/academic-year/src/models/AcademicYear.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/academic-year/src/models/AcademicYear.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/okotieno/academic-year/src/requests/CreateAcademicYearRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/academic-year/src/requests/CreateAcademicYearRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Controllers/ProcurementRequestApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Controllers/ProcurementRequestApiController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Controllers/ProcurementRequestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Controllers/ProcurementRequestController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Models/ProcurementRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Models/ProcurementRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/migrations/2020_01_10_170736_create_procurement_request_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/migrations/2020_01_10_170736_create_procurement_request_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/routes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/Unit.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/Unit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/UnitCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/UnitCategory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/requests/CreateClassLevelRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/requests/CreateClassLevelRequest.php" afterDir="false" />
@@ -53,31 +57,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages/okotieno/academic-year/src/routes.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="9" column="3" lean-forward="true" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/routes.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="192">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PermissionAndRolesSeeder.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/seeds/PermissionAndRolesSeeder.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="1337" column="38" selection-start-line="1337" selection-start-column="38" selection-end-line="1337" selection-end-column="38" />
-              <folding>
-                <element signature="e#12354#13159#1#PHP" />
-              </folding>
+              <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -85,35 +68,20 @@
       <file leaf-file-name="ProcurementRequest.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Models/ProcurementRequest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+            <state relative-caret-position="292">
+              <caret line="25" column="58" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
+              <folding>
+                <element signature="e#134#147#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2020_01_10_170736_create_procurement_request_table.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="2020_01_10_170736_create_procurement_request_table.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/migrations/2020_01_10_170736_create_procurement_request_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProcurementItemsCategoryCreateRequest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Request/ProcurementItemsCategoryCreateRequest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="22" column="52" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProcurementRequestCreateRequest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Request/ProcurementRequestCreateRequest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="41" column="82" selection-start-line="41" selection-start-column="82" selection-end-line="41" selection-end-column="82" />
+            <state relative-caret-position="268">
+              <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -121,8 +89,8 @@
       <file leaf-file-name="ProcurementRequestController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Controllers/ProcurementRequestController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="49" column="46" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
+            <state relative-caret-position="206">
+              <caret line="70" column="35" selection-start-line="70" selection-start-column="35" selection-end-line="70" selection-end-column="35" />
               <folding>
                 <element signature="e#52#88#0#PHP" expanded="true" />
               </folding>
@@ -133,8 +101,44 @@
       <file leaf-file-name="ProcurementRequestApiController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Controllers/ProcurementRequestApiController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="216">
+              <caret line="13" column="59" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="32" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="canBorrowBook.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-lms/src/Traits/canBorrowBook.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="canProcure.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Traits/canProcure.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProcurementItemsCategory.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Models/ProcurementItemsCategory.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="13" column="30" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -196,8 +200,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/ClassLevelCategoryController.php" />
-        <option value="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/requests/UpdateClassLevelRequest.php" />
         <option value="$PROJECT_DIR$/packages/okotieno/academic-year/src/routes.php" />
         <option value="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/ClassLevelController.php" />
         <option value="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/ClassLevel.php" />
@@ -241,12 +243,14 @@
         <option value="$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/migrations/2020_01_10_170902_create_procurement_items_categories_table.php" />
         <option value="$PROJECT_DIR$/database/seeds/PermissionAndRolesSeeder.php" />
         <option value="$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Request/ProcurementRequestCreateRequest.php" />
-        <option value="$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Controllers/ProcurementRequestApiController.php" />
-        <option value="$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/migrations/2020_01_10_170736_create_procurement_request_table.php" />
-        <option value="$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Controllers/ProcurementRequestController.php" />
-        <option value="$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Models/ProcurementRequest.php" />
         <option value="$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Controllers/ProcurementItemsCategoryController.php" />
         <option value="$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/routes.php" />
+        <option value="$PROJECT_DIR$/app/User.php" />
+        <option value="$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Controllers/ProcurementRequestApiController.php" />
+        <option value="$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Traits/canProcure.php" />
+        <option value="$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Models/ProcurementRequest.php" />
+        <option value="$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Controllers/ProcurementRequestController.php" />
+        <option value="$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/migrations/2020_01_10_170736_create_procurement_request_table.php" />
       </list>
     </option>
   </component>
@@ -448,6 +452,30 @@
               <item name="fsms_backend" type="462c0819:PsiDirectoryNode" />
               <item name="packages" type="462c0819:PsiDirectoryNode" />
               <item name="okotieno" type="462c0819:PsiDirectoryNode" />
+              <item name="laravel-lms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fsms_backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fsms_backend" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="okotieno" type="462c0819:PsiDirectoryNode" />
+              <item name="laravel-lms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fsms_backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fsms_backend" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="okotieno" type="462c0819:PsiDirectoryNode" />
+              <item name="laravel-lms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Traits" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fsms_backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fsms_backend" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="okotieno" type="462c0819:PsiDirectoryNode" />
               <item name="laravel-procurements" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -493,6 +521,15 @@
               <item name="laravel-procurements" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Request" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fsms_backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fsms_backend" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+              <item name="okotieno" type="462c0819:PsiDirectoryNode" />
+              <item name="laravel-procurements" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Traits" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -613,12 +650,12 @@
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2754491" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2754491" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.36826348" />
       <window_info id="npm" order="2" sideWeight="0.22385322" side_tool="true" weight="0.30786687" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.43413174" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.43413174" />
       <window_info id="Designer" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.77614677" visible="true" weight="0.3214826" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.77614677" visible="true" weight="0.3214826" />
       <window_info anchor="bottom" id="Atlassian " order="8" weight="0.32934132" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -706,27 +743,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/requests/CreateUnitCategoryRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/ClassLevelSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="699">
-          <caret line="47" column="9" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-students/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/packages/okotieno/phone/src/PhoneServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -956,13 +972,6 @@
         <state relative-caret-position="-144" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Models/ProcurementItemsCategory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1770" />
@@ -1020,34 +1029,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/migrations/2020_01_10_170736_create_procurement_request_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Request/ProcurementRequestCreateRequest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="41" column="82" selection-start-line="41" selection-start-column="82" selection-end-line="41" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Controllers/ProcurementRequestController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="49" column="46" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
-          <folding>
-            <element signature="e#52#88#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Models/ProcurementRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -1061,17 +1046,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-lms/src/Traits/canBorrowBook.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Controllers/ProcurementRequestApiController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="216">
+          <caret line="13" column="59" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Traits/canProcure.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Models/ProcurementItemsCategory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/routes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Models/ProcurementRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="25" column="58" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
+          <folding>
+            <element signature="e#134#147#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Controllers/ProcurementRequestController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="70" column="35" selection-start-line="70" selection-start-column="35" selection-end-line="70" selection-end-column="35" />
+          <folding>
+            <element signature="e#52#88#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/migrations/2020_01_10_170736_create_procurement_request_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
         </state>
       </provider>
     </entry>

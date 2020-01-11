@@ -66,7 +66,9 @@ class ProcurementRequestController extends Controller
      */
     public function show($id)
     {
-        //
+        $procurementRequest = ProcurementRequest::find($id);
+        $procurementRequest->user;
+        return $procurementRequest;
     }
 
     /**
@@ -98,12 +100,12 @@ class ProcurementRequestController extends Controller
      * @param ProcurementRequest $procurementRequest
      * @return \Illuminate\Http\Response
      */
-    public function destroy(ProcurementRequest $procurementRequest)
+    public function destroy($id)
     {
-        ProcurementRequest::destroy($procurementRequest->id);
+        ProcurementRequest::destroy($id);
         return response()->json([
             'saved' => true,
-            'message' => 'Book saved Successfully'
+            'message' => 'Procurement Request deleted successfully'
         ]);
     }
 }

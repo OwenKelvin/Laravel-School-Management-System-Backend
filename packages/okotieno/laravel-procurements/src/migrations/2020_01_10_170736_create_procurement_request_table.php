@@ -21,6 +21,7 @@ class CreateProcurementRequestTable extends Migration
             $table->string('quantity_description');
             $table->string('description');
             $table->integer('requested_by');
+            $table->integer('procurement_request_id')->nullable();
         });
     }
 
