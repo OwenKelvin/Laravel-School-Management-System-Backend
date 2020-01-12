@@ -1337,6 +1337,17 @@ class PermissionAndRolesSeeder extends Seeder
                     'dean of students',
                     'head of finance',
                 ]
+            ],[
+                'permission' => 'create procurement vendor',
+                'roles' => [
+                    'super admin',
+                    'admin',
+                    'head teacher',
+                    'deputy head teacher',
+                    'dean of students',
+                    'head of finance',
+                    'head accountant',
+                ]
             ],
         ];
 

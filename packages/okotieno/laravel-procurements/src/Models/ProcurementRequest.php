@@ -14,6 +14,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class ProcurementRequest extends Model
 {
+    protected $appends = ['requesting_user'];
     protected $fillable = [
         'requested_by',
         'name',
@@ -22,8 +23,18 @@ class ProcurementRequest extends Model
         'procurement_items_category_id'
     ];
 
-    public function user() {
+    public function user()
+    {
         return $this->belongsTo(User::class, 'requested_by');
     }
-
+    public function approved() {
+        return $this->hasMany(ProcurementApproval::class);
+    }
+    public static function pendingApproval()
+    {
+        return ProcurementRequest::doesnthave('approved')->get();
+    }
+    public function getRequestingUserAttribute() {
+        return $this->user;
+    }
 }
