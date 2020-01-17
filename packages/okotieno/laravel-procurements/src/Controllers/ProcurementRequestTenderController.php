@@ -5,9 +5,10 @@ namespace Okotieno\Procurement\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Okotieno\Procurement\Models\ProcurementRequest;
+use Okotieno\Procurement\Request\ProcurementRequestApprovalCreateRequest;
 use Okotieno\Procurement\Request\ProcurementRequestCreateRequest;
 
-class ProcurementRequestController extends Controller
+class ProcurementRequestTenderController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,7 +17,7 @@ class ProcurementRequestController extends Controller
      */
     public function index()
     {
-
+        return response()->json(ProcurementRequest::pendingTendering());
     }
 
     /**
@@ -35,20 +36,17 @@ class ProcurementRequestController extends Controller
      * @param ProcurementRequestCreateRequest $request
      * @return \Illuminate\Http\Response
      */
-    public function store(ProcurementRequestCreateRequest $request)
+    public function store(ProcurementRequestApprovalCreateRequest $request)
     {
-
-        $created_request = ProcurementRequest::create([
-            'name' => $request->name,
-            'procurement_items_category_id' => $request->procurement_items_category_id,
-            'quantity_description' => $request->quantity_description,
-            'description' => $request->description,
-            'requested_by' => auth()->id()
-        ]);
+        ProcurementRequest::find($request->procurement_request_id)
+            ->approved()
+            ->create([
+                'approved' => $request->approve,
+                'approved_by' => auth()->id()
+            ]);
         return response()->json([
             'saved' => true,
-            'message' => 'Procurement Request created Successfully',
-            'data' => $created_request
+            'message' => 'Book saved Successfully',
         ]);
     }
 
@@ -60,9 +58,7 @@ class ProcurementRequestController extends Controller
      */
     public function show($id)
     {
-        $procurementRequest = ProcurementRequest::find($id);
-        $procurementRequest->user;
-        return $procurementRequest;
+
     }
 
     /**
@@ -85,13 +81,7 @@ class ProcurementRequestController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $updated = ProcurementRequest::find($id);
-        $updated ->update($request->all());
-        return response()->json([
-            'saved' => true,
-            'message' => 'Procurement Request updated Successfully',
-            'data' => $updated
-        ]);
+        //
     }
 
     /**
@@ -102,10 +92,6 @@ class ProcurementRequestController extends Controller
      */
     public function destroy($id)
     {
-        ProcurementRequest::destroy($id);
-        return response()->json([
-            'saved' => true,
-            'message' => 'Procurement Request deleted successfully'
-        ]);
+
     }
 }

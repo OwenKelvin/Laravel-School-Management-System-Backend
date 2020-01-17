@@ -1337,7 +1337,8 @@ class PermissionAndRolesSeeder extends Seeder
                     'dean of students',
                     'head of finance',
                 ]
-            ],[
+            ],
+            [
                 'permission' => 'create procurement vendor',
                 'roles' => [
                     'super admin',
@@ -1349,8 +1350,36 @@ class PermissionAndRolesSeeder extends Seeder
                     'head accountant',
                 ]
             ],
+            [
+                'permission' => 'create procurement tender',
+                'roles' => [
+                    'super admin',
+                    'admin',
+                    'head teacher',
+                    'deputy head teacher',
+                    'accountant',
+                    'head accountant',
+                    'dean of students',
+                    'finance officer',
+                    'head of finance'
+                ]
+            ],
+            [
+                'permission' => 'create procurement bid',
+                'roles' => [
+                    'super admin',
+                    'admin',
+                    'head teacher',
+                    'deputy head teacher',
+                    'accountant',
+                    'head accountant',
+                    'finance officer',
+                    'head of finance',
+                    'school bursar',
+                ]
+            ],
         ];
-
+//
         foreach ($permissions as $permission) {
             if ($permission_saved = Permission::where('name', $permission['permission'])->first()) {
 
