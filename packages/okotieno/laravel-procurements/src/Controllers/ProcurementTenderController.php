@@ -27,13 +27,16 @@ class ProcurementTenderController extends Controller
                 })[0];
                 $procurementRequest = $procurementTender->procurementRequest;
 
+                $fulfilled = $procurementTender->fulfilled;
+
                 return [
                     'id' => $procurementTender['id'],
                     'requested_item_name' => $procurementRequest['name'],
                     'request_id' => $procurementRequest['id'],
                     'vendor_name' => $awardedBid['vendor_name'],
                     'vendor_id' => $awardedBid['vendor_id'],
-                    'quantity' => $awardedBid['vendor_id']];
+                    'quantity' => $awardedBid['vendor_id'],
+                    'fulfilled' => $fulfilled ? $fulfilled->fulfilled : null];
             }));
         }
 

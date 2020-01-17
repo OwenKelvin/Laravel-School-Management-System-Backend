@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Okotieno\Procurement\Models\ProcurementFulfill;
+use Okotieno\Procurement\Models\ProcurementTender;
 use Okotieno\Procurement\Request\ProcurementTenderCreateRequest;
 
 class ProcurementTenderFulfillmentController extends Controller
@@ -35,33 +36,35 @@ class ProcurementTenderFulfillmentController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param ProcurementTenderCreateRequest $request
+     * @param Request $request
+     * @param ProcurementTender $procurementTender
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, $id)
+    public function store(Request $request, ProcurementTender $procurementTender)
     {
-
-        $created_request = ProcurementFulfill::create([
-            'procurement_tender_id' => $id,
+        if ($procurementTender->fulfilled !== null) {
+            abort(409, 'Item fulfilment already set');
+        }
+        $created_request = $procurementTender->fulfilled()->create([
             'comment' => 'comment',
             'fulfilled' => $request->fulfilled,
             'entered_by' => auth()->id()
         ]);
-        $message = 'Tender Marked as Fullfilled Successfully';
+        $message = 'Tender Marked as Fulfilled Successfully';
         if ($request->fulfilled == 0) {
-            $message = 'Tender Marked as Not Fullfilled Successfully';
+            $message = 'Tender Marked as Not Fulfilled Successfully';
         }
         return response()->json([
             'saved' => true,
             'message' => $message,
-            'fullfill' => $created_request
+            'fulfill' => $created_request
         ]);
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
@@ -73,7 +76,7 @@ class ProcurementTenderFulfillmentController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
@@ -84,8 +87,8 @@ class ProcurementTenderFulfillmentController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \Illuminate\Http\Request $request
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)

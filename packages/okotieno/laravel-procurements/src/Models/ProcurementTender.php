@@ -37,4 +37,7 @@ class ProcurementTender extends Model
             $q->where('awarded', true);
         });
     }
+    public function fulfilled() {
+        return $this->hasOne(ProcurementFulfill::class);
+    }
 }
