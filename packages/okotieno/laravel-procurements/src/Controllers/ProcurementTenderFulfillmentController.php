@@ -5,8 +5,7 @@ namespace Okotieno\Procurement\Controllers;
 use App\Http\Controllers\Controller;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
-use Okotieno\Procurement\Models\ProcurementRequest;
-use Okotieno\Procurement\Models\ProcurementTender;
+use Okotieno\Procurement\Models\ProcurementFulfill;
 use Okotieno\Procurement\Request\ProcurementTenderCreateRequest;
 
 class ProcurementTenderFulfillmentController extends Controller
@@ -39,21 +38,24 @@ class ProcurementTenderFulfillmentController extends Controller
      * @param ProcurementTenderCreateRequest $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, $id)
     {
-        return ['qwertyu'];
-//        $created_request = ProcurementTender::create([
-//            'procurement_request_id' => $request->procurement_request_id,
-//            'expiry_datetime' => Carbon::createFromDate($request->expiry_datetime),
-//            'description' => $request->description
-//        ]);
-//        return response()->json([
-//            'saved' => true,
-//            'message' => 'Tender created Successfully',
-//            'tender' => [
-//                'id' => $created_request->id
-//            ]
-//        ]);
+
+        $created_request = ProcurementFulfill::create([
+            'procurement_tender_id' => $id,
+            'comment' => 'comment',
+            'fulfilled' => $request->fulfilled,
+            'entered_by' => auth()->id()
+        ]);
+        $message = 'Tender Marked as Fullfilled Successfully';
+        if ($request->fulfilled == 0) {
+            $message = 'Tender Marked as Not Fullfilled Successfully';
+        }
+        return response()->json([
+            'saved' => true,
+            'message' => $message,
+            'fullfill' => $created_request
+        ]);
     }
 
     /**

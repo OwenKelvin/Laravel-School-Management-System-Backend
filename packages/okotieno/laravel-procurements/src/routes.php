@@ -2,7 +2,7 @@
 
 Route::middleware(['auth:api', 'bindings'])->group(function () {
     Route::prefix('api')->group(function (){
-        Route::resource('/procurements/tenders/{procurementTender}/fullfilled', 'Okotieno\\Procurement\\Controllers\\ProcurementTenderFulfillmentController');
+        Route::resource('/procurements/tenders/{procurementTender}/fulfilled', 'Okotieno\\Procurement\\Controllers\\ProcurementTenderFulfillmentController');
         Route::resource('/procurements/tenders/{procurementTender}/bids', 'Okotieno\\Procurement\\Controllers\\ProcurementTenderBidsController');
 //        Route::resource('/procurements/tender/bids', 'Okotieno\\Procurement\\Controllers\\ProcurementTenderBidsController');
         Route::resource('/procurements/tenders', 'Okotieno\\Procurement\\Controllers\\ProcurementTenderController');
