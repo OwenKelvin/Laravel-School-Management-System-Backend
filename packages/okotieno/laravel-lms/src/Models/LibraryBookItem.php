@@ -4,9 +4,11 @@ namespace Okotieno\LMS\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Carbon\Carbon;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class LibraryBookItem extends Model
 {
+    use SoftDeletes;
     protected $fillable = ['ref', 'procurement_date', 'reserved'];
 
     public static function withRef($ref)
