@@ -41,10 +41,11 @@ class LibraryBookTagController extends Controller
         $input = [
           'name' => $request->name,
         ];
-        LibraryBookTag::create($input);
+        $createdTag = LibraryBookTag::create($input);
         return response()->json([
             'message' => 'Tag Created Successfully',
-            'saved' => true
+            'saved' => true,
+            'data' => $createdTag
         ]);
     }
 
@@ -54,9 +55,9 @@ class LibraryBookTagController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(LibraryBookTag $libraryBookTag)
     {
-        //
+        return response()->json($libraryBookTag);
     }
 
     /**
@@ -90,7 +91,8 @@ class LibraryBookTagController extends Controller
         $task->update($input);
         return response()->json([
             'message' => 'Tag Updated Successfully',
-            'saved' => true
+            'saved' => true,
+            'data' => LibraryBookTag::find($id)
         ]);
     }
 
@@ -105,7 +107,7 @@ class LibraryBookTagController extends Controller
         LibraryBookTag::destroy($id);
         return response()->json([
             'message' => 'Tag Deleted Successfully',
-            'saved' => true
+            'saved' => true,
         ]);
     }
 }

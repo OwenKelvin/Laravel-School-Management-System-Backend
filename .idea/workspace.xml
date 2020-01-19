@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-lms/src/Controllers/LibraryBookAuthorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-lms/src/Controllers/LibraryBookAuthorController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-lms/src/Controllers/LibraryBookPublisherController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-lms/src/Controllers/LibraryBookPublisherController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-lms/src/Controllers/LibraryBookTagController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-lms/src/Controllers/LibraryBookTagController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-lms/src/Models/LibraryBook.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-lms/src/Models/LibraryBook.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-lms/src/Models/LibraryBookAuthor.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-lms/src/Models/LibraryBookAuthor.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-lms/src/Models/LibraryBookItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-lms/src/Models/LibraryBookItem.php" afterDir="false" />
@@ -20,20 +21,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LibraryBookPublisherController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-lms/src/Controllers/LibraryBookPublisherController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="104" lean-forward="true" selection-start-line="104" selection-end-line="104" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="LibraryBookAuthorController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-lms/src/Controllers/LibraryBookAuthorController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="264">
               <caret line="101" column="11" lean-forward="true" selection-start-line="97" selection-start-column="8" selection-end-line="101" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LibraryBookController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-lms/src/Controllers/LibraryBookController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="48" column="11" lean-forward="true" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StoreLibraryBookRequest.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-lms/src/Request/StoreLibraryBookRequest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-24">
+              <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-lms/src/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="8" column="90" lean-forward="true" selection-start-line="8" selection-start-column="90" selection-end-line="8" selection-end-column="90" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LibraryBookTagController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-lms/src/Controllers/LibraryBookTagController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -90,6 +118,7 @@
         <option value="$PROJECT_DIR$/packages/okotieno/laravel-lms/src/Models/LibraryBookItem.php" />
         <option value="$PROJECT_DIR$/packages/okotieno/laravel-lms/src/Controllers/LibraryBookAuthorController.php" />
         <option value="$PROJECT_DIR$/packages/okotieno/laravel-lms/src/Controllers/LibraryBookPublisherController.php" />
+        <option value="$PROJECT_DIR$/packages/okotieno/laravel-lms/src/Controllers/LibraryBookTagController.php" />
       </list>
     </option>
   </component>
@@ -237,12 +266,6 @@
             <path>
               <item name="fsms_backend" type="b2602c69:ProjectViewProjectNode" />
               <item name="fsms_backend" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fsms_backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fsms_backend" type="462c0819:PsiDirectoryNode" />
               <item name="packages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -265,15 +288,6 @@
               <item name="okotieno" type="462c0819:PsiDirectoryNode" />
               <item name="laravel-lms" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fsms_backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fsms_backend" type="462c0819:PsiDirectoryNode" />
-              <item name="packages" type="462c0819:PsiDirectoryNode" />
-              <item name="okotieno" type="462c0819:PsiDirectoryNode" />
-              <item name="laravel-lms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Traits" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -340,7 +354,7 @@
       <window_info id="npm" order="2" sideWeight="0.22727273" side_tool="true" weight="0.46369138" />
       <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.24550898" />
       <window_info id="Designer" order="4" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.77272725" weight="0.46369138" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.77272725" weight="0.29198185" />
       <window_info anchor="bottom" id="Atlassian " order="8" weight="0.32934132" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -426,27 +440,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/migrations/2020_01_10_170902_create_procurement_items_categories_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/okotieno/academic-year/src/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="3" lean-forward="true" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Request/ProcurementRequestCreateRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="41" column="82" selection-start-line="41" selection-start-column="82" selection-end-line="41" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Controllers/ProcurementItemsCategoryController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -794,10 +787,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-lms/src/routes.php">
+    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-lms/src/Controllers/LibraryBookPublisherController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="100" selection-start-line="10" selection-start-column="100" selection-end-line="10" selection-end-column="100" />
+        <state relative-caret-position="72">
+          <caret line="94" column="7" lean-forward="true" selection-start-line="94" selection-start-column="7" selection-end-line="94" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -808,10 +801,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-lms/src/Controllers/LibraryBookPublisherController.php">
+    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-lms/src/Controllers/LibraryBookController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="104" lean-forward="true" selection-start-line="104" selection-end-line="104" />
+        <state relative-caret-position="192">
+          <caret line="48" column="11" lean-forward="true" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-lms/src/Request/StoreLibraryBookRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-24">
+          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-lms/src/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="90" lean-forward="true" selection-start-line="8" selection-start-column="90" selection-end-line="8" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-lms/src/Controllers/LibraryBookTagController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
         </state>
       </provider>
     </entry>
