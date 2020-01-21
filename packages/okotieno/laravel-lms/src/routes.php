@@ -6,6 +6,9 @@ Route::resource('/library-books', 'Okotieno\\LMS\\Controllers\\LibraryBookContro
 
 Route::middleware(['auth:api', 'bindings'])->group(function () {
 
+    Route::resource('/api/library-books/classifications', 'Okotieno\\LMS\\Controllers\\LibraryClassificationController');
+    Route::resource('/api/library-books/classifications/{libraryClassification}/classes', 'Okotieno\\LMS\\Controllers\\LibraryClassificationClassController');
+
     Route::resource('/api/library-book-tag', 'Okotieno\\LMS\\Controllers\\LibraryBookTagController');
     Route::resource('/api/library-book-author', 'Okotieno\\LMS\\Controllers\\LibraryBookAuthorController');
     Route::resource('/api/library-book-publisher', 'Okotieno\\LMS\\Controllers\\LibraryBookPublisherController');
