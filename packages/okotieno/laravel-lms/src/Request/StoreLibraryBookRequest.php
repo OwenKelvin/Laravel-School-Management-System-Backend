@@ -25,16 +25,19 @@ class StoreLibraryBookRequest extends FormRequest
     {
         return [
             'title' => 'required',
-//            'ref' => 'required',
-            'ISBN' => 'required'
+            'category' => 'required',
+            'ISBN' => 'required',
+            'authors' => 'required',
+            'book_items.*.ref' => 'required'
         ];
     }
     public function messages()
     {
         return [
             'title.required' => 'The book title is required',
-//            'ref.required' => 'The book Unique Reference is required',
+            'category.required' => 'The book Category is required',
             'ISBN.required' => 'The ISBN Number Field is required',
+            'authors.required' => 'required',
         ];
     }
     protected function failedAuthorization()

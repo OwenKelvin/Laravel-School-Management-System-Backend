@@ -2,7 +2,7 @@
 
 
 Route::resource('/library-classification', 'Okotieno\\LMS\\Controllers\\LibraryClassificationController');
-Route::resource('/library-books', 'Okotieno\\LMS\\Controllers\\LibraryBookController');
+//Route::resource('/library-books', 'Okotieno\\LMS\\Controllers\\LibraryBookController');
 
 Route::middleware(['auth:api', 'bindings'])->group(function () {
 
