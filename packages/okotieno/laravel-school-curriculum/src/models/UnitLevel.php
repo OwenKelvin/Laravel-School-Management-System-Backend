@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class UnitLevel extends Model
 {
     use softDeletes;
-    protected $fillable = ['name'];
+    protected $fillable = ['name', 'level'];
     public $timestamps = false;
     protected $hidden = ['deleted_at'];
 

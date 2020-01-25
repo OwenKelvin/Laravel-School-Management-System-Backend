@@ -34,10 +34,11 @@ class Unit extends Model
                 'description' => $request->description,
                 'active' => $request->active,
             ]);
-        if ($subjectLevels = $request->subjectLevels !== null){
-            foreach ($request->subjectLevels as $level){
+        if ($subjectLevels = $request->unitLevels !== null){
+            foreach ($request->unitLevels as $level){
                 $unit->unitLevels()->create([
-                    'name' => $level['name']
+                    'name' => $level['name'],
+                    'level' => $level['level'],
                 ]);
             }
         }
@@ -48,22 +49,23 @@ class Unit extends Model
     }
 
     public static function updateSubject(Unit $unit, Request $request) {
-
         $unit->name = $request->name;
         $unit->active = $request->active;
         $unit->abbreviation = $request->abbr;
         $unit->essence_statement = $request->description;
         $unit->save();
-        if ($request->subjectLevels) {
-            if(is_array($request->subjectLevels)){
-                foreach ($request->subjectLevels as $subjectLevel) {
-                    if (key_exists('id', $subjectLevel)) {
-                        $unit->unitLevels()->find($subjectLevel['id'])->update([
-                            'name' => $subjectLevel['name']
+        if ($request->unitLevels) {
+            if(is_array($request->unitLevels)){
+                foreach ($request->unitLevels as $unitLevel) {
+                    if (key_exists('id', $unitLevel)) {
+                        $unit->unitLevels()->find($unitLevel['id'])->update([
+                            'name' => $unitLevel['name'],
+                            'level' => $unitLevel['level'],
                         ]);
                     } else {
                         $unit->unitLevels()->create([
-                            'name' => $subjectLevel['name']
+                            'name' => $unitLevel['name'],
+                            'level' => $unitLevel['level'],
                         ]);
                     }
 
