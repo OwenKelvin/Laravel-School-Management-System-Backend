@@ -25,6 +25,11 @@ class ClassLevelController extends Controller
                 $classLevel->units;
             }
         }
+        if ($request->include_levels) {
+            foreach ($classLevels as $classLevel) {
+                $classLevel->unitLevels;
+            }
+        }
 
         return response()->json($classLevels);
     }

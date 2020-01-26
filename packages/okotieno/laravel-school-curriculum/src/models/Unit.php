@@ -55,9 +55,10 @@ class Unit extends Model
         $unit->essence_statement = $request->description;
         $unit->save();
         if ($request->unitLevels) {
+
             if(is_array($request->unitLevels)){
                 foreach ($request->unitLevels as $unitLevel) {
-                    if (key_exists('id', $unitLevel)) {
+                    if (key_exists('id', $unitLevel) && $unitLevel['id'] > 0) {
                         $unit->unitLevels()->find($unitLevel['id'])->update([
                             'name' => $unitLevel['name'],
                             'level' => $unitLevel['level'],

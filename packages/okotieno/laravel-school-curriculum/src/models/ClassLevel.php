@@ -39,7 +39,7 @@ class ClassLevel extends Model
         ]);
         return $classLevel;
     }
-    public function subjectLevels() {
-        return $this->belongsToMany(UnitLevel::class);
+    public function unitLevels() {
+        return $this->belongsToMany(UnitLevel::class, 'academic_year_unit_allocations');
     }
 }
