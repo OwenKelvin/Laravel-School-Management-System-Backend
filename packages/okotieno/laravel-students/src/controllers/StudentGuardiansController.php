@@ -12,6 +12,7 @@ namespace Okotieno\Students\Controllers;
 use App\Http\Controllers\Controller;
 use App\User;
 use Illuminate\Support\Facades\Request;
+use Okotieno\GuardianAdmissions\Requests\User\CreateGuardianRequest;
 use Okotieno\StudentAdmissions\Models\Student;
 
 class StudentGuardiansController extends Controller
@@ -56,9 +57,12 @@ class StudentGuardiansController extends Controller
      * Store a newly created resource in storage.
 
      */
-    public function store()
+    public function store(CreateGuardianRequest $request, User $user)
     {
-
+        if (($student = $user->student) != null) {
+            $user = $student->createGuardian($request);
+            return $user;
+        }
     }
 
     /**
