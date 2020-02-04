@@ -178,6 +178,7 @@ return [
         Okotieno\SchoolCurriculum\SchoolCurriculumServiceProvider::class,
         Okotieno\Students\StudentsServiceProvider::class,
         Okotieno\Procurement\ProcurementServiceProvider::class,
+        Okotieno\TeacherAdmissions\TeacherAdmissionsServiceProvider::class,
 
         /*
          * Application Service Providers...
