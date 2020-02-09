@@ -1,0 +1,16 @@
+{
+    "name": "okotieno/laravel-guardians",
+    "description": "Laravel Package for Guardian Admissions",
+    "authors": [
+        {
+            "name": "okotieno",
+            "email": "okotieno@yahoo.com"
+        }
+    ],
+    "require": {},
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}

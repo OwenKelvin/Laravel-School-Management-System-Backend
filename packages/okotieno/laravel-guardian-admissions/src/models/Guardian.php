@@ -11,6 +11,7 @@ namespace Okotieno\GuardianAdmissions\Models;
 
 use App\Traits\AppUser;
 use Illuminate\Database\Eloquent\Model;
+use Okotieno\StudentAdmissions\Models\Student;
 
 class Guardian extends Model
 {
@@ -19,5 +20,8 @@ class Guardian extends Model
     public static function generateIdNumber()
     {
         return self::count() + 1;
+    }
+    public function students() {
+        return $this->belongsToMany(Student::class);
     }
 }

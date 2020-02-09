@@ -23,7 +23,7 @@ class AcademicYearUnitLevelController extends Controller
         if ($request->class_level) {
             $allocations = $academicYear
                 ->classAllocations
-                ->where('class_level_id',$request->class_level);
+                ->where('class_level_id', $request->class_level);
             foreach ($allocations as $allocation) {
                 $response[] = [
                     'id' => $allocation['id'],
@@ -39,8 +39,7 @@ class AcademicYearUnitLevelController extends Controller
     {
         $academicYear->classAllocations()->delete();
         foreach ($request->all() as $item) {
-
-            foreach ($item['unitLevels'] as $item1) {
+            foreach (array_unique($item['unitLevels']) as $item1) {
                 $academicYear->classAllocations()->create([
                     'class_level_id' => $item['id'],
                     'unit_level_id' => $item1

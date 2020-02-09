@@ -49,6 +49,8 @@
             "Okotieno\\AcademicYear\\": "packages/okotieno/academic-year/src/",
             "Okotieno\\SchoolCurriculum\\": "packages/okotieno/laravel-school-curriculum/src/",
             "Okotieno\\Students\\": "packages/okotieno/laravel-students/src/",
+            "Okotieno\\Teachers\\": "packages/okotieno/laravel-teachers/src/",
+            "Okotieno\\Guardians\\": "packages/okotieno/laravel-guardians/src/",
             "Okotieno\\Procurement\\": "packages/okotieno/laravel-procurements/src/"
         },
         "classmap": [

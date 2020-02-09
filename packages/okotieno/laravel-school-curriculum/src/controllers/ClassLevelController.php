@@ -18,7 +18,6 @@ class ClassLevelController extends Controller
      */
     public function index(Request $request)
     {
-
         $classLevels = ClassLevel::all();
         if ($request->units) {
             foreach ($classLevels as $classLevel) {
@@ -26,11 +25,16 @@ class ClassLevelController extends Controller
             }
         }
         if ($request->include_levels) {
-            foreach ($classLevels as $classLevel) {
-                $classLevel->unitLevels;
+            foreach ($classLevels as $key => $classLevel) {
+                if ($request->academic_year_id) {
+                    $classLevels[$key]['unit_levels'] = $classLevel->unitLevels()
+                      -> wherePivot('academic_year_id', '=', $request->academic_year_id)->get();
+                } else {
+                    $classLevel->unitLevels;
+                }
+
             }
         }
-
         return response()->json($classLevels);
     }
 

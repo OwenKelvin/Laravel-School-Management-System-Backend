@@ -40,6 +40,7 @@ class ClassLevel extends Model
         return $classLevel;
     }
     public function unitLevels() {
-        return $this->belongsToMany(UnitLevel::class, 'academic_year_unit_allocations');
+        return $this->belongsToMany(UnitLevel::class, 'academic_year_unit_allocations')
+            ->withPivot('academic_year_id');
     }
 }
