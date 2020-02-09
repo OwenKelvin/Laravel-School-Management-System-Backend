@@ -59,6 +59,9 @@ class UnitController extends Controller
     {
         if ($request->include_unit_levels == 1) {
             $unit->unitLevels;
+            foreach ($unit->unitLevels as $key => $unitLevel) {
+                $unit->unitLevels[$key]->semesters;
+            }
 
         };
         return response()->json($unit);
