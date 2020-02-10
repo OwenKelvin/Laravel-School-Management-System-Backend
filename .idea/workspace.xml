@@ -175,8 +175,8 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="13" column="89" selection-start-line="13" selection-start-column="75" selection-end-line="13" selection-end-column="89" />
+            <state relative-caret-position="144">
+              <caret line="15" column="102" lean-forward="true" selection-start-line="15" selection-start-column="82" selection-end-line="15" selection-end-column="102" />
             </state>
           </provider>
         </entry>
@@ -190,11 +190,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Unit.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Unit.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/Unit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-52">
-              <caret line="82" column="45" selection-start-line="82" selection-start-column="45" selection-end-line="82" selection-end-column="45" />
+            <state relative-caret-position="240">
+              <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -208,11 +208,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClassLevelController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ClassLevelController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/ClassLevelController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="42" column="6" lean-forward="true" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
+            <state relative-caret-position="10">
+              <caret line="39" column="17" lean-forward="true" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -309,12 +309,12 @@
         <option value="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/migrations/2020_02_08_034909_create_semesters_table.php" />
         <option value="$PROJECT_DIR$/packages/okotieno/academic-year/src/controllers/AcademicYearUnitLevelController.php" />
         <option value="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/ClassLevel.php" />
-        <option value="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/ClassLevelController.php" />
         <option value="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/migrations/2020_02_09_153148_create_semester_unit_table.php" />
         <option value="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/migrations/2020_02_09_153148_create_semester_unit_level_table.php" />
         <option value="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/UnitLevel.php" />
         <option value="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/UnitController.php" />
         <option value="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/Unit.php" />
+        <option value="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/ClassLevelController.php" />
       </list>
     </option>
   </component>
@@ -638,11 +638,11 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.5988024" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33832335" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33832335" />
       <window_info id="npm" order="2" sideWeight="0.24115044" side_tool="true" weight="0.28971255" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.2949102" />
       <window_info id="Designer" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.75884956" visible="true" weight="0.18986385" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.75884956" weight="0.3540091" />
       <window_info anchor="bottom" id="Atlassian " order="8" weight="0.32934132" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -1025,24 +1025,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/ClassLevelController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="42" column="6" lean-forward="true" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/migrations/2020_02_08_034909_create_semesters_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-144">
           <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="13" column="89" selection-start-line="13" selection-start-column="75" selection-end-line="13" selection-end-column="89" />
         </state>
       </provider>
     </entry>
@@ -1069,8 +1055,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/Unit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-52">
-          <caret line="82" column="45" selection-start-line="82" selection-start-column="45" selection-end-line="82" selection-end-column="45" />
+        <state relative-caret-position="240">
+          <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="15" column="102" lean-forward="true" selection-start-line="15" selection-start-column="82" selection-end-line="15" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/ClassLevelController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10">
+          <caret line="39" column="17" lean-forward="true" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
         </state>
       </provider>
     </entry>

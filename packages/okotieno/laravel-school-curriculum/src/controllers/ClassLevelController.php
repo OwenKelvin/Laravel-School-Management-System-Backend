@@ -29,9 +29,16 @@ class ClassLevelController extends Controller
                 if ($request->academic_year_id) {
                     $classLevels[$key]['unit_levels'] = $classLevel->unitLevels()
                       -> wherePivot('academic_year_id', '=', $request->academic_year_id)->get();
+                    foreach ($classLevels[$key]['unit_levels'] as $key1 => $unitLevel) {
+                        $classLevels[$key]['unit_levels'][$key1]->semesters;
+                    }
                 } else {
-                    $classLevel->unitLevels;
+
+                    foreach ($classLevel->unitLevels as $key1 => $unitLevel) {
+                        $classLevel->unitLevels['unit_levels'][$key1]->semesters;
+                    }
                 }
+
 
             }
         }
