@@ -211,8 +211,8 @@
       <file leaf-file-name="ClassLevelController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/ClassLevelController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10">
-              <caret line="39" column="17" lean-forward="true" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+            <state relative-caret-position="322">
+              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
             </state>
           </provider>
         </entry>
@@ -638,9 +638,9 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.5988024" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33832335" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33832335" />
       <window_info id="npm" order="2" sideWeight="0.24115044" side_tool="true" weight="0.28971255" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.2949102" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2949102" />
       <window_info id="Designer" order="4" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.75884956" weight="0.3540091" />
       <window_info anchor="bottom" id="Atlassian " order="8" weight="0.32934132" />
@@ -1069,8 +1069,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/ClassLevelController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10">
-          <caret line="39" column="17" lean-forward="true" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+        <state relative-caret-position="322">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
         </state>
       </provider>
     </entry>
