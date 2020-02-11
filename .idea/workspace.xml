@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7cce1804-0a10-4d96-9387-b7a93156009c" name="Default" comment="">
       <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-accounts/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-accounts/src/Controllers/FinancialPlanController.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-accounts/src/Models/TuitionFeeFinancialPlan.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-accounts/src/Requets/StoreFinancialPlanRequest.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-accounts/src/SchoolAccountsServiceProvider.php" afterDir="false" />
@@ -14,6 +13,7 @@
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/okotieno/academic-year/src/models/AcademicYear.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/academic-year/src/models/AcademicYear.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-accounts/src/Controllers/FinancialPlanController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-accounts/src/Controllers/FinancialPlanController.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/vendor/asm89/stack-cors/" />
     <ignored path="$PROJECT_DIR$/vendor/barryvdh/laravel-cors/" />
@@ -167,8 +167,8 @@
       <file leaf-file-name="FinancialPlanController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-accounts/src/Controllers/FinancialPlanController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-550">
-              <caret line="12" column="63" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="63" />
+            <state relative-caret-position="360">
+              <caret line="33" column="33" lean-forward="true" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
               <folding>
                 <element signature="e#143#189#0#PHP" expanded="true" />
               </folding>
@@ -1047,8 +1047,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-accounts/src/Controllers/FinancialPlanController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-550">
-          <caret line="12" column="63" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="63" />
+        <state relative-caret-position="360">
+          <caret line="33" column="33" lean-forward="true" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
           <folding>
             <element signature="e#143#189#0#PHP" expanded="true" />
           </folding>

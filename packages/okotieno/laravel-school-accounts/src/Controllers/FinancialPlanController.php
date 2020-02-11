@@ -11,9 +11,41 @@ namespace Okotieno\SchoolAccounts\Controllers;
 
 use Okotieno\AcademicYear\Models\AcademicYear;
 use Okotieno\SchoolAccounts\Requests\StoreFinancialPlanRequest;
+use Okotieno\SchoolCurriculum\Models\ClassLevel;
+use Okotieno\SchoolCurriculum\Models\Semester;
 
 class FinancialPlanController
 {
+    public function index(AcademicYear $academicYear)
+    {
+        $tuitionPlans = [];
+        foreach ($academicYear->tuitionFeeFinancialPlans->groupBy('class_level_id') as $classLevelId => $tuitionPlan){
+            $unitLevels = [];
+            foreach ($tuitionPlan->groupBy('unit_level_id') as $key => $value){
+                $semesters = [];
+                foreach ($value as $semester) {
+                    $semesters[] = [
+                        'id' => $semester['semester_id'],
+                        'name' => Semester::find($semester['semester_id'])->name,
+                        'amount' => $semester['amount']
+                    ];
+                }
+                $unitLevels[] = [
+                    'id' => $key,
+                    'semesters' => $semesters
+                ];
+            }
+
+            $tuitionPlans[] = [
+                'classLevelId' => $classLevelId,
+                'name' => ClassLevel::find($classLevelId)->name,
+                'unitLevels' => $unitLevels
+            ];
+        }
+
+        return ['tuitionFee' => $tuitionPlans];
+    }
+
     public function store(StoreFinancialPlanRequest $request, AcademicYear $academicYear)
     {
         $tuitionFees = $request->tuitionFee;
