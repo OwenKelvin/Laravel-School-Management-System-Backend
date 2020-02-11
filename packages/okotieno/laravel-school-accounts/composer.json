@@ -1,0 +1,16 @@
+{
+    "name": "okotieno/laravel-school-accounts",
+    "description": "Laravel Package for School Accounting",
+    "authors": [
+        {
+            "name": "okotieno",
+            "email": "okotieno@yahoo.com"
+        }
+    ],
+    "require": {},
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}

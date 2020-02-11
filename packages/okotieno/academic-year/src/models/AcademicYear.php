@@ -5,10 +5,13 @@ namespace Okotieno\AcademicYear\Models;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Okotieno\AcademicYear\Requests\CreateAcademicYearRequest;
+use Okotieno\SchoolAccounts\Traits\hasFinancialYearPlans;
 use Okotieno\SchoolCurriculum\Models\ClassLevel;
 
 class AcademicYear extends Model
 {
+    use hasFinancialYearPlans;
+    
     public $timestamps = false;
     protected $fillable = ['name', 'start_date', 'end_date'];
 
