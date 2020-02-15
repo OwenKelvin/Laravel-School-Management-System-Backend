@@ -11,6 +11,7 @@ use Okotieno\Gender\Traits\hasGender;
 use Okotieno\Religion\Traits\hasReligion;
 use Okotieno\NamePrefix\Traits\hasNamePrefix;
 use Okotieno\GuardianAdmissions\Traits\canBeAGuardian;
+use Okotieno\SchoolExams\Traits\hasSchoolExams;
 use Spatie\Permission\Traits\HasRoles;
 use Okotieno\StudentAdmissions\Traits\canBeAStudent;
 use Okotieno\TeacherAdmissions\Traits\canBeATeacher;
@@ -26,7 +27,8 @@ class User extends Authenticatable
         hasNamePrefix,
         hasGender,
         hasReligion,
-        canProcure
+        canProcure,
+        hasSchoolExams
         ;
 
     /**

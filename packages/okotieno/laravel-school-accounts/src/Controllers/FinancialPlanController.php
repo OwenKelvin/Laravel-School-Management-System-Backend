@@ -9,12 +9,13 @@
 namespace Okotieno\SchoolAccounts\Controllers;
 
 
+use App\Http\Controllers\Controller;
 use Okotieno\AcademicYear\Models\AcademicYear;
 use Okotieno\SchoolAccounts\Requests\StoreFinancialPlanRequest;
 use Okotieno\SchoolCurriculum\Models\ClassLevel;
 use Okotieno\SchoolCurriculum\Models\Semester;
 
-class FinancialPlanController
+class FinancialPlanController extends Controller
 {
     public function index(AcademicYear $academicYear)
     {

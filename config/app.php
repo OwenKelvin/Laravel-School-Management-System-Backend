@@ -182,6 +182,7 @@ return [
         Okotieno\Teachers\TeachersServiceProvider::class,
         Okotieno\Guardians\GuardiansServiceProvider::class,
         Okotieno\SchoolAccounts\SchoolAccountsServiceProvider::class,
+        Okotieno\SchoolExams\SchoolExamsServiceProvider::class,
 
         /*
          * Application Service Providers...
