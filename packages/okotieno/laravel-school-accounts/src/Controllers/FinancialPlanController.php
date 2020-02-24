@@ -10,19 +10,21 @@ namespace Okotieno\SchoolAccounts\Controllers;
 
 
 use App\Http\Controllers\Controller;
+use function foo\func;
 use Okotieno\AcademicYear\Models\AcademicYear;
 use Okotieno\SchoolAccounts\Requests\StoreFinancialPlanRequest;
 use Okotieno\SchoolCurriculum\Models\ClassLevel;
 use Okotieno\SchoolCurriculum\Models\Semester;
+use Okotieno\SchoolCurriculum\UnitLevel;
 
 class FinancialPlanController extends Controller
 {
     public function index(AcademicYear $academicYear)
     {
         $tuitionPlans = [];
-        foreach ($academicYear->tuitionFeeFinancialPlans->groupBy('class_level_id') as $classLevelId => $tuitionPlan){
+        foreach ($academicYear->tuitionFeeFinancialPlans->groupBy('class_level_id') as $classLevelId => $tuitionPlan) {
             $unitLevels = [];
-            foreach ($tuitionPlan->groupBy('unit_level_id') as $key => $value){
+            foreach ($tuitionPlan->groupBy('unit_level_id') as $key => $value) {
                 $semesters = [];
                 foreach ($value as $semester) {
                     $semesters[] = [
@@ -43,8 +45,38 @@ class FinancialPlanController extends Controller
                 'unitLevels' => $unitLevels
             ];
         }
+        $transportPlans = [];
+        foreach ($academicYear->classAllocations->groupBy('class_level_id') as $classLevelId => $classLevel) {
+            $semestersIds = ClassLevel::find($classLevelId)->unitLevels->map(function($unitLevel) {
+                return $unitLevel->semesters;
+            })->flatten()->pluck('pivot')->flatten()->pluck('semester_id')->unique();
+            $semesters = [];
+            foreach ($semestersIds as $semestersId) {
+                $semesters[] = [
+                    'id' => $semestersId,
+                    'name' => Semester::find($semestersId)->name,
+                    'amount' => 0
+                ];
+            }
+            $transportPlans[] = [
+                'classLevelId' => $classLevelId,
+                'name' => ClassLevel::find($classLevelId)->name,
+                'semesters' => $semesters
+            ];
+        }
+        $tourPlans = [];
+        $mealPlans = [];
+        $buildAndConstPlan = [];
+        $libraryPlan = [];
 
-        return ['tuitionFee' => $tuitionPlans];
+        return [
+            'tuitionFee' => $tuitionPlans,
+            'transportFee' => $transportPlans,
+            'libraryFee' => $libraryPlan,
+            'buildAndConstFee' => $buildAndConstPlan,
+            'mealFee' => $mealPlans,
+            'tourFee' => $tourPlans,
+        ];
     }
 
     public function store(StoreFinancialPlanRequest $request, AcademicYear $academicYear)

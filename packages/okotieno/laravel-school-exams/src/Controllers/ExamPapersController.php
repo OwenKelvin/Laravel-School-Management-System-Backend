@@ -33,6 +33,9 @@ class ExamPapersController extends Controller
             }
 
         }
+        if($request->latest != null) {
+            $response = ExamPaper::latest()->limit($request->latest)->get();
+        }
         return response()->json(
             $response
         );
