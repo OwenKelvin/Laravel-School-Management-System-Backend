@@ -12,6 +12,8 @@ namespace Okotieno\SchoolAccounts\Controllers;
 use App\Http\Controllers\Controller;
 use function foo\func;
 use Okotieno\AcademicYear\Models\AcademicYear;
+use Okotieno\SchoolAccounts\Models\FinancialCost;
+use Okotieno\SchoolAccounts\Models\OtherFeesFinancialPlan;
 use Okotieno\SchoolAccounts\Requests\StoreFinancialPlanRequest;
 use Okotieno\SchoolCurriculum\Models\ClassLevel;
 use Okotieno\SchoolCurriculum\Models\Semester;
@@ -45,37 +47,58 @@ class FinancialPlanController extends Controller
                 'unitLevels' => $unitLevels
             ];
         }
-        $transportPlans = [];
+        $otherFeesPlans = [];
         foreach ($academicYear->classAllocations->groupBy('class_level_id') as $classLevelId => $classLevel) {
-            $semestersIds = ClassLevel::find($classLevelId)->unitLevels->map(function($unitLevel) {
+            $semestersIds = ClassLevel::find($classLevelId)
+                ->unitLevels->map(function ($unitLevel) {
                 return $unitLevel->semesters;
-            })->flatten()->pluck('pivot')->flatten()->pluck('semester_id')->unique();
-            $semesters = [];
-            foreach ($semestersIds as $semestersId) {
-                $semesters[] = [
-                    'id' => $semestersId,
-                    'name' => Semester::find($semestersId)->name,
-                    'amount' => 0
+            })
+                ->flatten()->pluck('pivot')
+                ->flatten()->pluck('semester_id')->unique();
+
+            $financialCosts = [];
+            $semesters = Semester::find($semestersIds);
+            foreach (FinancialCost::all() as $financialCost) {
+                $costItems = [];
+                foreach ($financialCost->costItems as $costItem){
+                    $semestersTemp = [];
+                    foreach ($semesters as $semester){
+                        $amount = $academicYear->otherFeesFinancialPlan()->where([
+                            'semester_id' => $semester['id'],
+                            'class_level_id' => $classLevelId,
+                            'financial_cost_item_id' => $costItem['id']])->first();
+                        $amount = $amount == null ? 0 : $amount['amount'];
+
+                        $semestersTemp[] = [
+                            'id' => $semester->id,
+                            'name' => $semester->name,
+                            'amount' => $amount
+                        ];
+                    }
+
+                    $costItems[] = [
+                        'id' => $costItem->id,
+                        'name'=> $costItem->name,
+                        'semesters' => $semestersTemp
+                    ];
+                }
+                $financialCosts[] = [
+                    'id' => $financialCost->id,
+                    'name' => $financialCost->name,
+                    'costItems' => $costItems
                 ];
             }
-            $transportPlans[] = [
+
+            $otherFeesPlans[] = [
                 'classLevelId' => $classLevelId,
                 'name' => ClassLevel::find($classLevelId)->name,
-                'semesters' => $semesters
+                'financialCosts' => $financialCosts
             ];
         }
-        $tourPlans = [];
-        $mealPlans = [];
-        $buildAndConstPlan = [];
-        $libraryPlan = [];
 
         return [
             'tuitionFee' => $tuitionPlans,
-            'transportFee' => $transportPlans,
-            'libraryFee' => $libraryPlan,
-            'buildAndConstFee' => $buildAndConstPlan,
-            'mealFee' => $mealPlans,
-            'tourFee' => $tourPlans,
+            'otherFees' => $otherFeesPlans,
         ];
     }
 
@@ -106,6 +129,7 @@ class FinancialPlanController extends Controller
             }
         }
 
+        $academicYear->saveOtherFeePayments($request->otherFees);
         return [
             'saved' => true,
             'message' => 'Financial Plan Successfully saved',
