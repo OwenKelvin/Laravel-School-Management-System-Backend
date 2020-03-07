@@ -53,7 +53,8 @@
             "Okotieno\\Guardians\\": "packages/okotieno/laravel-guardians/src/",
             "Okotieno\\Procurement\\": "packages/okotieno/laravel-procurements/src/",
             "Okotieno\\SchoolAccounts\\": "packages/okotieno/laravel-school-accounts/src/",
-            "Okotieno\\SchoolExams\\": "packages/okotieno/laravel-school-exams/src/"
+            "Okotieno\\SchoolExams\\": "packages/okotieno/laravel-school-exams/src/",
+            "Okotieno\\StudyMaterials\\": "packages/okotieno/laravel-study-materials/src/"
         },
         "classmap": [
             "database/seeds",
