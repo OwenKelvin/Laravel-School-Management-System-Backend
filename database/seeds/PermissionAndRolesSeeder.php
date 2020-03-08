@@ -1378,6 +1378,19 @@ class PermissionAndRolesSeeder extends Seeder
                     'school bursar',
                 ]
             ],
+            [
+                'permission' => 'upload study materials',
+                'roles' => [
+                    'super admin',
+                    'admin',
+                    'head teacher',
+                    'deputy head teacher',
+                    'teacher',
+                    'class teacher',
+                    'dean of students',
+                    'librarian',
+                ]
+            ],
         ];
 //
         foreach ($permissions as $permission) {

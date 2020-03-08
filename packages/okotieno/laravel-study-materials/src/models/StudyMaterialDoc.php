@@ -14,4 +14,7 @@ class StudyMaterialDoc extends Model
         'size',
         'file_path'
     ];
+    public function studyMaterial() {
+        return $this->belongsTo(StudyMaterial::class);
+    }
 }

@@ -2,19 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cce1804-0a10-4d96-9387-b7a93156009c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-students/src/controllers/StudentFeeStatementController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-study-materials/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/StudyMaterialServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/controllers/StudyMaterialFilesController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/models/StudyMaterialDoc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/routes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/traits/canUploadStudyMaterials.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-study-materials/tests/Unit/ExampleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/controllers/StudyMaterialController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/models/StudyMaterial.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/requests/CreateStudyMaterialDocRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/requests/CreateStudyMaterialRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-students/src/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-students/src/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/PermissionAndRolesSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/PermissionAndRolesSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/controllers/StudyMaterialFilesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/controllers/StudyMaterialFilesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/models/StudyMaterialDoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/models/StudyMaterialDoc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/routes.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/vendor/asm89/stack-cors/" />
     <ignored path="$PROJECT_DIR$/vendor/barryvdh/laravel-cors/" />
@@ -132,41 +128,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="StudentFeeStatementController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-students/src/controllers/StudentFeeStatementController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="99" column="7" selection-start-line="99" selection-start-column="7" selection-end-line="99" selection-end-column="7" />
-              <folding>
-                <element signature="e#1468#2675#0#PHP" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StudyMaterialServiceProvider.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/StudyMaterialServiceProvider.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/app.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="182" column="47" selection-start-line="182" selection-start-column="47" selection-end-line="182" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="4" column="129" selection-start-line="4" selection-start-column="129" selection-end-line="4" selection-end-column="129" />
+            <state relative-caret-position="120">
+              <caret line="5" column="97" selection-start-line="5" selection-start-column="97" selection-end-line="5" selection-end-column="97" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudyMaterialController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/controllers/StudyMaterialController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -174,8 +149,35 @@
       <file leaf-file-name="StudyMaterialDoc.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/models/StudyMaterialDoc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+            <state relative-caret-position="282">
+              <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreateStudyMaterialRequest.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/requests/CreateStudyMaterialRequest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="26" column="18" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudyMaterial.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/models/StudyMaterial.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2020_03_07_193552_create_study_materials_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/migrations/2020_03_07_193552_create_study_materials_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="18" column="50" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -183,8 +185,8 @@
       <file leaf-file-name="2020_03_07_162941_create_study_material_docs_table.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/migrations/2020_03_07_162941_create_study_material_docs_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+            <state relative-caret-position="96">
+              <caret line="15" column="42" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -192,8 +194,8 @@
       <file leaf-file-name="StudyMaterialFilesController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/controllers/StudyMaterialFilesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="35" column="21" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="21" />
+            <state relative-caret-position="264">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="e#55#91#0#PHP" expanded="true" />
               </folding>
@@ -201,35 +203,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="CreateStudyMaterialDocRequest.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/requests/CreateStudyMaterialDocRequest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="6" column="35" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="canUploadStudyMaterials.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/traits/canUploadStudyMaterials.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
+            <state relative-caret-position="282">
               <caret line="19" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-168">
-              <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
-              <folding>
-                <element signature="e#23#66#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hasFinancialYearPlans.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-accounts/src/Traits/hasFinancialYearPlans.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="984">
-              <caret line="44" column="42" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="42" />
-              <folding>
-                <element signature="e#50#78#0#PHP" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -271,13 +258,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/packages/okotieno/laravel-school-accounts/src/SchoolAccountsProvider.php" />
-        <option value="$PROJECT_DIR$/packages/okotieno/laravel-school-accounts/src/Controllers/TuitionFeeFinancialPlanController.php" />
-        <option value="$PROJECT_DIR$/packages/okotieno/laravel-school-accounts/composer.json" />
-        <option value="$PROJECT_DIR$/packages/okotieno/laravel-school-accounts/src/SchoolAccountsServiceProvider.php" />
-        <option value="$PROJECT_DIR$/packages/okotieno/laravel-school-accounts/src/Requets/StoreFinancialPlanRequest.php" />
-        <option value="$PROJECT_DIR$/packages/okotieno/laravel-school-accounts/src/migrations/2020_02_11_042840_create_tuition_fee_financial_plans_table.php" />
-        <option value="$PROJECT_DIR$/packages/okotieno/laravel-school-accounts/src/Traits/hasFinancialYearPlan.php" />
         <option value="$PROJECT_DIR$/packages/okotieno/academic-year/src/models/AcademicYear.php" />
         <option value="$PROJECT_DIR$/packages/okotieno/laravel-school-exams/composer.json" />
         <option value="$PROJECT_DIR$/packages/okotieno/laravel-school-exams/src/SchoolExamsServiceProvider.php" />
@@ -316,11 +296,18 @@
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/StudyMaterialServiceProvider.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
-        <option value="$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/routes.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/traits/canUploadStudyMaterials.php" />
-        <option value="$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/models/StudyMaterialDoc.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_03_07_162941_create_study_material_docs_table.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/requests/CreateStudyMaterialDocRequest.php" />
+        <option value="$PROJECT_DIR$/database/seeds/PermissionAndRolesSeeder.php" />
+        <option value="$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/routes.php" />
+        <option value="$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/requests/CreateStudyMaterialRequest.php" />
+        <option value="$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/migrations/2020_03_07_193552_create_study_materials_table.php" />
+        <option value="$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/models/StudyMaterialDoc.php" />
+        <option value="$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/controllers/StudyMaterialController.php" />
+        <option value="$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/models/StudyMaterial.php" />
         <option value="$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/controllers/StudyMaterialFilesController.php" />
       </list>
     </option>
@@ -468,70 +455,6 @@
             <path>
               <item name="fsms_backend" type="b2602c69:ProjectViewProjectNode" />
               <item name="fsms_backend" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fsms_backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fsms_backend" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fsms_backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fsms_backend" type="462c0819:PsiDirectoryNode" />
-              <item name="packages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fsms_backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fsms_backend" type="462c0819:PsiDirectoryNode" />
-              <item name="packages" type="462c0819:PsiDirectoryNode" />
-              <item name="okotieno" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fsms_backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fsms_backend" type="462c0819:PsiDirectoryNode" />
-              <item name="packages" type="462c0819:PsiDirectoryNode" />
-              <item name="okotieno" type="462c0819:PsiDirectoryNode" />
-              <item name="laravel-study-materials" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fsms_backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fsms_backend" type="462c0819:PsiDirectoryNode" />
-              <item name="packages" type="462c0819:PsiDirectoryNode" />
-              <item name="okotieno" type="462c0819:PsiDirectoryNode" />
-              <item name="laravel-study-materials" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fsms_backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fsms_backend" type="462c0819:PsiDirectoryNode" />
-              <item name="packages" type="462c0819:PsiDirectoryNode" />
-              <item name="okotieno" type="462c0819:PsiDirectoryNode" />
-              <item name="laravel-study-materials" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fsms_backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fsms_backend" type="462c0819:PsiDirectoryNode" />
-              <item name="packages" type="462c0819:PsiDirectoryNode" />
-              <item name="okotieno" type="462c0819:PsiDirectoryNode" />
-              <item name="laravel-study-materials" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fsms_backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fsms_backend" type="462c0819:PsiDirectoryNode" />
-              <item name="packages" type="462c0819:PsiDirectoryNode" />
-              <item name="okotieno" type="462c0819:PsiDirectoryNode" />
-              <item name="laravel-study-materials" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="traits" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fsms_backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fsms_backend" type="462c0819:PsiDirectoryNode" />
               <item name="storage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -574,11 +497,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-study-materials\src\models" />
+      <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-study-materials\src\requests" />
+      <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-study-materials\src\controllers" />
       <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno" />
       <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-students\src\controllers" />
-      <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-school-accounts\src\Models" />
-      <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-school-accounts\src\Controllers" />
-      <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-school-exams\src\Models" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-study-materials\src\migrations" />
@@ -675,9 +598,9 @@
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.5988024" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.17040358" />
       <window_info id="npm" order="2" sideWeight="0.24115044" side_tool="true" weight="0.28971255" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2122571" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.29147983" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.75884956" visible="true" weight="0.20499243" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.75884956" visible="true" weight="0.30408472" />
       <window_info anchor="bottom" id="Atlassian " order="8" weight="0.32934132" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -742,55 +665,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-exams/src/migrations/2020_02_11_161359_create_exam_instructions_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-exams/src/migrations/2020_02_11_161144_create_exam_papers_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-exams/src/Models/ExamInstruction.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-exams/src/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-exams/src/Models/ExamPaper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="40" column="29" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-exams/src/Models/ExamPaperQuestionAnswer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="15" column="29" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-exams/src/migrations/2020_02_14_102914_create_exam_paper_questions_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="20" column="48" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-school-exams/src/Models/ExamPaperQuestionTag.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -1047,13 +921,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="129" selection-start-line="4" selection-start-column="129" selection-end-line="4" selection-end-column="129" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-168">
@@ -1074,31 +941,87 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/requests/CreateStudyMaterialDocRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="35" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/PermissionAndRolesSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1386">
+          <caret line="1384" column="28" selection-start-line="1384" selection-start-column="28" selection-end-line="1384" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/traits/canUploadStudyMaterials.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
+        <state relative-caret-position="282">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/models/StudyMaterialDoc.php">
+    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        <state relative-caret-position="120">
+          <caret line="5" column="97" selection-start-line="5" selection-start-column="97" selection-end-line="5" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/requests/CreateStudyMaterialRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="26" column="18" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/migrations/2020_03_07_162941_create_study_material_docs_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+        <state relative-caret-position="96">
+          <caret line="15" column="42" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/models/StudyMaterialDoc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/migrations/2020_03_07_193552_create_study_materials_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="18" column="50" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/controllers/StudyMaterialController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/models/StudyMaterial.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/packages/okotieno/laravel-study-materials/src/controllers/StudyMaterialFilesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="35" column="21" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="21" />
+        <state relative-caret-position="264">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="e#55#91#0#PHP" expanded="true" />
           </folding>

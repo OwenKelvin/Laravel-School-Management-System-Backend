@@ -6,22 +6,21 @@ use App\Http\Controllers\Controller;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use Okotieno\StudyMaterials\Request\CreateStudyMaterialDocRequest;
 
 class StudyMaterialFilesController extends Controller
 {
-    public function store(Request $request) {
+    public function index(Request $request)
+    {
+        return Storage::download($request->file_path);
+        return [$request->file_path];
+    }
+
+    public function store(CreateStudyMaterialDocRequest $request)
+    {
 
         if ($request->pdfFile !== null) {
             $filePath = Storage::put('uploads/study-materials', $request->pdfFile);
-
-//            return [
-//                'name' => $request->file->getClientOriginalName(),
-//                'type' => $request->file->getClientOriginalExtension(),
-//                'extension' =>  $request->file->getClientOriginalExtension(),
-//                'mme_type' => $request->file->getMimeType(),
-//                'size' => $request->file->getSize(),
-//                'file_path' => $filePath
-//            ];
             $saved_content = User::find(auth()->id())->uploadStudyMaterial()->create([
                 'name' => $request->pdfFile->getClientOriginalName(),
                 'type' => $request->pdfFile->getClientOriginalExtension(),
