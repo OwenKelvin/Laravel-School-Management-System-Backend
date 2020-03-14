@@ -184,6 +184,8 @@ return [
         Okotieno\SchoolAccounts\SchoolAccountsServiceProvider::class,
         Okotieno\SchoolExams\SchoolExamsServiceProvider::class,
         Okotieno\StudyMaterials\StudyMaterialServiceProvider::class,
+        Okotieno\PermissionsAndRoles\PermissionsAndRolesServiceProvider::class,
+        Okotieno\SupportStaffAdmissions\SupportStaffAdmissionsServiceProvider::class,
 
         /*
          * Application Service Providers...

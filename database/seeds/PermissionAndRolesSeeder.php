@@ -806,7 +806,7 @@ class PermissionAndRolesSeeder extends Seeder
                     'teacher',
                     'class teacher',
                     'student',
-                    'parent'
+                    'guardian'
                 ]
             ],
             [
@@ -1205,6 +1205,15 @@ class PermissionAndRolesSeeder extends Seeder
                 ]
             ],
             [
+                'permission' => 'create support staff',
+                'roles' => [
+                    'super admin',
+                    'admin',
+                    'maker admissions',
+                    'hr admissions maker',
+                ]
+            ],
+            [
                 'permission' => 'read teacher',
                 'roles' => [
                     'super admin',
@@ -1391,6 +1400,14 @@ class PermissionAndRolesSeeder extends Seeder
                     'librarian',
                 ]
             ],
+            [
+                'permission' => 'view my dependants',
+                'roles' => [
+                    'super admin',
+                    'admin',
+                    'guardian',
+                ]
+            ],
         ];
 //
         foreach ($permissions as $permission) {
@@ -1418,5 +1435,16 @@ class PermissionAndRolesSeeder extends Seeder
             ])->setPassword('Password1')->assignRole('super admin');
         } catch (Exception $e) {
         }
+
+        Role::where('name', 'student')->first()
+            ->update(['is_staff' => false]);
+        Role::where('name', 'guardian')->first()
+            ->update(['is_staff' => false]);
+        Role::where('name', 'teacher')->first()
+            ->update(['is_staff' => false]);
+        Role::where('name', 'super admin')->first()
+            ->update(['is_staff' => false]);
+        Role::where('name', 'admin')->first()
+            ->update(['is_staff' => false]);
     }
 }
