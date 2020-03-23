@@ -1401,6 +1401,19 @@ class PermissionAndRolesSeeder extends Seeder
                 ]
             ],
             [
+                'permission' => 'create e-learning course',
+                'roles' => [
+                    'super admin',
+                    'admin',
+                    'head teacher',
+                    'deputy head teacher',
+                    'teacher',
+                    'class teacher',
+                    'dean of students',
+                    'librarian',
+                ]
+            ],
+            [
                 'permission' => 'view my dependants',
                 'roles' => [
                     'super admin',
