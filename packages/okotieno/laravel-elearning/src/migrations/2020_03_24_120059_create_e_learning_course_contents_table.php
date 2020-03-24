@@ -18,6 +18,7 @@ class CreateELearningCourseContentsTable extends Migration
             $table->integer('e_learning_topic_id');
             $table->integer('study_material_id');
             $table->integer('position')->default(0);
+            $table->softDeletes();
             $table->timestamps();
         });
     }

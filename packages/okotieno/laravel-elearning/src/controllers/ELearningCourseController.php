@@ -95,6 +95,8 @@ class ELearningCourseController extends Controller
         $topics = $eLearningCourse->topics()->whereNull('e_learning_topic_id')->get();
         foreach ($topics as $topic) {
             $topic->subTopics;
+            $topic->learningOutcomes;
+            $topic->eLearningContents;
         }
         return response()->json([
             'id' => $eLearningCourse->id,
