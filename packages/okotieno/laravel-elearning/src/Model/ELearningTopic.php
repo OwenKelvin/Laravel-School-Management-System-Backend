@@ -17,18 +17,18 @@ class ELearningTopic extends Model
     protected $appends = ['topic_number_style_name'];
     protected $hidden = ['topic_number_style'];
 
-//    public function getTopicNumberStyleNameAttribute()
-//    {
-//        return $this->topicNumberStyle ? $this->topicNumberStyle->name : null;
-//    }
-//
-//    public function topicNumberStyle()
-//    {
-//        return $this->belongsTo(TopicNumberStyle::class);
-//    }
-
     public function subTopics()
     {
         return $this->hasMany(ELearningTopic::class);
+    }
+
+    public function saveLearningOutcome($request)
+    {
+        return $this->learningOutcomes()->create([
+            'description' => $request->description
+        ]);
+    }
+    public function learningOutcomes() {
+        return $this->hasMany(TopicLearningOutcome::class);
     }
 }

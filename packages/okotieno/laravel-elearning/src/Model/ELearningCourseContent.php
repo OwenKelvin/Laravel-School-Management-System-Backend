@@ -1,0 +1,20 @@
+<?php
+
+namespace Okotieno\ELearning\Models;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+
+class ELearningCourseContent extends Model
+{
+    use softDeletes;
+    protected $fillable = ['study_material_id','e_learning_topic_id'];
+
+    public static function saveStudyMaterial($request) {
+        self::create([
+            'e_learning_topic_id' => $request->e_learning_topic_id,
+            'study_material_id' => $request->study_material_id
+        ]);
+    }
+
+}
