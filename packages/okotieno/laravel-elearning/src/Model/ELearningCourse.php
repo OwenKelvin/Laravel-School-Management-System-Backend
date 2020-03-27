@@ -12,7 +12,7 @@ use Okotieno\SchoolCurriculum\Unit;
 class ELearningCourse extends Model
 {
     use softDeletes, hasTopicNumbers;
-    protected $appends = ['sub_topics','topic_number_style_name'];
+    protected $appends = ['topic_number_style_name'];
 
     protected $fillable = [
         'name',
@@ -22,9 +22,7 @@ class ELearningCourse extends Model
         'topic_number_style_id',
         'description'
     ];
-    public function getSubTopicsAttribute() {
-        return $this->subTopics;
-    }
+
     public function topics() {
         return $this->hasMany(ELearningTopic::class);
     }

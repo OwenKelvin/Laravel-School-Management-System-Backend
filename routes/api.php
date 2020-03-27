@@ -17,18 +17,11 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::middleware('auth:api')->get('/users/email', 'User\\UserApiController@getUserByEmail');
-// Passport::routes();
-// Route::middleware('api')->post('oauth/token', 'Auth\\AuthController@login');
-// Route::post();
 
-// Route::group([
-//     'prefix' => 'auth'
-// ], function () {
+Route::middleware('auth:api')->group(function () {
+   Route::get('users/auth', function (){
+       return \App\User::find(auth()->id());
+   });
+   Route::post('users/profile-picture', 'FileDocumentController@store');
 
-//     Route::group([
-//       'middleware' => 'auth:api'
-//     ], function() {
-//         Route::get('logout', 'Auth\\AuthController@logout');
-//         Route::get('user', 'Auth\\AuthController@user');
-//     });
-// });
+});

@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Traits\canSaveFileDocument;
 use Okotieno\Procurement\Traits\canProcure;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -30,7 +31,8 @@ class User extends Authenticatable
         hasReligion,
         canProcure,
         hasSchoolExams,
-        canUploadStudyMaterials
+        canUploadStudyMaterials,
+        canSaveFileDocument
         ;
 
     /**
