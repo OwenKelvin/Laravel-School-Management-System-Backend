@@ -27,4 +27,14 @@ class FileDocumentController extends Controller
             ]);
         }
     }
+
+    public function show($userId) {
+//        return User::find($userId)->profilePictures->last()
+//            ->fileDocument->file_path;
+        $picture = User::find($userId)->profilePictures->last();
+        if($picture != null) {
+            return Storage::download($picture->fileDocument->file_path);
+        }
+
+    }
 }

@@ -10,10 +10,24 @@ namespace App\Traits;
 
 
 use App\Models\FileDocument;
+use App\Models\ProfilePic;
 
 trait canSaveFileDocument
 {
-    public function uploadFileDocument() {
+    public function uploadFileDocument()
+    {
         return $this->hasMany(FileDocument::class);
+    }
+
+    public function saveProfilePic($request)
+    {
+        $this->profilePictures()->create([
+            'file_document_id' => $request->profile_pic_id
+        ]);
+    }
+
+    public function profilePictures()
+    {
+        return $this->hasMany(ProfilePic::class);
     }
 }

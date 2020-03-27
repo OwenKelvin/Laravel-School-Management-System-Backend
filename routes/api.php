@@ -22,6 +22,7 @@ Route::middleware('auth:api')->group(function () {
    Route::get('users/auth', function (){
        return \App\User::find(auth()->id());
    });
-   Route::post('users/profile-picture', 'FileDocumentController@store');
+   Route::middleware('bindings')->resource('users/profile-picture', 'FileDocumentController');
+   Route::patch('users/{user}', 'User\\UserController@update');
 
 });
