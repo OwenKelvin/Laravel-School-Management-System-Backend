@@ -17,4 +17,9 @@ trait hasReligion
     {
         return $this->belongsto(Religion::class);
     }
+
+    public function getReligionNameAttribute()
+    {
+        return $this->religion ? $this->religion->name : null;
+    }
 }

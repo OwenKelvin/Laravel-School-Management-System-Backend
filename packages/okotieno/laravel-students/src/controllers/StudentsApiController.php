@@ -56,8 +56,8 @@ class StudentsApiController extends Controller
                 'gender_id' => $user->gender_id,
                 'religion_id' => $user->religion_id,
                 'student_id' => $user->student->student_school_id_number,
-                'religion' => $user->religion_name,
-                'gender' => $user->gender_name
+                'religion_name' => $user->religion_name,
+                'gender_name' => $user->gender_name
             ]);
         }
     }

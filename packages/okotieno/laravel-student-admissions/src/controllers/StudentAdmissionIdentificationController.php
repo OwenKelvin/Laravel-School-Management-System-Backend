@@ -37,7 +37,11 @@ class StudentAdmissionIdentificationController extends Controller
     public function store(CreateStudentRequest $request)
     {
         $user = User::createStudent($request);
-        return $user;
+        return response()->json([
+            'saved' => true,
+            'message' => 'Student Successfully Created',
+            'data' => $user
+        ]);
     }
 
     /**
@@ -66,7 +70,7 @@ class StudentAdmissionIdentificationController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request $request
-     * @param LibraryBookAuthor $libraryBookAuthor
+     * @param $student_id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $student_id)

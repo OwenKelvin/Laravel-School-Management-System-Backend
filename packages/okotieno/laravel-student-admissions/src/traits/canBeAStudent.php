@@ -46,7 +46,7 @@ trait canBeAStudent
 
     /**
      * @param $request
-     * @return \Illuminate\Http\JsonResponse
+     * @return array
      */
     public static function createStudent($request)
     {
@@ -70,7 +70,7 @@ trait canBeAStudent
         $user->student()->create([
             'student_school_id_number' => $idNumber
         ]);
-        return response()->json([
+        return [
             'id' => $user->id,
             'first_name' => $user->first_name,
             'last_name' => $user->last_name,
@@ -84,7 +84,7 @@ trait canBeAStudent
             'gender_id' => $user->gender_id,
             'religion_id' => $user->religion_id,
             'student_id' => $user->student->student_school_id_number
-        ]);
+        ];
     }
 
     public function student()
