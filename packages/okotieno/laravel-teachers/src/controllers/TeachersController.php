@@ -76,7 +76,9 @@ class TeachersController extends Controller
             'phone' => $user->phone,
             'name_prefix_id' => $user->name_prefix_id,
             'gender_id' => $user->gender_id,
+            'gender_name' => $user->gender_name,
             'religion_id' => $user->religion_id,
+            'religion_name' => $user->religion_name,
             // 'student_id' => $user->student->student_school_id_number
         ]);
     }

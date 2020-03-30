@@ -11,6 +11,9 @@ class UserController extends Controller
 {
     public function update(Request $request, User $user)
     {
+//        if (!auth()->user()->can('update user profile')) {
+//            abort('400', 'insufficient privilege to update profile');
+//        }
         if ($request->profile_pic_id) {
             $user->saveProfilePic($request);
         }
@@ -48,6 +51,14 @@ class UserController extends Controller
         }
         if(key_exists('date_of_birth', $request->all())){
             $user->date_of_birth = $request->date_of_birth;
+            $user->save();
+        }
+        if(key_exists('email', $request->all())){
+            $user->email = $request->email;
+            $user->save();
+        }
+        if(key_exists('phone', $request->all())){
+            $user->phone = $request->phone;
             $user->save();
         }
 
