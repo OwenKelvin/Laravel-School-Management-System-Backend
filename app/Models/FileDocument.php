@@ -3,9 +3,11 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Okotieno\LMS\Traits\hasFileDocuments;
 
 class FileDocument extends Model
 {
+    use hasFileDocuments;
     protected $fillable = [
         'name',
         'type',
@@ -14,4 +16,5 @@ class FileDocument extends Model
         'size',
         'file_path'
     ];
+
 }

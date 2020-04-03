@@ -21,12 +21,12 @@ trait canSaveFileDocument
 
     public function saveProfilePic($request)
     {
-        $this->profilePictures()->create([
+        $this->profilePics()->create([
             'file_document_id' => $request->profile_pic_id
         ]);
     }
 
-    public function profilePictures()
+    public function profilePics()
     {
         return $this->hasMany(ProfilePic::class);
     }
