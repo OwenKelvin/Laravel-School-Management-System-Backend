@@ -18,6 +18,6 @@ trait hasProfilePics
     }
 
     public function getProfilePicIdAttribute() {
-        return $this->profilePics ? $this->profilePics : null;
+        return $this->profilePics->last() ? $this->profilePics->last()->file_document_id : null;
     }
 }

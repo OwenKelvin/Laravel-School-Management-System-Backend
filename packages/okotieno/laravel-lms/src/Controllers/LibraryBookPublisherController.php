@@ -105,7 +105,8 @@ class LibraryBookPublisherController extends Controller
      */
     public function update(Request $request, LibraryBookPublisher $libraryBookPublisher)
     {
-        $libraryBookPublisher->update(['name' => $request->name]);
+
+        $libraryBookPublisher->update(['name' => $request->name, 'biography' => $request->biography]);
         return response()->json([
             'saved' => true,
             'message' => 'Publisher Updated Successfully',

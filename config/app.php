@@ -187,6 +187,7 @@ return [
         Okotieno\PermissionsAndRoles\PermissionsAndRolesServiceProvider::class,
         Okotieno\SupportStaffAdmissions\SupportStaffAdmissionsServiceProvider::class,
         Okotieno\ELearning\ELearningServiceProvider::class,
+        Okotieno\Files\FilesServiceProvider::class,
 
         /*
          * Application Service Providers...

@@ -1,0 +1,16 @@
+{
+    "name": "okotieno/files",
+    "description": "Laravel Package for Files",
+    "authors": [
+        {
+            "name": "okotieno",
+            "email": "okotieno@yahoo.com"
+        }
+    ],
+    "require": {},
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}

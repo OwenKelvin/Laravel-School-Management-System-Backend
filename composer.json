@@ -57,7 +57,8 @@
             "Okotieno\\StudyMaterials\\": "packages/okotieno/laravel-study-materials/src/",
             "Okotieno\\PermissionsAndRoles\\": "packages/okotieno/laravel-permissions-and-roles/src/",
             "Okotieno\\SupportStaffAdmissions\\": "packages/okotieno/laravel-support-staff-admissions/src/",
-            "Okotieno\\ELearning\\": "packages/okotieno/laravel-elearning/src/"
+            "Okotieno\\ELearning\\": "packages/okotieno/laravel-elearning/src/",
+            "Okotieno\\Files\\": "packages/okotieno/laravel-files/src/"
         },
         "classmap": [
             "database/seeds",
