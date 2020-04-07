@@ -688,6 +688,21 @@ class PermissionAndRolesSeeder extends Seeder
                 ]
             ],
             [
+                'permission' => 'receive student fee payment',
+                'roles' => [
+                    'super admin',
+                    'admin',
+                    'head teacher',
+                    'deputy head teacher',
+                    'accountant',
+                    'head accountant',
+                    'dean of students',
+                    'finance officer',
+                    'head of finance',
+                    'school bursar',
+                ]
+            ],
+            [
                 'permission' => 'send message',
                 'roles' => [
                     'super admin',
