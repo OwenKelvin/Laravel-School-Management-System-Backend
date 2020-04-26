@@ -24,7 +24,16 @@ class PasswordChangeRequest extends FormRequest
     public function rules()
     {
         return [
-            'password' => 'required|confirmed|min:8'
+            'old_password' => 'required_without:token',
+            'new_password' => 'required|confirmed'
+        ];
+    }
+
+    public function messages()
+    {
+        return [
+            'old_password.required_without' => 'Old Password is required',
+            'new_password.required' => 'New Password field is required'
         ];
     }
 }

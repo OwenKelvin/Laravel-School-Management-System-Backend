@@ -41,7 +41,10 @@ class ForgotPasswordController extends Controller
 //        Mail::raw($message_body, function ($message){
 //            $message->to('admin@admin.com');
 //        });
-        return ['send' => true];
+        return [
+            'saved' => true,
+            'message' => 'Successfully sent Password reset email'
+        ];
     }
 
 

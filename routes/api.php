@@ -28,3 +28,8 @@ Route::middleware('auth:api')->group(function () {
 
 Route::post('/password/email', 'User\\ForgotPasswordController@sendResetLinkEmail');
 Route::post('/password/token', 'User\\ResetPasswordController@tokenLogin');
+
+Route::middleware('auth:api')->group(function () {
+    Route::post('/password/reset', 'User\\ResetPasswordController@reset');
+});
+

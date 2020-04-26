@@ -10,7 +10,11 @@ class PasswordToken extends Model
     protected $fillable = ['token'];
 
     public static function getUserForToken($token) {
-        return self::where('token', $token)->first()->user;
+        $tokenValue = self::where('token', $token)->first();
+        if($tokenValue == null) {
+            return null;
+        }
+        return $tokenValue->user;
     }
 
     public function user() {
