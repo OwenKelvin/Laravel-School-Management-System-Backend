@@ -24,5 +24,7 @@ Route::middleware('auth:api')->group(function () {
    });
    Route::middleware('bindings')->resource('users/profile-picture', 'FileDocumentController');
    Route::patch('users/{user}', 'User\\UserController@update');
-
 });
+
+Route::post('/password/email', 'User\\ForgotPasswordController@sendResetLinkEmail');
+Route::post('/password/token', 'User\\ResetPasswordController@tokenLogin');

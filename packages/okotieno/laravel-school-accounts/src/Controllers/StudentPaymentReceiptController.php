@@ -28,7 +28,8 @@ class StudentPaymentReceiptController extends Controller
         $receipt = $user->student->feePayments()->create([
             'amount'=>filter_var($request->amount, FILTER_VALIDATE_FLOAT, FILTER_FLAG_ALLOW_THOUSAND),
             'ref'=>$request->ref,
-            'payment_method_id'=>$request->payment_method_id
+            'payment_method_id'=>$request->payment_method_id,
+            'transaction_date' => $request->transaction_date
         ]);
         return [
             'saved' => true,

@@ -9,7 +9,12 @@ class FeePayment extends Model
 {
     use SoftDeletes;
 
-    protected $fillable = ['amount', 'ref', 'payment_method_id'];
+    protected $fillable = [
+        'amount',
+        'ref',
+        'payment_method_id',
+        'transaction_date'
+    ];
     protected $hidden = ['deleted_at'];
     protected $appends = ['payment_method_name'];
 

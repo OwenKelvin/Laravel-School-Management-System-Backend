@@ -25,7 +25,8 @@ class StoreFeePaymentRequest extends FormRequest
     {
         return [
             'amount' => 'required',
-            'payment_method_id' => 'required'
+            'payment_method_id' => 'required',
+            'transaction_date' => 'required|date',
             //
         ];
     }
@@ -34,6 +35,7 @@ class StoreFeePaymentRequest extends FormRequest
         return [
             'amount.required' => 'Amount of Payment is required',
             'payment_method_id.required'  => 'Payment Method is required',
-        ];
+            'transaction_date.required' => 'Transaction Date is required',
+            ];
     }
 }

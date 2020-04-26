@@ -36,6 +36,7 @@ class StudentFeeStatementController extends Controller
     public function index(User $user)
     {
         $feeStructureTemp = [];
+        $student = $user->student;
         $studentUnitAllocation = $user->student->unitAllocation;
         foreach ($studentUnitAllocation->groupBy(['academic_year_id', 'class_level_id']) as $unitAllocations) {
             foreach ($unitAllocations as $unitAllocation) {
@@ -78,7 +79,8 @@ class StudentFeeStatementController extends Controller
         }
         return response()->json([
             'feeStructure' => $feeStructureTemp,
-            'otherFees' => $otherFees
+            'otherFees' => $otherFees,
+            'payments' => $student->feePayments
         ]);
     }
 

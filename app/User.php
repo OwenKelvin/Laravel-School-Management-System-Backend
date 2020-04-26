@@ -17,6 +17,7 @@ use Okotieno\StudyMaterials\Traits\canUploadStudyMaterials;
 use Spatie\Permission\Traits\HasRoles;
 use Okotieno\StudentAdmissions\Traits\canBeAStudent;
 use Okotieno\TeacherAdmissions\Traits\canBeATeacher;
+use App\Traits\HasPasswordToken;
 
 class User extends Authenticatable
 {
@@ -32,7 +33,8 @@ class User extends Authenticatable
         canProcure,
         hasSchoolExams,
         canUploadStudyMaterials,
-        canSaveFileDocument
+        canSaveFileDocument,
+        HasPasswordToken
         ;
 
     /**

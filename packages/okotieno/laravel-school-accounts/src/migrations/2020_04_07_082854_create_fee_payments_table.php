@@ -19,6 +19,7 @@ class CreateFeePaymentsTable extends Migration
             $table->double('amount');
             $table->integer('payment_method_id');
             $table->string('ref')->nullable();
+            $table->date('transaction_date');
             $table->softDeletes();
             $table->timestamps();
         });
