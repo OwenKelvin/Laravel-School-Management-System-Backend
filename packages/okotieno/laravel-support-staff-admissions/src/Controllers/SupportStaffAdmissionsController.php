@@ -12,7 +12,9 @@ namespace Okotieno\SupportStaffAdmissions\Controllers;
 use App\Http\Controllers\Controller;
 use App\User;
 
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 use Okotieno\PermissionsAndRoles\Models\Role;
 use Okotieno\SupportStaffAdmissions\Request\CreateSupportStaffRequest;
 use Okotieno\TeacherAdmissions\Request\CreateTeacherRequest;
@@ -22,9 +24,7 @@ class SupportStaffAdmissionsController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @param Request $request
-     * @param User $user
-     * @return \Illuminate\Http\Response
+     * @return jsonResponse
      */
     public function index()
     {
@@ -35,7 +35,7 @@ class SupportStaffAdmissionsController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function create()
     {
@@ -44,8 +44,8 @@ class SupportStaffAdmissionsController extends Controller
 
     /**
      * Store a newly created resource in storage.
-     * @param CreateTeacherRequest $request
-     * @return \Illuminate\Http\JsonResponse
+     * @param CreateSupportStaffRequest $request
+     * @return JsonResponse
      */
     public function store(CreateSupportStaffRequest $request)
     {
@@ -85,18 +85,18 @@ class SupportStaffAdmissionsController extends Controller
     /**
      * Display th specified resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
-    public function show()
+    public function show($id)
     {
-
+        return User::find($id);
     }
 
     /**
      * Show the form for editing the specified resource.
      *
      * @param  int $id
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function edit($id)
     {
@@ -107,7 +107,7 @@ class SupportStaffAdmissionsController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request $request
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function update()
     {

@@ -40,7 +40,7 @@ class ResetPasswordController extends Controller
         }
         if ($userAuthenticated) {
             $user = auth()->user();
-            $user->password = bcrypt($request->password);
+            $user->password = bcrypt($request->new_password);
             $user->save();
             return response()->json([
                 'saved' => true,

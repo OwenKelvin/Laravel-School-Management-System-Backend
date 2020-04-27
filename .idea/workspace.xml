@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcd9c95a-1bb8-4d1f-8881-52547adc3c99" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/User/ForgotPasswordController.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/Http/Controllers/User/PasswordChangeController.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/Http/Requests/User/ResetPasswordEmailRequest.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/Mail/PasswordResetMail.php" afterDir="false" />
@@ -14,7 +13,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/ForgotPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/ForgotPasswordController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/ResetPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/ResetPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/UserApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/UserApiController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Requests/User/PasswordChangeRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/User/PasswordChangeRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/PasswordToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/PasswordToken.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
@@ -26,6 +28,7 @@
       <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-accounts/src/Requets/StoreFeePaymentRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-accounts/src/Requets/StoreFeePaymentRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-accounts/src/migrations/2020_04_07_082854_create_fee_payments_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-accounts/src/migrations/2020_04_07_082854_create_fee_payments_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-students/src/controllers/StudentFeeStatementController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-students/src/controllers/StudentFeeStatementController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-support-staff-admissions/src/Controllers/SupportStaffAdmissionsController .php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-support-staff-admissions/src/Controllers/SupportStaffAdmissionsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -266,6 +269,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="390" y="119" width="585" height="530" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1587834138724" />
+    <state x="339" y="172" key="run.anything.popup" timestamp="1587914084387">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1587914084387" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1587833998253">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

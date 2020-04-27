@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
@@ -11,23 +12,19 @@ use Carbon\Carbon;
 
 class AuthController extends Controller
 {
-  
+
     /**
      * Login user and create token
      *
-     * @param  [string] email
-     * @param  [string] password
-     * @param  [boolean] remember_me
-     * @return [string] access_token
-     * @return [string] token_type
-     * @return [string] expires_at
+     * @param LoginRequest $request
+     * @return JsonResponse [string] access_token
      */
     public function login(LoginRequest $request)
     {
         $credentials = [
         	'password' => $request->password,
-        	'email'=>$request->username, 
-        
+        	'email'=>$request->username,
+
         ];
 
         if(!Auth::attempt($credentials))
@@ -48,11 +45,12 @@ class AuthController extends Controller
             )->toDateTimeString()
         ]);
     }
-  
+
     /**
      * Logout user (Revoke the token)
      *
-     * @return [string] message
+     * @param Request $request
+     * @return JsonResponse [string] message
      */
     public function logout(Request $request)
     {
@@ -61,11 +59,12 @@ class AuthController extends Controller
             'message' => 'Successfully logged out'
         ]);
     }
-  
+
     /**
      * Get the authenticated User
      *
-     * @return [json] user object
+     * @param Request $request
+     * @return JsonResponse [json] user object
      */
     public function user(Request $request)
     {

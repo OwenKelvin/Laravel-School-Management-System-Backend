@@ -19,9 +19,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::middleware('auth:api')->get('/users/email', 'User\\UserApiController@getUserByEmail');
 
 Route::middleware('auth:api')->group(function () {
-   Route::get('users/auth', function (){
-       return \App\User::find(auth()->id());
-   });
+   Route::get('users/auth','User\\UserApiController@authenticatedUser');
    Route::middleware('bindings')->resource('users/profile-picture', 'FileDocumentController');
    Route::patch('users/{user}', 'User\\UserController@update');
 });

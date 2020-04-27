@@ -15,5 +15,12 @@ class UserApiController extends Controller
         return User::where('email', $request->q)->first();
     }
 
+    public function authenticatedUser() {
+        $user = User::find(auth()->id());
+        $response = $user->toArray();
+
+        $response['permissions'] = $user->getAllPermissions()->pluck('name')->toArray();
+        return response()->json($response);
+    }
 
 }
