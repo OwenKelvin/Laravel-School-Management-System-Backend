@@ -59,7 +59,7 @@ class TeachersController extends Controller
      * Display the specified resource.
      *
      * @param $userId
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\jsonResponse
      */
     public function show($userId)
     {

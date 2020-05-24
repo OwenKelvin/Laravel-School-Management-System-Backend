@@ -82,10 +82,11 @@ class ProcurementTenderBidsController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\jsonResponse
      */
     public function update(Request $request, $tenderId, $bidId)
     {
+        // TODO-me validate if user can('approve procurement tender')
         $bid = ProcurementBid::find($bidId);
         $bid->awarded = $request->awarded;
         $bid->save();
@@ -100,7 +101,7 @@ class ProcurementTenderBidsController extends Controller
      * Remove the specified resource from storage.
      *
      * @param $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\jsonResponse
      */
     public function destroy($id)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Okotieno\SchoolCurriculum;
+namespace Okotieno\SchoolCurriculum\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Okotieno\SchoolCurriculum\traits\takenByStudents;

@@ -12,10 +12,13 @@ class SemesterController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse
      */
-    public function index()
+    public function index(Request $request)
     {
+        if ($request->active) {
+            return Semester::where('active', true)->get();
+        }
         return response()->json(Semester::all());
     }
 
@@ -33,7 +36,7 @@ class SemesterController extends Controller
      * Store a newly created resource in storage.
      *
      * @param CreateUnitRequest $request
-     * @return Request|CreateUnitRequest
+     * @return \Illuminate\Http\JsonResponse
      */
     public function store(CreateSemesterRequest $request)
     {
@@ -43,9 +46,9 @@ class SemesterController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param ClassLevelCategory $classLevelCategory
+     * @param Semester $semester
      * @param Request $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse
      */
     public function show(Semester $semester, Request $request)
     {
@@ -66,9 +69,9 @@ class SemesterController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request $request
-     * @param ClassLevelCategory $unit
-     * @return \Illuminate\Http\Response
+     * @param \Illuminate\Http\Request $request
+     * @param Semester $semester
+     * @return \Illuminate\Http\JsonResponse
      */
     public function update(Request $request, Semester $semester)
     {
@@ -78,12 +81,16 @@ class SemesterController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param ClassLevelCategory $unit
-     * @return void
+     * @param Semester $semester
+     * @return \Illuminate\Http\JsonResponse
      * @throws \Exception
      */
     public function destroy(Semester $semester)
     {
         $semester->delete();
+        return response()->json([
+            'saved' => true,
+            'message' => 'Successfully deleted semester'
+        ]);
     }
 }

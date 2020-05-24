@@ -17,6 +17,7 @@ class CreateClassLevelCategoriesTable extends Migration
             $table->increments('id');
             $table->boolean('active')->default(true);
             $table->string('name');
+            $table->longText('description')->nullable();
             $table->softDeletes();
         });
     }

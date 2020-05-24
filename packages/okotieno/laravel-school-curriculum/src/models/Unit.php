@@ -1,6 +1,6 @@
 <?php
 
-namespace Okotieno\SchoolCurriculum;
+namespace Okotieno\SchoolCurriculum\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -68,7 +68,7 @@ class Unit extends Model
         $unit->name = $request->name;
         $unit->active = $request->active;
         $unit->abbreviation = $request->abbr;
-        $unit->essence_statement = $request->description;
+        $unit->description = $request->description;
         $unit->save();
         if ($request->unitLevels && is_array($request->unitLevels)) {
 

@@ -1,0 +1,16 @@
+{
+    "name": "okotieno/laravel-school-timetable",
+    "description": "Laravel Package for School Time Table Functionality",
+    "authors": [
+        {
+            "name": "okotieno",
+            "email": "okotieno@yahoo.com"
+        }
+    ],
+    "require": {},
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}

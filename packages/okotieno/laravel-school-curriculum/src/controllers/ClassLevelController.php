@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Okotieno\SchoolCurriculum\Requests\CreateClassLevelRequest;
 use Okotieno\SchoolCurriculum\Models\ClassLevel;
 use Okotieno\SchoolCurriculum\Requests\UpdateClassLevelRequest;
-use Okotieno\SchoolCurriculum\UnitCategory;
+use Okotieno\SchoolCurriculum\Models\UnitCategory;
 
 class ClassLevelController extends Controller
 {

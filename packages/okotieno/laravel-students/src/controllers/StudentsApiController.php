@@ -60,5 +60,14 @@ class StudentsApiController extends Controller
                 'gender_name' => $user->gender_name
             ]);
         }
+        if ($request->q) {
+            return User::where(
+                'first_name', 'like', '%'.$request->q.'%'
+            )->orWhere(
+                'last_name', 'like', '%'.$request->q.'%'
+            )->orWhere(
+                'middle_name', 'like', '%'.$request->q.'%'
+            )->get();
+        }
     }
 }

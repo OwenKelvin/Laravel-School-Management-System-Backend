@@ -39,7 +39,7 @@ class SupportStaffAdmissionsController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**

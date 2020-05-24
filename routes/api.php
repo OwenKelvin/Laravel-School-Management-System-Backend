@@ -20,6 +20,7 @@ Route::middleware('auth:api')->get('/users/email', 'User\\UserApiController@getU
 
 Route::middleware('auth:api')->group(function () {
    Route::get('users/auth','User\\UserApiController@authenticatedUser');
+   Route::get('users/auth/logout','Auth\\AuthController@logout');
    Route::middleware('bindings')->resource('users/profile-picture', 'FileDocumentController');
    Route::patch('users/{user}', 'User\\UserController@update');
 });

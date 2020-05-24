@@ -20,6 +20,7 @@ class UserApiController extends Controller
         $response = $user->toArray();
 
         $response['permissions'] = $user->getAllPermissions()->pluck('name')->toArray();
+        $response['roles'] = $user->roles->pluck('name')->toArray();
         return response()->json($response);
     }
 

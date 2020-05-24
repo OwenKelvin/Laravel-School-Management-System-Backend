@@ -5,6 +5,7 @@ namespace Okotieno\PermissionsAndRoles\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Okotieno\PermissionsAndRoles\Models\Role;
+use Okotieno\PermissionsAndRoles\Requests\UpdateUserRoleRequest;
 use Spatie\Permission\Models\Permission;
 
 class PermissionsRolesController extends Controller
@@ -67,7 +68,7 @@ class PermissionsRolesController extends Controller
         return $role;
     }
 
-    public function update(Role $role, Request $request)
+    public function update(Role $role, UpdateUserRoleRequest $request)
     {
 
         if($request->hasPermission && !$role->hasPermissionTo($request->name)) {
