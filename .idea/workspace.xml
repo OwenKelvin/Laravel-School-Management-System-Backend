@@ -2,45 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcd9c95a-1bb8-4d1f-8881-52547adc3c99" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-permissions-and-roles/src/requests/UpdateUserRoleRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/TimeTableServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/controllers/TimeTableController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/controllers/TimingsTemplateController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/models/TimeTableTiming.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/routes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/tests/Unit/ExampleTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/UserApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/UserApiController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/ClassLevelSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/ClassLevelSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/PermissionAndRolesSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/PermissionAndRolesSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-permissions-and-roles/src/controllers/PermissionsRolesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-permissions-and-roles/src/controllers/PermissionsRolesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Controllers/ProcurementTenderBidsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-procurements/src/Controllers/ProcurementTenderBidsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/ClassLevelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/ClassLevelController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/SchoolCurriculumApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/SchoolCurriculumApiController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/SemesterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/SemesterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/UnitApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/UnitApiController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/UnitCategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/UnitCategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/UnitController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/UnitController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/UnitLevelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/UnitLevelController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/migrations/2019_10_10_104427_create_units_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/migrations/2019_10_10_104427_create_units_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/migrations/2019_10_14_034634_create_class_level_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/migrations/2019_10_14_034634_create_class_level_categories_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/migrations/2019_10_14_034805_create_class_levels_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/migrations/2019_10_14_034805_create_class_levels_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/ClassLevelCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/ClassLevelCategory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/Course.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/Course.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/Unit.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/Unit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/UnitCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/UnitCategory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/UnitLevel.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/UnitLevel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/traits/takenByStudents.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/traits/takenByStudents.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/traits/takesCourses.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/traits/takesCourses.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-students/src/controllers/StudentsApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-students/src/controllers/StudentsApiController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-support-staff-admissions/src/Controllers/SupportStaffAdmissionsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-support-staff-admissions/src/Controllers/SupportStaffAdmissionsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-teachers/src/controllers/TeachersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-teachers/src/controllers/TeachersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/religion/src/controllers/ReligionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/religion/src/controllers/ReligionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/religion/src/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/religion/src/routes.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -277,22 +241,22 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1589976257832" />
-    <state width="1323" height="199" key="GridCell.Tab.0.bottom" timestamp="1590334159696">
+    <state width="1323" height="199" key="GridCell.Tab.0.bottom" timestamp="1590349620930">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="199" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1590334159696" />
-    <state width="1323" height="199" key="GridCell.Tab.0.center" timestamp="1590334159696">
+    <state width="1323" height="199" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1590349620930" />
+    <state width="1323" height="199" key="GridCell.Tab.0.center" timestamp="1590349620915">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="199" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1590334159696" />
-    <state width="1323" height="199" key="GridCell.Tab.0.left" timestamp="1590334159696">
+    <state width="1323" height="199" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1590349620915" />
+    <state width="1323" height="199" key="GridCell.Tab.0.left" timestamp="1590349620883">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="199" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1590334159696" />
-    <state width="1323" height="199" key="GridCell.Tab.0.right" timestamp="1590334159696">
+    <state width="1323" height="199" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1590349620883" />
+    <state width="1323" height="199" key="GridCell.Tab.0.right" timestamp="1590349620915">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="199" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1590334159696" />
+    <state width="1323" height="199" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1590349620915" />
     <state x="184" y="28" width="1110" height="711" key="SettingsEditor" timestamp="1589087067044">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -305,10 +269,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1590262076480" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1590333886220">
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1590336905869">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1590333886220" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1590336905869" />
   </component>
   <component name="atlassian-ide-plugin-workspace-issues">
     <option name="view">
