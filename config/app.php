@@ -189,6 +189,7 @@ return [
         Okotieno\ELearning\ELearningServiceProvider::class,
         Okotieno\Files\FilesServiceProvider::class,
         Okotieno\TimeTable\TimeTableServiceProvider::class,
+        Okotieno\SchoolInfrastructure\SchoolInfrastructureServiceProvider::class,
 
         /*
          * Application Service Providers...

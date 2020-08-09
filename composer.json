@@ -59,7 +59,8 @@
             "Okotieno\\SupportStaffAdmissions\\": "packages/okotieno/laravel-support-staff-admissions/src/",
             "Okotieno\\ELearning\\": "packages/okotieno/laravel-elearning/src/",
             "Okotieno\\Files\\": "packages/okotieno/laravel-files/src/",
-            "Okotieno\\TimeTable\\": "packages/okotieno/laravel-school-timetable/src/"
+            "Okotieno\\TimeTable\\": "packages/okotieno/laravel-school-timetable/src/",
+            "Okotieno\\SchoolInfrastructure\\": "packages/okotieno/laravel-school-infrastructures/src/"
         },
         "classmap": [
             "database/seeds",

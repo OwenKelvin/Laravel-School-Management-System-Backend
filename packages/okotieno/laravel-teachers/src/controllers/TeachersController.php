@@ -12,6 +12,7 @@ namespace Okotieno\Teachers\Controllers;
 use App\Http\Controllers\Controller;
 use App\User;
 use Illuminate\Http\Request;
+use Okotieno\Teachers\Models\Teacher;
 
 class TeachersController extends Controller
 {
@@ -25,7 +26,12 @@ class TeachersController extends Controller
      */
     public function index(Request $request, User $user)
     {
+        $teachers = Teacher::all();
+        //return Teacher::all();
         $response = [];
+        foreach ($teachers as $teacher) {
+            $response[] = $teacher->user;
+        }
         return response()->json($response);
     }
 
