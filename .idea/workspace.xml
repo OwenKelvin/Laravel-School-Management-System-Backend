@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcd9c95a-1bb8-4d1f-8881-52547adc3c99" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/PreflightResponse.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-infrastructures/composer.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-infrastructures/src/Controllers/RoomsController.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-infrastructures/src/Models/Room.php" afterDir="false" />
@@ -10,11 +9,13 @@
       <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-infrastructures/src/routes.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-teachers/src/models/teacher.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Stream.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/Stream.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_09_091652_create_streams_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/migrations/2020_08_09_091652_create_streams_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/RoomsSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/RoomsSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-teachers/src/controllers/TeachersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-teachers/src/controllers/TeachersController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
@@ -169,9 +170,11 @@
       <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-permissions-and-roles\src\requests" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-school-curriculum\src\migrations" />
+      <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-school-curriculum\src\models" />
+      <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\database\seeds" />
       <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-school-infrastructures\src\migrations" />
       <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-school-timetable\src\migrations" />
-      <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-school-timetable\src\models" />
     </key>
   </component>
   <component name="RunManager" selected="npm.php-s">
@@ -274,10 +277,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1590262076480" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1596962499144">
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1596967974601">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1596962499144" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1596967974601" />
   </component>
   <component name="atlassian-ide-plugin-workspace-issues">
     <option name="view">

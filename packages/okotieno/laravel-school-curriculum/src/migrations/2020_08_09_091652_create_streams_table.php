@@ -15,6 +15,10 @@ class CreateStreamsTable extends Migration
     {
         Schema::create('streams', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('name');
+            $table->boolean('active')->default(true);
+            $table->string('abbreviation');
+            $table->string('associated_color');
             $table->timestamps();
         });
     }
