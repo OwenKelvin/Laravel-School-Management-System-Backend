@@ -7,11 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 use Okotieno\AcademicYear\Requests\CreateAcademicYearRequest;
 use Okotieno\SchoolAccounts\Traits\hasFinancialYearPlans;
 use Okotieno\SchoolCurriculum\Models\ClassLevel;
+use Okotieno\TimeTable\Traits\HasTimeTables;
 
 class AcademicYear extends Model
 {
-    use hasFinancialYearPlans;
-    
+    use hasFinancialYearPlans, HasTimeTables;
+
     public $timestamps = false;
     protected $fillable = ['name', 'start_date', 'end_date'];
 
