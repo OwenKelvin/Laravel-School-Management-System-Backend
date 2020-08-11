@@ -10,7 +10,6 @@ namespace Okotieno\ELearning\Controllers;
 
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
 use Okotieno\ELearning\Models\ELearningTopic;
 use Okotieno\ELearning\Request\StoreLearningOutcomeRequest;
 

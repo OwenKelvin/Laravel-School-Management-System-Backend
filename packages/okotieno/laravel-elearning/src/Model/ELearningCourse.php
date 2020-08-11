@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Okotieno\AcademicYear\Models\AcademicYear;
 use Okotieno\ELearning\Traits\hasTopicNumbers;
 use Okotieno\SchoolCurriculum\Models\ClassLevel;
-use Okotieno\SchoolCurriculum\Unit;
+use Okotieno\SchoolCurriculum\Models\Unit;
 
 class ELearningCourse extends Model
 {

@@ -3,10 +3,10 @@
 namespace Okotieno\SchoolCurriculum\Controllers;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Okotieno\SchoolCurriculum\Requests\CreateUnitRequest;
 use Okotieno\SchoolCurriculum\Models\Unit;
-use Okotieno\SchoolCurriculum\Models\UnitCategory;
 
 class UnitController extends Controller
 {
@@ -14,7 +14,7 @@ class UnitController extends Controller
      * Display a listing of the resource.
      *
      * @param Request $request
-     * @return \Illuminate\Http\Response
+     * @return JsonResponse
      */
     public function index(Request $request)
     {
@@ -41,7 +41,7 @@ class UnitController extends Controller
      * Store a newly created resource in storage.
      *
      * @param CreateUnitRequest $request
-     * @return \Illuminate\Http\JsonResponse
+     * @return JsonResponse
      */
     public function store(CreateUnitRequest $request)
     {
@@ -70,7 +70,7 @@ class UnitController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
@@ -81,9 +81,9 @@ class UnitController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request $request
+     * @param \Illuminate\Http\Request $request
      * @param Unit $unit
-     * @return \Illuminate\Http\JsonResponse
+     * @return JsonResponse
      */
     public function update(Request $request, Unit $unit)
     {

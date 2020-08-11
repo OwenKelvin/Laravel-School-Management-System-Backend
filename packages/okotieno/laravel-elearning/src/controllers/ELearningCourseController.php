@@ -24,10 +24,11 @@ class ELearningCourseController extends Controller
      *
      * @param Request $request
      * @param User $user
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse
      */
     public function index(Request $request)
     {
+
 //        return ELearningCourse::limit($request->limit)->get();
         $response = [];
         foreach (ELearningCourse::limit($request->limit)->get() as $temp) {
@@ -87,7 +88,7 @@ class ELearningCourseController extends Controller
      * Display the specified resource.
      *
      * @param ELearningCourse $eLearningCourse
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse
      */
     public function show($eLearningCourse)
     {

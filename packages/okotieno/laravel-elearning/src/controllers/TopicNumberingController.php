@@ -10,9 +10,6 @@ namespace Okotieno\ELearning\Controllers;
 
 
 use App\Http\Controllers\Controller;
-use App\User;
-use Illuminate\Http\Request;
-use Okotieno\ELearning\Models\ELearningCourse;
 use Okotieno\ELearning\Models\TopicNumberStyle;
 
 class TopicNumberingController extends Controller

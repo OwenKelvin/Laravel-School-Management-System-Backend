@@ -23,6 +23,7 @@ class AcademicYearTimeTableController extends Controller
 
     public function store(AcademicYear $academicYear, Request $request)
     {
+        $academicYear->timeTables()->create(['time_table_timing_id' => 1]);
         return [
             'saved' => true,
             'message' => 'TimeTable Created Successfully'
