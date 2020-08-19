@@ -19,6 +19,7 @@ class CreateStreamsTable extends Migration
             $table->boolean('active')->default(true);
             $table->string('abbreviation');
             $table->string('associated_color');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

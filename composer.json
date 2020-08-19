@@ -60,7 +60,8 @@
             "Okotieno\\ELearning\\": "packages/okotieno/laravel-elearning/src/",
             "Okotieno\\Files\\": "packages/okotieno/laravel-files/src/",
             "Okotieno\\TimeTable\\": "packages/okotieno/laravel-school-timetable/src/",
-            "Okotieno\\SchoolInfrastructure\\": "packages/okotieno/laravel-school-infrastructures/src/"
+            "Okotieno\\SchoolInfrastructure\\": "packages/okotieno/laravel-school-infrastructures/src/",
+            "Okotieno\\SchoolStreams\\": "packages/okotieno/laravel-school-streams/src/"
         },
         "classmap": [
             "database/seeds",

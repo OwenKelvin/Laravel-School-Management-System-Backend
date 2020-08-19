@@ -190,6 +190,7 @@ return [
         Okotieno\Files\FilesServiceProvider::class,
         Okotieno\TimeTable\TimeTableServiceProvider::class,
         Okotieno\SchoolInfrastructure\SchoolInfrastructureServiceProvider::class,
+        Okotieno\SchoolStreams\SchoolStreamServiceProvider::class,
 
         /*
          * Application Service Providers...

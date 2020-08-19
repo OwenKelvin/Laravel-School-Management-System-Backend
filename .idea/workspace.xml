@@ -2,14 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcd9c95a-1bb8-4d1f-8881-52547adc3c99" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/models/TimeTable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-streams/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-streams/src/SchoolStreamServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-streams/src/controllers/SchoolStreamsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-streams/src/models/Stream.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-streams/src/routes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/controllers/TimeTableLessonsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/controllers/TimeTableTimingsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/controllers/WeekDaysController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/models/TimeTableLesson.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/models/WeekDay.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-elearning/src/controllers/ELearningCourseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-elearning/src/controllers/ELearningCourseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-elearning/src/controllers/TopicLearningOutcomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-elearning/src/controllers/TopicLearningOutcomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-elearning/src/controllers/TopicNumberingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-elearning/src/controllers/TopicNumberingController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/UnitController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/UnitController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/migrations/2020_08_09_091652_create_streams_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-streams/src/migrations/2020_08_09_091652_create_streams_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/controllers/AcademicYearTimeTableController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/controllers/AcademicYearTimeTableController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/traits/HasTimeTables.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/traits/HasTimeTables.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/models/TimeTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/models/TimeTable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/routes.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,22 +161,22 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-school-curriculum\src\migrations" />
-      <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-school-curriculum\src\models" />
-      <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\database\seeds" />
-      <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-school-infrastructures\src\migrations" />
-      <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-school-timetable\src\migrations" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-school-timetable\src\models" />
       <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-school-timetable\src\controllers" />
-      <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-school-timetable\src\traits" />
-      <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-school-infrastructure" />
-      <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno" />
+      <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-shool-streams\src\controllers" />
+      <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-shool-streams\src" />
+      <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-shool-streams" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-school-streams\src\migrations" />
+      <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-shool-streams\src\models" />
+      <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-school-timetable\src\migrations" />
+      <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-school-timetable\src\models" />
+      <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-school-curriculum\src\migrations" />
     </key>
   </component>
   <component name="RunManager" selected="npm.php-s">
@@ -229,10 +239,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="163" y="0" key="#Project_Structure/0.0.1366.768@0.0.1366.768" timestamp="1590230798822" />
-    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1596958947191">
+    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1597660402563">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1596958947191" />
+    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1597660402563" />
     <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1589976257832">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -253,30 +263,30 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1306" height="196" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1596359620744" />
-    <state x="409" y="106" key="NewPhpClassDialog" timestamp="1591984485864">
+    <state x="409" y="106" key="NewPhpClassDialog" timestamp="1597386835538">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="409" y="106" key="NewPhpClassDialog/0.0.1366.768@0.0.1366.768" timestamp="1591984485864" />
-    <state x="517" y="307" key="NewPhpFileDialog" timestamp="1596982509084">
+    <state x="409" y="106" key="NewPhpClassDialog/0.0.1366.768@0.0.1366.768" timestamp="1597386835538" />
+    <state x="517" y="307" key="NewPhpFileDialog" timestamp="1597658828865">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="517" y="307" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1596982509084" />
-    <state x="184" y="28" width="1110" height="711" key="SettingsEditor" timestamp="1589087067044">
+    <state x="517" y="307" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1597658828865" />
+    <state x="184" y="28" width="1110" height="711" key="SettingsEditor" timestamp="1597381079626">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="184" y="28" width="1110" height="711" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1589087067044" />
+    <state x="184" y="28" width="1110" height="711" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1597381079626" />
     <state x="390" y="119" width="585" height="582" key="find.popup" timestamp="1597116590890">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="390" y="119" width="585" height="582" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1597116590890" />
-    <state x="339" y="172" key="run.anything.popup" timestamp="1590262076480">
+    <state x="339" y="172" key="run.anything.popup" timestamp="1597660230312">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1590262076480" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1597164988076">
+    <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1597660230312" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1597666787392">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1597164988076" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1597666787392" />
   </component>
   <component name="atlassian-ide-plugin-workspace-issues">
     <option name="view">

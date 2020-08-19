@@ -1,0 +1,16 @@
+{
+    "name": "okotieno/laravel-school-streams",
+    "description": "Laravel Package for School Stream Functionality",
+    "authors": [
+        {
+            "name": "okotieno",
+            "email": "okotieno@yahoo.com"
+        }
+    ],
+    "require": {},
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}

@@ -5,6 +5,8 @@ namespace Okotieno\TimeTable\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Okotieno\AcademicYear\Models\AcademicYear;
+use Okotieno\TimeTable\Models\TimeTable;
+use Okotieno\TimeTable\Models\TimeTableTimingTemplate;
 
 class AcademicYearTimeTableController extends Controller
 {
@@ -14,19 +16,22 @@ class AcademicYearTimeTableController extends Controller
         return response()->json($academicYear->timeTables);
     }
 
-    public function show(AcademicYear $academicYear)
+    public function show(AcademicYear $academicYear, TimeTable $timeTable)
     {
-        return response()->json([
-
-        ]);
+        $timeTable['timing'] = TimeTableTimingTemplate::find($timeTable->time_table_timing_id);
+        return response()->json($timeTable);
     }
 
     public function store(AcademicYear $academicYear, Request $request)
     {
-        $academicYear->timeTables()->create(['time_table_timing_id' => 1]);
+        $timetable = $academicYear->timeTables()->create([
+            'description' => $request['description'],
+            'time_table_timing_template_id' => $request['timing']
+        ]);
         return [
             'saved' => true,
-            'message' => 'TimeTable Created Successfully'
+            'message' => 'TimeTable Created Successfully',
+            'data' => $timetable
         ];
     }
 }
