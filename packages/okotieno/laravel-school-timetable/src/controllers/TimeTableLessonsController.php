@@ -24,11 +24,29 @@ class TimeTableLessonsController extends Controller
     {
 //        return response()->json($timeTable->lessons);
         foreach ($request->all() as $lesson) {
-            $timings = explode(' - ', $lesson['timeValue']);
-            $timing = TimeTableTiming::where(['start' => $timings[0], 'end' => $timings[1]])->first();
-            $classLevel = ClassLevel::where(['abbreviation' => $lesson['classLevelName']])->first();
-            $dayOfWeek = WeekDay::where(['abbreviation' => $lesson['dayOfWeekName']])->first();
-            $stream = Stream::where(['abbreviation' => $lesson['streamName']])->first();
+            if (key_exists('timeValue', $lesson)) {
+                $timings = explode(' - ', $lesson['timeValue']);
+                $timing = TimeTableTiming::where(['start' => $timings[0], 'end' => $timings[1]])->first();
+            } else {
+                $timing = TimeTableTiming::find($lesson['timeId']);
+            }
+
+            if(key_exists('classLevelName', $lesson)) {
+                $classLevel = ClassLevel::where(['abbreviation' => $lesson['classLevelName']])->first();
+            } else {
+                $classLevel = ClassLevel::find($lesson['classLevelId']);
+            }
+            if(key_exists('dayOfWeekName', $lesson)) {
+                $dayOfWeek = WeekDay::where(['abbreviation' => $lesson['dayOfWeekName']])->first();
+            } else {
+                $dayOfWeek = WeekDay::find($lesson['dayOfWeekId'])->first();
+            }
+            if(key_exists('streamName', $lesson)) {
+                $stream = Stream::where(['abbreviation' => $lesson['streamName']])->first();
+            } else {
+                $stream = Stream::find($lesson['streamId'])->first();
+            }
+
 
 
             $lessonExists = TimeTableLesson::where([
@@ -57,7 +75,7 @@ class TimeTableLessonsController extends Controller
                     'unit_id' => $lesson['subjectId']
                 ]);
             }
-            
+
         }
         return response()->json([
             'saved' => true,
