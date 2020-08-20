@@ -11,7 +11,11 @@ class TimeTableLesson extends Model
     protected $fillable = [
         'teacher_id',
         'time_table_id',
-        'day_of_week_id',
-        'room_id'
+        'week_day_id',
+        'room_id',
+        'unit_id',
+        'stream_id',
+        'time_table_timing_id',
+        'class_level_id'
     ];
 }

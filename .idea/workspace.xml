@@ -7,10 +7,8 @@
       <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-streams/src/controllers/SchoolStreamsController.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-streams/src/models/Stream.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-streams/src/routes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/controllers/TimeTableLessonsController.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/controllers/TimeTableTimingsController.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/controllers/WeekDaysController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/models/TimeTableLesson.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/models/WeekDay.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
@@ -18,7 +16,10 @@
       <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/migrations/2020_08_09_091652_create_streams_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-streams/src/migrations/2020_08_09_091652_create_streams_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/controllers/AcademicYearTimeTableController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/controllers/AcademicYearTimeTableController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/controllers/TimeTableLessonsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/controllers/TimeTableLessonsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/migrations/2020_08_14_064634_create_time_table_lessons_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/migrations/2020_08_14_064634_create_time_table_lessons_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/models/TimeTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/models/TimeTable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/models/TimeTableLesson.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/models/TimeTableLesson.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/routes.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -283,10 +284,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1597660230312" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1597666787392">
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1597845827858">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1597666787392" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1597845827858" />
   </component>
   <component name="atlassian-ide-plugin-workspace-issues">
     <option name="view">

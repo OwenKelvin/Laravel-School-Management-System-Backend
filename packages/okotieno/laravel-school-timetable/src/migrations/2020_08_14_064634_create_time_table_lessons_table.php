@@ -18,8 +18,12 @@ class CreateTimeTableLessonsTable extends Migration
             $table->softDeletes();
             $table->integer('teacher_id');
             $table->integer('time_table_id');
-            $table->integer('day_of_week_id');
+            $table->integer('week_day_id');
             $table->integer('room_id');
+            $table->integer('stream_id');
+            $table->integer('time_table_timing_id');
+            $table->integer('unit_id');
+            $table->integer('class_level_id');
             $table->timestamps();
         });
     }
