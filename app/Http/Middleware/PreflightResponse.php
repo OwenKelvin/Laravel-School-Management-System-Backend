@@ -5,6 +5,7 @@ namespace App\Http\Middleware;
 
 
 use Closure;
+
 class PreflightResponse
 {
     /**
@@ -14,10 +15,14 @@ class PreflightResponse
      * @param \Closure $next
      * @return mixed
      */
-    public function handle($request, Closure $next )
+    public function handle($request, Closure $next)
     {
         if ($request->getMethod() === "OPTIONS") {
-            return response('');
+            return response('')->withHeaders([
+                'Access-Control-Allow-Origin' => '*',
+                'Access-Control-Allow-Methods' => 'OPTIONS',
+                'Access-Control-Allow-Headers' => 'CONTENT-TYPE'
+            ]);
         }
         return $next($request);
     }
