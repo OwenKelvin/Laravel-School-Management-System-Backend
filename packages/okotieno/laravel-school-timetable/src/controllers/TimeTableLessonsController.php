@@ -22,7 +22,6 @@ class TimeTableLessonsController extends Controller
 
     public function store(AcademicYear $academicYear, TimeTable $timeTable, Request $request)
     {
-//        return response()->json($timeTable->lessons);
         foreach ($request->all() as $lesson) {
             if (key_exists('timeValue', $lesson)) {
                 $timings = explode(' - ', $lesson['timeValue']);

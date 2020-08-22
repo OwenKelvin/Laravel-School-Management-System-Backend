@@ -58,7 +58,7 @@ trait canBeAStudent
             'birth_cert_number' => $request->birth_cert_number,
             'date_of_birth' => new Carbon($request->date_of_birth),
             'religion_id' => $request->religion_id,
-            'gender_id' => $request->religion_id
+            'gender_id' => $request->gender_id
         ]);
 
         if ($request->student_school_id_number != null && $request->student_school_id_number != '') {

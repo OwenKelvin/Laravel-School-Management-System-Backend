@@ -2,25 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcd9c95a-1bb8-4d1f-8881-52547adc3c99" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-streams/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-streams/src/SchoolStreamServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-streams/src/controllers/SchoolStreamsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-streams/src/models/Stream.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-streams/src/routes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/controllers/TimeTableTimingsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/controllers/WeekDaysController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/models/WeekDay.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/migrations/2020_08_09_091652_create_streams_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-streams/src/migrations/2020_08_09_091652_create_streams_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/controllers/AcademicYearTimeTableController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/controllers/AcademicYearTimeTableController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/controllers/TimeTableLessonsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/controllers/TimeTableLessonsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/migrations/2020_08_14_064634_create_time_table_lessons_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/migrations/2020_08_14_064634_create_time_table_lessons_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/models/TimeTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/models/TimeTable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/models/TimeTableLesson.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/models/TimeTableLesson.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-student-admissions/src/traits/canBeAStudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-student-admissions/src/traits/canBeAStudent.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
