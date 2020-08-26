@@ -4,11 +4,9 @@ namespace Okotieno\SchoolCurriculum\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Illuminate\Http\Request;
 use Okotieno\SchoolCurriculum\Requests\UpdateClassLevelRequest;
 use Okotieno\SchoolCurriculum\Requests\CreateClassLevelRequest;
-use Okotieno\SchoolCurriculum\Unit;
-use Okotieno\SchoolCurriculum\UnitLevel;
+
 
 class ClassLevel extends Model
 {

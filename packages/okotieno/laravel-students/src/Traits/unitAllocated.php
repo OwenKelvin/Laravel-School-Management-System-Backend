@@ -4,7 +4,7 @@ namespace Okotieno\Students\Traits;
 use Okotieno\AcademicYear\Models\AcademicYear;
 use Okotieno\AcademicYear\Models\AcademicYearUnitAllocation;
 use Okotieno\SchoolCurriculum\Models\ClassLevel;
-use Okotieno\SchoolCurriculum\UnitLevel;
+use Okotieno\SchoolCurriculum\Models\UnitLevel;
 
 trait unitAllocated
 {

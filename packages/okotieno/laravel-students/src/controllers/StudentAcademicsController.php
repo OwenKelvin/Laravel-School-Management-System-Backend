@@ -14,8 +14,7 @@ use App\User;
 
 use Illuminate\Http\Request;
 use Okotieno\AcademicYear\Models\AcademicYearUnitAllocation;
-use Okotieno\GuardianAdmissions\Requests\User\CreateGuardianRequest;
-use Okotieno\StudentAdmissions\Models\Student;
+
 
 class StudentAcademicsController extends Controller
 {
@@ -24,7 +23,7 @@ class StudentAcademicsController extends Controller
      *
      * @param Request $request
      * @param User $user
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse
      */
     public function index(Request $request, User $user)
     {

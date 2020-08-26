@@ -2,10 +2,8 @@
 
 namespace Okotieno\AcademicYear\Models;
 
-use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
-use Okotieno\AcademicYear\Requests\CreateAcademicYearRequest;
-use Okotieno\SchoolCurriculum\UnitLevel;
+use Okotieno\SchoolCurriculum\Models\UnitLevel;
 use Okotieno\Students\Traits\unitAllocated;
 
 class AcademicYearUnitAllocation extends Model

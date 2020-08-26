@@ -8,8 +8,7 @@ use Illuminate\Http\Request;
 use Okotieno\AcademicYear\Models\AcademicYear;
 use Okotieno\AcademicYear\Requests\CreateAcademicYearRequest;
 use Okotieno\SchoolCurriculum\Models\ClassLevel;
-use Okotieno\SchoolCurriculum\Unit;
-use Okotieno\SchoolCurriculum\UnitLevel;
+use Okotieno\SchoolCurriculum\Models\UnitLevel;
 
 class AcademicYearController extends Controller
 {
@@ -71,7 +70,7 @@ class AcademicYearController extends Controller
                     $unit = [
                         'id' => $_classAllocation['id'],
                         'name' => $unitLevel->unit->name,
-                        'level' => $unitLevel->name 
+                        'level' => $unitLevel->name
                     ];
                     $units[] = $unit;
                 }

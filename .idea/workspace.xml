@@ -1,12 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="dcd9c95a-1bb8-4d1f-8881-52547adc3c99" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.rnd" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/PreflightResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/PreflightResponse.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/controllers/TimeTableLessonsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/controllers/TimeTableLessonsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-student-admissions/src/traits/canBeAStudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-student-admissions/src/traits/canBeAStudent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/academic-year/src/controllers/AcademicYearController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/academic-year/src/controllers/AcademicYearController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/academic-year/src/controllers/AcademicYearUnitLevelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/academic-year/src/controllers/AcademicYearUnitLevelController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/academic-year/src/models/AcademicYearUnitAllocation.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/academic-year/src/models/AcademicYearUnitAllocation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-accounts/src/Controllers/FinancialCostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-accounts/src/Controllers/FinancialCostsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-accounts/src/Controllers/FinancialPlanController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-accounts/src/Controllers/FinancialPlanController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/ClassLevelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/ClassLevelController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/ClassLevel.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/models/ClassLevel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-exams/src/Models/ExamPaper.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-exams/src/Models/ExamPaper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-exams/src/Models/ExamPaperQuestion.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-exams/src/Models/ExamPaperQuestion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-exams/src/Models/ExamPaperQuestionAnswer.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-exams/src/Models/ExamPaperQuestionAnswer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-exams/src/Models/ExamPaperQuestionTag.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-exams/src/Models/ExamPaperQuestionTag.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-infrastructures/src/Models/Room.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-infrastructures/src/Models/Room.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-students/src/Traits/unitAllocated.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-students/src/Traits/unitAllocated.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-students/src/controllers/StudentAcademicsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-students/src/controllers/StudentAcademicsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload.zip" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +166,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/models" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -174,6 +205,12 @@
       <module />
       <method />
     </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -188,12 +225,6 @@
     </configuration>
     <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
@@ -215,11 +246,34 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dcd9c95a-1bb8-4d1f-8881-52547adc3c99" name="Default Changelist" comment="" />
+      <created>1598277242032</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598277242032</updated>
+      <workItem from="1598277264561" duration="18624000" />
+    </task>
+    <servers />
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="163" y="0" key="#Project_Structure" timestamp="1590230798822">
@@ -262,18 +316,18 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="184" y="28" width="1110" height="711" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1597381079626" />
-    <state x="390" y="119" width="585" height="582" key="find.popup" timestamp="1597116590890">
+    <state x="390" y="119" width="585" height="582" key="find.popup" timestamp="1598452006875">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="390" y="119" width="585" height="582" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1597116590890" />
+    <state x="390" y="119" width="585" height="582" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1598452006875" />
     <state x="339" y="172" key="run.anything.popup" timestamp="1597660230312">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1597660230312" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1598085955199">
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1598451619250">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1598085955199" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1598451619250" />
   </component>
   <component name="atlassian-ide-plugin-workspace-issues">
     <option name="view">

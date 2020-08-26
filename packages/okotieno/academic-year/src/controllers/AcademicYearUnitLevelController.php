@@ -12,7 +12,7 @@ namespace Okotieno\AcademicYear\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Okotieno\AcademicYear\Models\AcademicYear;
-use Okotieno\SchoolCurriculum\UnitLevel;
+use Okotieno\SchoolCurriculum\Models\UnitLevel;
 
 
 class AcademicYearUnitLevelController extends Controller

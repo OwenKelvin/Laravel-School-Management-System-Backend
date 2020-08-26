@@ -13,11 +13,9 @@ use App\Http\Controllers\Controller;
 use function foo\func;
 use Okotieno\AcademicYear\Models\AcademicYear;
 use Okotieno\SchoolAccounts\Models\FinancialCost;
-use Okotieno\SchoolAccounts\Models\OtherFeesFinancialPlan;
 use Okotieno\SchoolAccounts\Requests\StoreFinancialPlanRequest;
 use Okotieno\SchoolCurriculum\Models\ClassLevel;
 use Okotieno\SchoolCurriculum\Models\Semester;
-use Okotieno\SchoolCurriculum\UnitLevel;
 
 class FinancialPlanController extends Controller
 {

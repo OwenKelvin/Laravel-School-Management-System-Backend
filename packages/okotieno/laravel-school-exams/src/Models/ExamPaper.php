@@ -11,7 +11,7 @@ namespace Okotieno\SchoolExams\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Okotieno\SchoolCurriculum\UnitLevel;
+use Okotieno\SchoolCurriculum\Models\UnitLevel;
 
 class ExamPaper extends Model
 {

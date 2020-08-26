@@ -7,14 +7,14 @@ use Illuminate\Http\Request;
 use Okotieno\SchoolCurriculum\Requests\CreateClassLevelRequest;
 use Okotieno\SchoolCurriculum\Models\ClassLevel;
 use Okotieno\SchoolCurriculum\Requests\UpdateClassLevelRequest;
-use Okotieno\SchoolCurriculum\Models\UnitCategory;
+
 
 class ClassLevelController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse
      */
     public function index(Request $request)
     {
@@ -59,11 +59,12 @@ class ClassLevelController extends Controller
      * Store a newly created resource in storage.
      *
      * @param CreateClassLevelRequest $request
-     * @return Request|CreateUnitRequest
+     * @return \Illuminate\Http\JsonResponse
      */
     public function store(CreateClassLevelRequest $request)
     {
         return response()->json(ClassLevel::createClassLevel($request));
+
     }
 
     /**
@@ -71,7 +72,7 @@ class ClassLevelController extends Controller
      *
      * @param ClassLevel $classLevel
      * @param Request $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse
      */
     public function show(ClassLevel $classLevel, Request $request)
     {
@@ -94,7 +95,7 @@ class ClassLevelController extends Controller
      *
      * @param ClassLevel $classLevel
      * @param  \Illuminate\Http\Request $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse
      */
     public function update(ClassLevel $classLevel, UpdateClassLevelRequest $request)
     {
