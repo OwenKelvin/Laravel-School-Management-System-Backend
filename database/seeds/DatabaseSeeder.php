@@ -20,6 +20,8 @@ class DatabaseSeeder extends Seeder
         $this->call(UnitsSeeder::class);
         $this->call(StreamSeeder::class);
         $this->call(RoomsSeeder::class);
+        $this->call(AcademicYearsSeeder::class);
+        $this->call(StudentsSeeder::class);
     }
 
 }

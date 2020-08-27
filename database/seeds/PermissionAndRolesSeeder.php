@@ -18,6 +18,11 @@ class PermissionAndRolesSeeder extends Seeder
                 'name' => 'super admin'
             ]);
         } catch (Exception $exception) { }
+        try {
+            Role::create([
+                'name' => 'student'
+            ]);
+        } catch (Exception $exception) { }
         $permissions = [
             [
                 'permission' => 'change role permissions',
@@ -1437,7 +1442,8 @@ class PermissionAndRolesSeeder extends Seeder
             ],
         ];
 //
-        foreach ($permissions as $permission) {
+        foreach ($permissions as $index => $permission) {
+            echo ($index + 1) . " of". sizeof($permissions). "\n";
             if ($permission_saved = Permission::where('name', $permission['permission'])->first()) {
 
             } else {

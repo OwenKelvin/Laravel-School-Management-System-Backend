@@ -61,15 +61,7 @@ trait canBeAStudent
             'gender_id' => $request->gender_id
         ]);
 
-        if ($request->student_school_id_number != null && $request->student_school_id_number != '') {
-            $idNumber = $request->student_school_id_number;
-        } else {
-            $idNumber = Student::generateIdNumber();
-        }
-
-        $user->student()->create([
-            'student_school_id_number' => $idNumber
-        ]);
+        $user->makeStudent($request->student_school_id_number);
         return [
             'id' => $user->id,
             'first_name' => $user->first_name,
@@ -92,9 +84,13 @@ trait canBeAStudent
         return $this->hasOne(Student::class);
     }
 
-    public function makeStudent() {
+    public function makeStudent($idNumber = null)
+    {
+        if ($idNumber == null || $idNumber == '') {
+            $idNumber = Student::generateIdNumber();
+        }
         $this->student()->create([
-            'student_school_id_number' => Student::generateIdNumber()
+            'student_school_id_number' => $idNumber
         ]);
         $this->assignRole('student');
     }

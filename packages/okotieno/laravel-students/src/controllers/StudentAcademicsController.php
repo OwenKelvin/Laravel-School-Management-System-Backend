@@ -12,7 +12,10 @@ namespace Okotieno\Students\Controllers;
 use App\Http\Controllers\Controller;
 use App\User;
 
+use Exception;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 use Okotieno\AcademicYear\Models\AcademicYearUnitAllocation;
 
 
@@ -23,7 +26,7 @@ class StudentAcademicsController extends Controller
      *
      * @param Request $request
      * @param User $user
-     * @return \Illuminate\Http\JsonResponse
+     * @return JsonResponse
      */
     public function index(Request $request, User $user)
     {
@@ -75,7 +78,7 @@ class StudentAcademicsController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function create()
     {
@@ -86,7 +89,7 @@ class StudentAcademicsController extends Controller
      * Store a newly created resource in storage.
      * @param Request $request
      * @param User $user
-     * @return \Illuminate\Http\JsonResponse
+     * @return JsonResponse
      */
     public function store(Request $request, User $user)
     {
@@ -109,7 +112,7 @@ class StudentAcademicsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function show()
     {
@@ -120,7 +123,7 @@ class StudentAcademicsController extends Controller
      * Show the form for editing the specified resource.
      *
      * @param  int $id
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function edit($id)
     {
@@ -130,8 +133,8 @@ class StudentAcademicsController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request $request
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @return Response
      */
     public function update()
     {
@@ -142,7 +145,7 @@ class StudentAcademicsController extends Controller
      * Remove the specified resource from storage.
      *
      * @return void
-     * @throws \Exception
+     * @throws Exception
      */
     public function destroy()
     {
