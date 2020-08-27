@@ -91,4 +91,11 @@ trait canBeAStudent
     {
         return $this->hasOne(Student::class);
     }
+
+    public function makeStudent() {
+        $this->student()->create([
+            'student_school_id_number' => Student::generateIdNumber()
+        ]);
+        $this->assignRole('student');
+    }
 }

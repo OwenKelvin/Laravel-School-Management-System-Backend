@@ -14,11 +14,11 @@ class AcademicYearUnitAllocation extends Model
         'unit_level_id',
         'class_level_id'];
 
-    public static function allocate($academicYearId, $classlevel, $unitLevelId)
+    public static function allocate($academicYearId, $classLevelId, $unitLevelId)
     {
         return self::create([
             'academic_year_id' => $academicYearId,
-            'class_level_id' => $classlevel,
+            'class_level_id' => $classLevelId,
             'unit_level_id' => $unitLevelId,
         ]);
     }
