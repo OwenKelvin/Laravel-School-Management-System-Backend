@@ -19,6 +19,7 @@ class AcademicYearUnitLevelController extends Controller
 {
     public function index(Request $request, AcademicYear $academicYear)
     {
+
         $response = [];
         if ($request->class_level) {
             $allocations = $academicYear

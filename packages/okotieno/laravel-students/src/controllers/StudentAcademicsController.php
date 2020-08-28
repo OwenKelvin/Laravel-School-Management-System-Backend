@@ -16,7 +16,10 @@ use Exception;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\DB;
+use Okotieno\AcademicYear\Models\AcademicYear;
 use Okotieno\AcademicYear\Models\AcademicYearUnitAllocation;
+use Okotieno\SchoolStreams\Models\Stream;
 
 
 class StudentAcademicsController extends Controller
@@ -53,7 +56,7 @@ class StudentAcademicsController extends Controller
 //        }
         foreach ($user->student->unitAllocation->groupBy('academic_year_id') as $unitAllocation) {
             $classLevels = [];
-            foreach( $unitAllocation->groupBy('class_level_id') as $classLevel) {
+            foreach ($unitAllocation->groupBy('class_level_id') as $classLevel) {
                 $units = [];
                 foreach ($classLevel as $item) {
                     $units[] = $item->unitLevel;
@@ -61,7 +64,7 @@ class StudentAcademicsController extends Controller
                 $classLevels[] = [
                     'class_level_id' => $classLevel[0]->classLevel->id,
                     'class_level_name' => $classLevel[0]->classLevel->name,
-                    'units' =>$units
+                    'units' => $units
                 ];
             }
 
@@ -112,17 +115,52 @@ class StudentAcademicsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @return Response
+     * @param User $user
+     * @param $academicYear
+     * @return JsonResponse
      */
-    public function show()
+    public function show(User $user, $academicYear, Request $request)
     {
+        $unitLevels = DB::table('users')
+            ->where('users.id', $user->id)
+            ->leftJoin('students', function ($join) {
+                $join->on('students.user_id', '=', 'users.id');
+            })
+            ->leftJoin('student_unit_allocations', function ($join) {
+                $join->on('student_unit_allocations.student_id', '=', 'students.id');
+            })
+            ->leftJoin('academic_year_unit_allocations', function ($join) {
+                $join->on('student_unit_allocations.unit_allocation_id', '=', 'academic_year_unit_allocations.id');
+            })
+            ->leftJoin('unit_levels', function ($join) {
+                $join->on('academic_year_unit_allocations.unit_level_id', '=', 'unit_levels.id');
+            })
+            ->leftJoin('class_levels', function ($join) {
+                $join->on('academic_year_unit_allocations.class_level_id', '=', 'class_levels.id');
+            })
+            ->where('academic_year_unit_allocations.academic_year_id', $academicYear)
+            ->select([
+                'unit_levels.id as unit_level_id',
+                'unit_levels.name as unit_level_name',
+                'class_levels.id as class_level_id',
+                'class_levels.name as class_level_name'
+            ])
+            ->distinct();
+        if ($request->class_level_id !== null) {
+            $unitLevels = $unitLevels->where(
+                'academic_year_unit_allocations.class_level_id',
+                $request->class_level_id
+            );
+        }
+
+        return response()->json($unitLevels->get());
 
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int $id
+     * @param int $id
      * @return Response
      */
     public function edit($id)
@@ -134,10 +172,35 @@ class StudentAcademicsController extends Controller
      * Update the specified resource in storage.
      *
      * @param Request $request
-     * @return Response
+     * @return JsonResponse
      */
-    public function update()
+    public function update(User $user, $academicYearId, Request $request)
     {
+        $user->student->updateStream( $user, $request->stream, $academicYearId, $request->classLevelId);
+
+        foreach ($request->unitLevels as $unitLevel) {
+            $academicYearUnitAllocation = AcademicYearUnitAllocation::where([
+                'academic_year_id' => $academicYearId,
+                'class_level_id' => $request->classLevelId,
+                'unit_level_id' => $unitLevel['id']
+            ])->first();
+//            return $academicYearUnitAllocation;
+            $allocation = $user->student->unitAllocation()
+                ->where('unit_level_id', $unitLevel['id'])
+                ->where('academic_year_id', $academicYearId);
+            if ($unitLevel['value'] === true && $allocation->first() === null) {
+                $allocation->save($academicYearUnitAllocation);
+            }
+
+            if ($unitLevel['value'] === false && $allocation->first() != null) {
+                $allocation->detach($academicYearUnitAllocation->id);
+            }
+        }
+
+        return response()->json([
+            'saved' => true,
+            'message' => 'Academic Details Successfully saved'
+        ]);
 
     }
 

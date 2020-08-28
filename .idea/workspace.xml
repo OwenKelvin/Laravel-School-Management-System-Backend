@@ -20,14 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcd9c95a-1bb8-4d1f-8881-52547adc3c99" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-streams/src/Traits/BelongsToStream.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-streams/src/controllers/StudentStreamsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-streams/src/migrations/2020_08_28_053819_create_stream_student_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/AcademicYearsSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/AcademicYearsSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/PermissionAndRolesSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/PermissionAndRolesSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/StudentsSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/StudentsSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/UnitsSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UnitsSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-students/src/Controllers/StudentsApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-students/src/Controllers/StudentsApiController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/academic-year/src/controllers/AcademicYearUnitLevelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/academic-year/src/controllers/AcademicYearUnitLevelController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/UnitLevelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/UnitLevelController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-streams/src/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-streams/src/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-student-admissions/src/models/Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-student-admissions/src/models/Student.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-students/src/controllers/StudentAcademicsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-students/src/controllers/StudentAcademicsController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,15 +149,19 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1b2aRHHh9mvU9cZohNARXnda3EH" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/database/seeds" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/packages/okotieno/laravel-school-streams/src/Controllers" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -180,11 +185,11 @@
       <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-school-curriculum\src\migrations" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-school-streams\src\Controllers" />
       <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\database\seeds" />
       <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-school-timetable\src\models" />
       <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-school-timetable\src\controllers" />
       <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-shool-streams\src\controllers" />
-      <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-shool-streams\src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.php-s">
@@ -247,7 +252,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598277242032</updated>
-      <workItem from="1598277264561" duration="44099000" />
+      <workItem from="1598277264561" duration="75310000" />
     </task>
     <servers />
   </component>
@@ -265,39 +270,42 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="163" y="0" key="#Project_Structure" timestamp="1590230798822">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="163" y="0" key="#Project_Structure/0.0.1366.768@0.0.1366.768" timestamp="1590230798822" />
-    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598511934996">
+    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598552256011">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1598511934996" />
+    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1598552256011" />
     <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1589976257832">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1589976257832" />
-    <state width="1323" height="204" key="GridCell.Tab.0.bottom" timestamp="1598464670331">
+    <state width="1323" height="204" key="GridCell.Tab.0.bottom" timestamp="1598600417309">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="204" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1598464670331" />
-    <state width="1323" height="204" key="GridCell.Tab.0.center" timestamp="1598464670327">
+    <state width="1323" height="204" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1598600417309" />
+    <state width="1323" height="204" key="GridCell.Tab.0.center" timestamp="1598600417243">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="204" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1598464670327" />
-    <state width="1323" height="204" key="GridCell.Tab.0.left" timestamp="1598464670327">
+    <state width="1323" height="204" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1598600417243" />
+    <state width="1323" height="204" key="GridCell.Tab.0.left" timestamp="1598600417226">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="204" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1598464670327" />
-    <state width="1323" height="204" key="GridCell.Tab.0.right" timestamp="1598464670327">
+    <state width="1323" height="204" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1598600417226" />
+    <state width="1323" height="204" key="GridCell.Tab.0.right" timestamp="1598600417243">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="204" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1598464670327" />
-    <state x="409" y="106" key="NewPhpClassDialog" timestamp="1597386835538">
+    <state width="1323" height="204" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1598600417243" />
+    <state x="409" y="106" key="NewPhpClassDialog" timestamp="1598532654825">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="409" y="106" key="NewPhpClassDialog/0.0.1366.768@0.0.1366.768" timestamp="1597386835538" />
+    <state x="409" y="106" key="NewPhpClassDialog/0.0.1366.768@0.0.1366.768" timestamp="1598532654825" />
     <state x="517" y="307" key="NewPhpFileDialog" timestamp="1597658828865">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -306,18 +314,18 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="184" y="28" width="1110" height="711" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1597381079626" />
-    <state x="390" y="119" width="585" height="582" key="find.popup" timestamp="1598531033188">
+    <state x="390" y="119" width="667" height="582" key="find.popup" timestamp="1598589129841">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="390" y="119" width="585" height="582" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1598531033188" />
-    <state x="339" y="172" key="run.anything.popup" timestamp="1597660230312">
+    <state x="390" y="119" width="667" height="582" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1598589129841" />
+    <state x="339" y="172" key="run.anything.popup" timestamp="1598589556093">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1597660230312" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1598531037103">
+    <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1598589556093" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1598603089331">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1598531037103" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1598603089331" />
   </component>
   <component name="atlassian-ide-plugin-workspace-issues">
     <option name="view">
