@@ -16,12 +16,12 @@ class CreateGendersTable extends Migration
         Schema::create('genders', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('prefix');
+            $table->string('abbreviation');
             $table->boolean('active')->default(true);
         });
         DB::table('genders')->insert([
-            ['name'=>'Male', 'prefix' => 'M'],
-            ['name'=>'Female', 'prefix' => 'F'],
+            ['name'=>'Male', 'abbreviation' => 'M'],
+            ['name'=>'Female', 'abbreviation' => 'F'],
         ]);
     }
 

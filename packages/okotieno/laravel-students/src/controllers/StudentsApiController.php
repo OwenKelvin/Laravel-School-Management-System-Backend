@@ -54,6 +54,10 @@ class StudentsApiController extends Controller
             ->leftJoin('users', function ($join) use ($request) {
                 $join->on('students.user_id', '=', 'users.id');
             })
+            ->leftJoin('genders', function ($join) use ($request) {
+                $join->on('genders.id', '=', 'users.gender_id');
+            })
+
             ->leftJoin('student_unit_allocations', function ($join) use ($request) {
                 $join->on('student_unit_allocations.student_id', '=', 'students.id');
             })
@@ -66,15 +70,27 @@ class StudentsApiController extends Controller
             ->leftJoin('class_levels', function ($join) use ($request) {
                 $join->on('academic_year_unit_allocations.class_level_id', '=', 'class_levels.id');
             })
+
+            ->leftJoin('stream_student', function ($join) use ($request) {
+                $join->on('stream_student.student_id', '=', 'students.id');
+                $join->on('stream_student.academic_year_id', '=', 'academic_years.id');
+                $join->on('stream_student.class_level_id', '=', 'class_levels.id');
+            })
+            ->leftJoin('streams', function ($join) use ($request) {
+                $join->on('stream_student.stream_id', '=', 'streams.id');
+            })
+
             ->select([
                 'users.id as id',
                 'academic_years.name as academic_year_name',
                 'class_levels.name as class_level_name',
+                'streams.id as stream_id',
+                'streams.name as stream_name',
                 'first_name',
                 'last_name',
                 'middle_name',
-                'academic_year_id',
-                'class_level_id',
+                'academic_years.id as academic_year_id',
+                'class_levels.id as class_level_id',
                 'email',
                 'other_names',
                 'birth_cert_number',
@@ -83,23 +99,25 @@ class StudentsApiController extends Controller
                 'phone',
                 'student_school_id_number as student_id',
                 'date_of_birth',
-                'name_prefix_id'
+                'name_prefix_id',
+                'genders.name as gender_name',
+                'genders.abbreviation as gender_abbreviation',
 
             ])
             ->distinct();
 
         if ($request->academicYear) {
-            $students = $students->where('academic_year_id', $request->academicYear);
+            $students = $students->where('academic_years.id', $request->academicYear);
         }
         if ($request->classLevels) {
 
-            $students = $students->whereIn('class_level_id', $request->classLevels);
+            $students = $students->whereIn('class_levels.id', $request->classLevels);
         }
-//          TODO-me fix streams
-//        if ($request->streams) {
-//
-//            $students = $students->whereIn('class_level_id', $request->streams);
-//        }
+
+        if ($request->streams) {
+
+            $students = $students->whereIn('stream_id', $request->streams);
+        }
         if ($request->last) {
 
             $students = $students->limit($request->last);

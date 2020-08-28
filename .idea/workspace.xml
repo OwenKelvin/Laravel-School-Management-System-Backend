@@ -19,16 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcd9c95a-1bb8-4d1f-8881-52547adc3c99" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-streams/src/Traits/BelongsToStream.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-streams/src/controllers/StudentStreamsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-streams/src/migrations/2020_08_28_053819_create_stream_student_table.php" afterDir="false" />
+    <list default="true" id="dcd9c95a-1bb8-4d1f-8881-52547adc3c99" name="Default Changelist" comment="User can save stream">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/academic-year/src/controllers/AcademicYearUnitLevelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/academic-year/src/controllers/AcademicYearUnitLevelController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/UnitLevelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/UnitLevelController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-streams/src/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-streams/src/routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-student-admissions/src/models/Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-student-admissions/src/models/Student.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-students/src/controllers/StudentAcademicsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-students/src/controllers/StudentAcademicsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/gender/src/migrations/2019_10_07_085500_create_genders_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/gender/src/migrations/2019_10_07_085500_create_genders_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-students/src/Controllers/StudentsApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-students/src/Controllers/StudentsApiController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,8 +246,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598277242032</updated>
-      <workItem from="1598277264561" duration="75310000" />
+      <workItem from="1598277264561" duration="82847000" />
     </task>
+    <task id="LOCAL-00001" summary="User can save stream">
+      <created>1598607354438</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1598607354474</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,6 +274,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="User can save stream" />
+    <option name="LAST_COMMIT_MESSAGE" value="User can save stream" />
   </component>
   <component name="WindowStateProjectService">
     <state x="163" y="0" key="#Project_Structure" timestamp="1590230798822">
@@ -286,22 +290,22 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1589976257832" />
-    <state width="1323" height="204" key="GridCell.Tab.0.bottom" timestamp="1598600417309">
+    <state width="1323" height="204" key="GridCell.Tab.0.bottom" timestamp="1598609562943">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="204" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1598600417309" />
-    <state width="1323" height="204" key="GridCell.Tab.0.center" timestamp="1598600417243">
+    <state width="1323" height="204" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1598609562943" />
+    <state width="1323" height="204" key="GridCell.Tab.0.center" timestamp="1598609562934">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="204" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1598600417243" />
-    <state width="1323" height="204" key="GridCell.Tab.0.left" timestamp="1598600417226">
+    <state width="1323" height="204" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1598609562934" />
+    <state width="1323" height="204" key="GridCell.Tab.0.left" timestamp="1598609562932">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="204" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1598600417226" />
-    <state width="1323" height="204" key="GridCell.Tab.0.right" timestamp="1598600417243">
+    <state width="1323" height="204" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1598609562932" />
+    <state width="1323" height="204" key="GridCell.Tab.0.right" timestamp="1598609562934">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="204" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1598600417243" />
+    <state width="1323" height="204" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1598609562934" />
     <state x="409" y="106" key="NewPhpClassDialog" timestamp="1598532654825">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -314,6 +318,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="184" y="28" width="1110" height="711" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1597381079626" />
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1598608032688">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1598608032688" />
     <state x="390" y="119" width="667" height="582" key="find.popup" timestamp="1598589129841">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -322,10 +330,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1598589556093" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1598603089331">
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1598612835590">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1598603089331" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1598612835590" />
   </component>
   <component name="atlassian-ide-plugin-workspace-issues">
     <option name="view">

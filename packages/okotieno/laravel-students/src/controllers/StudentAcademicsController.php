@@ -34,34 +34,20 @@ class StudentAcademicsController extends Controller
     public function index(Request $request, User $user)
     {
         $response = [];
-
-//        foreach ($user->student->unitAllocation as $unitAllocation) {
-//
-//            $response[] = [
-//                'class_level' => [
-//                    'id' => $unitAllocation->classLevel->id,
-//                    'name' => $unitAllocation->classLevel->name,
-//                ],
-//                'unit_level' => [
-//                    'id' => $unitAllocation->unitLevel->id,
-//                    'name' => $unitAllocation->unitLevel->name,
-//                ],
-//                'academic_year' => [
-//                    'id' => $unitAllocation->academicYear->id,
-//                    'name' => $unitAllocation->academicYear->name
-//                ],
-//                'id' => $unitAllocation->id,
-//
-//            ];
-//        }
         foreach ($user->student->unitAllocation->groupBy('academic_year_id') as $unitAllocation) {
             $classLevels = [];
             foreach ($unitAllocation->groupBy('class_level_id') as $classLevel) {
                 $units = [];
+                $stream = $user->student->streams()
+                    ->where('academic_year_id', $unitAllocation[0]->academicYear->id)
+                    ->where('class_level_id', $classLevel[0]->classLevel->id)->first();
                 foreach ($classLevel as $item) {
                     $units[] = $item->unitLevel;
                 }
                 $classLevels[] = [
+                    'stream_id' => $stream == null ? null : $stream->id,
+                    'stream_name' => $stream == null ? null : $stream->name,
+                    'stream_abbreviation' => $stream == null ? null : $stream->abbreviation,
                     'class_level_id' => $classLevel[0]->classLevel->id,
                     'class_level_name' => $classLevel[0]->classLevel->name,
                     'units' => $units
@@ -184,7 +170,6 @@ class StudentAcademicsController extends Controller
                 'class_level_id' => $request->classLevelId,
                 'unit_level_id' => $unitLevel['id']
             ])->first();
-//            return $academicYearUnitAllocation;
             $allocation = $user->student->unitAllocation()
                 ->where('unit_level_id', $unitLevel['id'])
                 ->where('academic_year_id', $academicYearId);
