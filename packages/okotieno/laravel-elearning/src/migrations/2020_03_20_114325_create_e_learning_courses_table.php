@@ -16,11 +16,11 @@ class CreateELearningCoursesTable extends Migration
         Schema::create('e_learning_courses', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->integer('class_level_id');
-            $table->integer('academic_year_id');
-            $table->integer('unit_id');
-            $table->integer('topic_number_style_id');
-            $table->longText('description')->default(null);
+            $table->integer('class_level_id')->unsigned();
+            $table->integer('academic_year_id')->unsigned();
+            $table->integer('unit_id')->unsigned();
+            $table->integer('topic_number_style_id')->unsigned();
+            $table->longText('description')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

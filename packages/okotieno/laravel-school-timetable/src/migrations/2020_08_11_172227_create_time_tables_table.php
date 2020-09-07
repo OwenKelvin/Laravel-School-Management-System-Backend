@@ -16,9 +16,9 @@ class CreateTimeTablesTable extends Migration
         Schema::create('time_tables', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->softDeletes();
-            $table->integer('time_table_timing_template_id');
+            $table->integer('time_table_timing_template_id')->unsigned();
             $table->string('description');
-            $table->integer('academic_year_id');
+            $table->integer('academic_year_id')->unsigned();
             $table->timestamps();
         });
     }

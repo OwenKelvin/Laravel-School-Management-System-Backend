@@ -16,10 +16,10 @@ class CreateOtherFeesFinancialPlansTable extends Migration
         Schema::create('other_fees_financial_plans', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->double('amount')->default(0);
-            $table->integer('class_level_id');
-            $table->integer('financial_cost_item_id');
-            $table->integer('semester_id');
-            $table->integer('academic_year_id');
+            $table->integer('class_level_id')->unsigned();
+            $table->integer('financial_cost_item_id')->unsigned();
+            $table->integer('semester_id')->unsigned();
+            $table->integer('academic_year_id')->unsigned();
             $table->softDeletes();
             $table->timestamps();
         });

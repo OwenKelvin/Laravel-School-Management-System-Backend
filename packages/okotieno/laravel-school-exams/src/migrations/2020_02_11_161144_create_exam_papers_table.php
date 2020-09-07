@@ -16,7 +16,7 @@ class CreateExamPapersTable extends Migration
         Schema::create('exam_papers', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
-            $table->integer('unit_level_id');
+            $table->integer('unit_level_id')->unsigned();
             $table->boolean('available')->default(false);
             $table->boolean('private')->default(false);
             $table->boolean('access_by_key')->default(false);

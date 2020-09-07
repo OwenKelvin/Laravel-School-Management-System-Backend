@@ -16,10 +16,10 @@ class CreateTuitionFeeFinancialPlansTable extends Migration
         Schema::create('tuition_fee_financial_plans', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->double('amount')->default(0);
-            $table->integer('class_level_id');
-            $table->integer('unit_level_id');
-            $table->integer('semester_id');
-            $table->integer('academic_year_id');
+            $table->integer('class_level_id')->unsigned();
+            $table->integer('unit_level_id')->unsigned();
+            $table->integer('semester_id')->unsigned();
+            $table->integer('academic_year_id')->unsigned();
             $table->timestamps();
         });
     }
