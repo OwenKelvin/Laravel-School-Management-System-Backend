@@ -19,18 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcd9c95a-1bb8-4d1f-8881-52547adc3c99" name="Default Changelist" comment="User can save stream">
+    <list default="true" id="dcd9c95a-1bb8-4d1f-8881-52547adc3c99" name="Default Changelist" comment="Fixed bug e learning contents not updating">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/academic-year/src/migrations/2019_10_19_165423_create_academic_year_unit_allocations_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/academic-year/src/migrations/2019_10_19_165423_create_academic_year_unit_allocations_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-elearning/src/Model/ELearningCourse.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-elearning/src/Model/ELearningCourse.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-elearning/src/controllers/ELearningCourseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-elearning/src/controllers/ELearningCourseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-elearning/src/migrations/2020_03_20_114325_create_e_learning_courses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-elearning/src/migrations/2020_03_20_114325_create_e_learning_courses_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-accounts/src/migrations/2020_02_11_042840_create_tuition_fee_financial_plans_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-accounts/src/migrations/2020_02_11_042840_create_tuition_fee_financial_plans_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-accounts/src/migrations/2020_02_29_182127_create_other_fees_financial_plans_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-accounts/src/migrations/2020_02_29_182127_create_other_fees_financial_plans_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/migrations/2019_10_15_031630_create_class_level_unit_level_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/migrations/2019_10_15_031630_create_class_level_unit_level_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-exams/src/migrations/2020_02_11_161144_create_exam_papers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-exams/src/migrations/2020_02_11_161144_create_exam_papers_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/migrations/2020_08_11_172227_create_time_tables_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/migrations/2020_08_11_172227_create_time_tables_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/migrations/2020_08_14_064634_create_time_table_lessons_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-timetable/src/migrations/2020_08_14_064634_create_time_table_lessons_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-teachers/src/Controllers/TeacherSubjectsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-teachers/src/Controllers/TeacherSubjectsController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -261,7 +252,7 @@
       <workItem from="1598277264561" duration="84708000" />
       <workItem from="1598665722475" duration="9425000" />
       <workItem from="1598697919074" duration="30419000" />
-      <workItem from="1599371727381" duration="12154000" />
+      <workItem from="1599371727381" duration="27175000" />
     </task>
     <task id="LOCAL-00001" summary="User can save stream">
       <created>1598607354438</created>
@@ -270,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598607354474</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fixed bug e learning contents not updating">
+      <created>1599450165897</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1599450165897</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,7 +289,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="User can save stream" />
-    <option name="LAST_COMMIT_MESSAGE" value="User can save stream" />
+    <MESSAGE value="Fixed bug e learning contents not updating" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug e learning contents not updating" />
   </component>
   <component name="WindowStateProjectService">
     <state x="438" y="208" key="#Notifications" timestamp="1598665850289">
@@ -302,22 +301,22 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1598552256011" />
-    <state width="1323" height="204" key="GridCell.Tab.0.bottom" timestamp="1599395344682">
+    <state width="1323" height="204" key="GridCell.Tab.0.bottom" timestamp="1599845534542">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="204" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1599395344682" />
-    <state width="1323" height="204" key="GridCell.Tab.0.center" timestamp="1599395344681">
+    <state width="1323" height="204" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1599845534542" />
+    <state width="1323" height="204" key="GridCell.Tab.0.center" timestamp="1599845534490">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="204" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1599395344681" />
-    <state width="1323" height="204" key="GridCell.Tab.0.left" timestamp="1599395344680">
+    <state width="1323" height="204" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1599845534490" />
+    <state width="1323" height="204" key="GridCell.Tab.0.left" timestamp="1599845534324">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="204" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1599395344680" />
-    <state width="1323" height="204" key="GridCell.Tab.0.right" timestamp="1599395344681">
+    <state width="1323" height="204" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1599845534324" />
+    <state width="1323" height="204" key="GridCell.Tab.0.right" timestamp="1599845534516">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="204" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1599395344681" />
+    <state width="1323" height="204" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1599845534516" />
     <state x="409" y="106" key="NewPhpClassDialog" timestamp="1598532654825">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -342,10 +341,25 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1598589556093" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1599400717105">
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1599845524821">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1599400717105" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1599845524821" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php-line-method">
+          <url>file://$PROJECT_DIR$/packages/okotieno/laravel-teachers/src/Controllers/TeacherSubjectsController.php</url>
+          <line>28</line>
+          <properties>
+            <option name="className" value="\Okotieno\Teachers\Controllers\TeacherSubjectsController" />
+            <option name="methodName" value="index" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="atlassian-ide-plugin-workspace-issues">
     <option name="view">
