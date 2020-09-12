@@ -29,6 +29,7 @@ class TeacherSubjectsController extends Controller
     public function index(Request $request, User $user)
     {
         $response = [];
+        return  $user;
         return response()->json($response);
     }
 
@@ -54,7 +55,7 @@ class TeacherSubjectsController extends Controller
         return response()->json([
             'saves' => true,
             'message' => 'Successfully allocated units to the student',
-            'data' => []
+            'data' => $request
         ]);
     }
 
