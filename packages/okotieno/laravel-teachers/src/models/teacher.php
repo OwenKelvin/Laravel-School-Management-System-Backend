@@ -10,8 +10,9 @@ namespace Okotieno\Teachers\Models;
 
 use App\Traits\AppUser;
 use Illuminate\Database\Eloquent\Model;
+use Okotieno\Teachers\Traits\TeachesUnit;
 
 class Teacher extends Model
 {
-    use AppUser;
+    use AppUser, TeachesUnit;
 }

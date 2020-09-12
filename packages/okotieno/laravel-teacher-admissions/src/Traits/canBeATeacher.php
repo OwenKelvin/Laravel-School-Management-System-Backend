@@ -2,7 +2,8 @@
 
 namespace Okotieno\TeacherAdmissions\Traits;
 
-use Okotieno\TeacherAdmissions\Models\Teacher;
+
+use Okotieno\Teachers\Models\Teacher;
 
 trait canBeATeacher {
     public function makeTeacher() {

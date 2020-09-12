@@ -34,7 +34,7 @@ class CreateSyncModelsTable extends Migration
             ],
             [
                 'name' => 'Teachers',
-                'model_class' => \Okotieno\TeacherAdmissions\Models\Teacher::class,
+                'model_class' => \Okotieno\Teachers\Models\Teacher::class,
                 'api_link' => env('SYNC_TEACHER_API').'/api/teachers'
             ],
         ]);
