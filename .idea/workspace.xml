@@ -21,6 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dcd9c95a-1bb8-4d1f-8881-52547adc3c99" name="Default Changelist" comment="User can submit teacher subject allocation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -251,7 +252,7 @@
       <workItem from="1598277264561" duration="84708000" />
       <workItem from="1598665722475" duration="9425000" />
       <workItem from="1598697919074" duration="30419000" />
-      <workItem from="1599371727381" duration="40372000" />
+      <workItem from="1599371727381" duration="41053000" />
     </task>
     <task id="LOCAL-00001" summary="User can save stream">
       <created>1598607354438</created>
