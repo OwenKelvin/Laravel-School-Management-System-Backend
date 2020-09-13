@@ -20,13 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcd9c95a-1bb8-4d1f-8881-52547adc3c99" name="Default Changelist" comment="User can submit teacher subject allocation">
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-teachers/src/Traits/TeachesUnit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-teachers/src/migrations/2020_09_12_083256_create_teacher_unit_level_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-data-sync/src/migrations/2019_06_01_101819_create_sync_models_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-data-sync/src/migrations/2019_06_01_101819_create_sync_models_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-teacher-admissions/src/Traits/canBeATeacher.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-teacher-admissions/src/Traits/canBeATeacher.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-teachers/src/controllers/TeacherSubjectsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-teachers/src/controllers/TeacherSubjectsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-teachers/src/models/teacher.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-teachers/src/models/teacher.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -257,7 +251,7 @@
       <workItem from="1598277264561" duration="84708000" />
       <workItem from="1598665722475" duration="9425000" />
       <workItem from="1598697919074" duration="30419000" />
-      <workItem from="1599371727381" duration="36100000" />
+      <workItem from="1599371727381" duration="40372000" />
     </task>
     <task id="LOCAL-00001" summary="User can save stream">
       <created>1598607354438</created>
@@ -287,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599886056829</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="User can submit teacher subject allocation">
+      <created>1599925518072</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1599925518224</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,22 +322,22 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1598552256011" />
-    <state width="1323" height="204" key="GridCell.Tab.0.bottom" timestamp="1599897660593">
+    <state width="1323" height="129" key="GridCell.Tab.0.bottom" timestamp="1599999916692">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="204" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1599897660593" />
-    <state width="1323" height="204" key="GridCell.Tab.0.center" timestamp="1599897660592">
+    <state width="1323" height="129" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1599999916692" />
+    <state width="1323" height="129" key="GridCell.Tab.0.center" timestamp="1599999916692">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="204" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1599897660592" />
-    <state width="1323" height="204" key="GridCell.Tab.0.left" timestamp="1599897660592">
+    <state width="1323" height="129" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1599999916692" />
+    <state width="1323" height="129" key="GridCell.Tab.0.left" timestamp="1599999916692">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="204" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1599897660592" />
-    <state width="1323" height="204" key="GridCell.Tab.0.right" timestamp="1599897660593">
+    <state width="1323" height="129" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1599999916692" />
+    <state width="1323" height="129" key="GridCell.Tab.0.right" timestamp="1599999916692">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="204" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1599897660593" />
+    <state width="1323" height="129" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1599999916692" />
     <state x="409" y="106" key="NewPhpClassDialog" timestamp="1599898456383">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -349,10 +350,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="184" y="28" width="1110" height="711" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1598666442294" />
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1599886245827">
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1599925538038">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1599886245827" />
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1599925538038" />
     <state x="390" y="119" width="689" height="582" key="find.popup" timestamp="1599912170128">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
