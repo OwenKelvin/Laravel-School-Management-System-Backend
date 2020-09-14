@@ -147,9 +147,10 @@ class ELearningCourseController extends Controller
       'name' => $request->name,
       'topic_number_style_id' => TopicNumberStyle::firstOrCreate(['name' => $request->numbering])->id
     ]);
+    $eLearningCourse->saveTopics($request->topics);
     return response()->json([
       'saved' => true,
-      'message' => 'Successfully Deleted Course',
+      'message' => 'Successfully Updated Course',
       'data' => ELearningCourse::find($eLearningCourse->id)
     ]);
 

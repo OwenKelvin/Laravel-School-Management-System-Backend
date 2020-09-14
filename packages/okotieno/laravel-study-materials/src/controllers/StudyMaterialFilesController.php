@@ -12,8 +12,12 @@ class StudyMaterialFilesController extends Controller
 {
     public function index(Request $request)
     {
-        return Storage::download($request->file_path);
-        return [$request->file_path];
+      $name = 'file-'. rand(100000, 999999);
+      $headers = [
+        'Accept' => 'application/octet-stream'
+
+      ];
+      return Storage::download(trim($request->file_path), $name, $headers);
     }
 
     public function store(CreateStudyMaterialDocRequest $request)
