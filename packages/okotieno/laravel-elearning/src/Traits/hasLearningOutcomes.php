@@ -7,7 +7,7 @@ use Okotieno\ELearning\Models\TopicNumberStyle;
 
 trait hasLearningOutcomes
 {
-    public function learningOutcomes()
+      public function learningOutcomes()
     {
         return $this->hasMany(TopicLearningOutcome::class);
     }
