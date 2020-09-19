@@ -26,5 +26,11 @@ class ELearningCourseContent extends Model
             'study_material_id' => $request->study_material_id
         ]);
     }
+    public function deleteStudyMaterial($request) {
+
+      if($request['study_material_id'] == $this->study_material_id && $request['e_learning_topic_id'] == $this->e_learning_topic_id) {
+         $this->delete();
+      }
+    }
 
 }
