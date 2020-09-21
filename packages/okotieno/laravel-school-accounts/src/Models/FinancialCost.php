@@ -8,72 +8,84 @@ use Illuminate\Http\Request;
 
 class FinancialCost extends Model
 {
-    use SoftDeletes;
-    public $timestamps = false;
-    protected $fillable = [
-        'name',
-    ];
+  use SoftDeletes;
 
-    protected $appends = ['costItems'];
+  public $timestamps = false;
+  protected $fillable = [
+    'name',
+  ];
 
-    public function getCostItemsAttribute()
-    {
-        return $this->costItemsRelations;
-    }
+  protected $appends = ['cost_items'];
 
-    public static function saveCosts(Request $request)
-    {
+  public function getCostItemsAttribute()
+  {
+    return $this->costItemsRelations;
+  }
 
-        foreach ($request->all() as $cost) {
+  public static function saveCosts($request)
+  {
+
+    foreach ($request->all() as $cost) {
+
+      if (key_exists('id', $cost) && $savedCost = FinancialCost::find($cost['id'])) {
+        if ($savedCost == null) {
+          $savedCost = self::create([
+            'name' => $cost['name']
+          ]);
+          foreach ($cost['costItems'] as $costItem) {
+            $savedCost->costItemsRelations()->create([
+              'name' => $costItem['name']
+            ]);
+          }
+        } else {
+          $savedCost->update(['name' => $cost['name']]);
+          foreach ($cost['costItems'] as $costItem) {
             if (
-                key_exists('id', $cost) &&
-                $savedCost = FinancialCost::find($cost['id'])
+              key_exists('id', $costItem) &&
+              $savedCostItem = $savedCost->costItemsRelations()->find($costItem['id'])
             ) {
-                if ($savedCost == null) {
-                    $savedCost = self::create([
-                        'name' => $cost['name']
-                    ]);
-                    foreach ($cost['costItems'] as $costItem) {
-                        $savedCost->costItemsRelations()->create([
-                            'name' => $costItem['name']
-                        ]);
-                    }
-                } else {
-                    $savedCost->update(['name' => $cost['name']]);
-                    foreach ($cost['costItems'] as $costItem) {
-                        if (
-                            key_exists('id', $costItem) &&
-                            $savedCostItem = $savedCost->costItemsRelations()->find($costItem['id'])
-                        ) {
-                            if ($savedCostItem == null) {
-                                $savedCost->costItemsRelations()->create([
-                                    'name' => $costItem['name']
-                                ]);
-                            } else {
-                                $savedCostItem->update(['name' => $costItem['name']]);
-                            }
-                        }
-
-                    }
-
-                    $toDeletes = array_diff(
-                        $savedCost->costItemsRelations->pluck('id')->toArray(),
-                        collect($cost['costItems'])->pluck('id')->toArray()
-                        );
-                    if(sizeof($toDeletes) > 0){
-                        foreach ($toDeletes as $toDelete){
-                            FinancialCostItem::find($toDelete)->delete();
-                        }
-                    }
-                }
+              if ($savedCostItem == null) {
+                $savedCost->costItemsRelations()->create([
+                  'name' => $costItem['name']
+                ]);
+              } else {
+                $savedCostItem->update(['name' => $costItem['name']]);
+              }
+            } else {
+              $savedCostItem = $savedCost->costItemsRelations()->create(['name' => $costItem['name']]);
             }
 
+          }
 
+          $toDeletes = array_diff(
+            $savedCost->costItemsRelations->pluck('id')->toArray(),
+            collect($cost['costItems'])->pluck('id')->toArray()
+          );
+          if (sizeof($toDeletes) > 0) {
+            foreach ($toDeletes as $toDelete) {
+              FinancialCostItem::find($toDelete)->delete();
+            }
+          }
         }
-    }
+      }
 
-    public function costItemsRelations()
-    {
-        return $this->hasMany(FinancialCostItem::class);
+      else {
+
+        $savedCost = self::create([
+          'name' => $cost['name']
+        ]);
+
+        foreach ($cost['costItems'] as $costItem) {
+          $savedCost->costItemsRelations()->create([
+            'name' => $costItem['name']
+          ]);
+        }
+      }
     }
+  }
+
+  public function costItemsRelations()
+  {
+    return $this->hasMany(FinancialCostItem::class);
+  }
 }
