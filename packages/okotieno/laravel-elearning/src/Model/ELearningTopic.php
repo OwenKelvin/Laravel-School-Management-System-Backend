@@ -6,12 +6,14 @@ use Illuminate\Database\Eloquent\Model;
 use Okotieno\ELearning\Traits\hasELearningContents;
 use Okotieno\ELearning\Traits\hasLearningOutcomes;
 use Okotieno\ELearning\Traits\hasTopicNumbers;
+use Okotieno\ELearning\Traits\hasOnlineAssessment;
 
 class ELearningTopic extends Model
 {
     use hasTopicNumbers,
         hasLearningOutcomes,
-        hasELearningContents;
+        hasELearningContents,
+        hasOnlineAssessment;
     protected $fillable = [
         'description',
         'e_learning_course_id',

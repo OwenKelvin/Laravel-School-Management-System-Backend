@@ -19,11 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcd9c95a-1bb8-4d1f-8881-52547adc3c99" name="Default Changelist" comment="Fixed other costs not showing">
+    <list default="true" id="dcd9c95a-1bb8-4d1f-8881-52547adc3c99" name="Default Changelist" comment="Fixed error in publisher">
+      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-elearning/src/Traits/hasOnlineAssessment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-exams/src/Models/OnlineAssessment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-exams/src/migrations/2020_09_29_033051_create_online_assessments_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/academic-year/src/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/academic-year/src/routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-accounts/src/Controllers/FinancialPlanController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-accounts/src/Controllers/FinancialPlanController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-accounts/src/Traits/hasFinancialYearPlans.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-accounts/src/Traits/hasFinancialYearPlans.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/academic-year/src/controllers/AcademicYearApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/academic-year/src/controllers/AcademicYearApiController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-elearning/src/Model/ELearningTopic.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-elearning/src/Model/ELearningTopic.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-elearning/src/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-elearning/src/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/routes.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +164,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editorconfig.notification" value="c" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/packages/okotieno/laravel-school-streams/src/Controllers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/Controllers" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -176,22 +180,22 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-school-curriculum\src\Controllers" />
+      <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-school-curriculum\src\Traits" />
+      <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-school-exams\src\Models" />
+      <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-elearning\src\Traits" />
+      <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-elearning\src\Controllers" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-school-exams\src\migrations" />
       <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-teachers\src\migrations" />
       <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-school-streams\src\migrations" />
       <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-shool-streams\src\models" />
       <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-school-timetable\src\migrations" />
-      <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-school-timetable\src\models" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-school-streams\src\Controllers" />
-      <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\database\seeds" />
-      <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-school-timetable\src\models" />
-      <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-school-timetable\src\controllers" />
-      <recent name="C:\Users\oko\Desktop\TESTAPPS\fsms_backend\packages\okotieno\laravel-shool-streams\src\controllers" />
     </key>
   </component>
-  <component name="RunManager" selected="Unknown.php-s609581784">
+  <component name="RunManager" selected="npm.php-s">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -321,7 +325,21 @@
       <option name="project" value="LOCAL" />
       <updated>1600659770161</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="User can view academic year financial plan">
+      <created>1600802425403</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1600802425500</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Fixed error in publisher">
+      <created>1600833408508</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1600833408508</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -349,17 +367,19 @@
     <MESSAGE value="User can delete course content" />
     <MESSAGE value="User can update course content" />
     <MESSAGE value="Fixed other costs not showing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed other costs not showing" />
+    <MESSAGE value="User can view academic year financial plan" />
+    <MESSAGE value="Fixed error in publisher" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed error in publisher" />
   </component>
   <component name="WindowStateProjectService">
     <state x="438" y="208" key="#Notifications" timestamp="1598665850289">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="438" y="208" key="#Notifications/0.0.1366.768@0.0.1366.768" timestamp="1598665850289" />
-    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598552256011">
+    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601397374961">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1598552256011" />
+    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1601397374961" />
     <state width="1323" height="129" key="GridCell.Tab.0.bottom" timestamp="1600191948525">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -376,38 +396,38 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="129" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1600191948525" />
-    <state x="409" y="106" key="NewPhpClassDialog" timestamp="1599898456383">
+    <state x="409" y="106" key="NewPhpClassDialog" timestamp="1601396638947">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="409" y="106" key="NewPhpClassDialog/0.0.1366.768@0.0.1366.768" timestamp="1599898456383" />
+    <state x="409" y="106" key="NewPhpClassDialog/0.0.1366.768@0.0.1366.768" timestamp="1601396638947" />
     <state x="517" y="307" key="NewPhpFileDialog" timestamp="1597658828865">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="517" y="307" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1597658828865" />
-    <state x="184" y="28" width="1110" height="711" key="SettingsEditor" timestamp="1600191937332">
+    <state x="184" y="28" width="1110" height="711" key="SettingsEditor" timestamp="1600963768306">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="184" y="28" width="1110" height="711" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1600191937332" />
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1600659835650">
+    <state x="184" y="28" width="1110" height="711" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1600963768306" />
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1600921757465">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1600659835650" />
-    <state x="500" y="52" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1600192538377">
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1600921757465" />
+    <state x="500" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1601573603428">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="500" y="52" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.768@0.0.1366.768" timestamp="1600192538377" />
-    <state x="390" y="119" width="689" height="582" key="find.popup" timestamp="1600003292209">
+    <state x="500" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.768@0.0.1366.768" timestamp="1601573603428" />
+    <state x="390" y="119" width="689" height="582" key="find.popup" timestamp="1601396808706">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="390" y="119" width="689" height="582" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1600003292209" />
+    <state x="390" y="119" width="689" height="582" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1601396808706" />
     <state x="339" y="172" key="run.anything.popup" timestamp="1598589556093">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1598589556093" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1600791936836">
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1601396998551">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1600791936836" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1601396998551" />
   </component>
   <component name="atlassian-ide-plugin-workspace-issues">
     <option name="view">
