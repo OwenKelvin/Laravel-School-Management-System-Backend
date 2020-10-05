@@ -23,9 +23,11 @@ class ELearningTopic extends Model
     protected $appends = [
         'topic_number_style_name',
         'expected_learning_outcomes',
-        'learning_content_materials'
+        'learning_content_materials',
+        'online_assessments'
     ];
     protected $hidden = ['topic_number_style', 'learning_outcomes'];
+
 
     public function subTopics()
     {

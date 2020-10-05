@@ -21,6 +21,7 @@ class CreateOnlineAssessmentsTable extends Migration
       $table->dateTime('available_at');
       $table->dateTime('closing_at');
       $table->timestamps();
+      $table->softDeletes();
       $table->foreign('exam_paper_id')->references('id')->on('exam_papers');
     });
   }

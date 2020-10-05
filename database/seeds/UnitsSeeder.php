@@ -26,8 +26,8 @@ class UnitsSeeder extends Seeder
                         'name' => 'Language Activities',
                         'description' => '',
                         'levels' => [
-                            ['name' => 'LA PP1', 'level' => 1, 'semesters' => ['Term 1', 'Term 2', 'Term 3']],
-                            ['name' => 'LA PP2', 'level' => 2, 'semesters' => ['Term 1', 'Term 2', 'Term 3']],
+                            ['name' => 'LA PP1', 'class_levels' => ['PP1'], 'level' => 1, 'semesters' => ['Term 1', 'Term 2', 'Term 3']],
+                            ['name' => 'LA PP2', 'class_levels' => ['PP2'], 'level' => 2, 'semesters' => ['Term 1', 'Term 2', 'Term 3']],
                         ]
                     ]
                 ]
@@ -45,8 +45,8 @@ class UnitsSeeder extends Seeder
                         'name' => 'Mathematical Activities',
                         'description' => '',
                         'levels' => [
-                            ['name' => 'MA PP1', 'level' => 1, 'semesters' => ['Term 1', 'Term 2', 'Term 3']],
-                            ['name' => 'MA PP2', 'level' => 2, 'semesters' => ['Term 1', 'Term 2', 'Term 3']],
+                            ['name' => 'MA PP1', 'class_levels' => ['PP1'], 'level' => 1, 'semesters' => ['Term 1', 'Term 2', 'Term 3']],
+                            ['name' => 'MA PP2', 'class_levels' => ['PP2'], 'level' => 2, 'semesters' => ['Term 1', 'Term 2', 'Term 3']],
                         ]
                     ]
                 ]
@@ -63,8 +63,8 @@ class UnitsSeeder extends Seeder
                         'name' => 'Environmental Activities',
                         'description' => '',
                         'levels' => [
-                            ['name' => 'EA PP1', 'level' => 1, 'semesters' => ['Term 1', 'Term 2', 'Term 3']],
-                            ['name' => 'EA PP2', 'level' => 2, 'semesters' => ['Term 1', 'Term 2', 'Term 3']],
+                            ['name' => 'EA PP1', 'class_levels' => ['PP1'], 'level' => 1, 'semesters' => ['Term 1', 'Term 2', 'Term 3']],
+                            ['name' => 'EA PP2', 'class_levels' => ['PP2'], 'level' => 2, 'semesters' => ['Term 1', 'Term 2', 'Term 3']],
                         ]
                     ]
                 ]
@@ -81,8 +81,8 @@ class UnitsSeeder extends Seeder
                         'name' => 'Psychomotor and Creative Activities',
                         'description' => '',
                         'levels' => [
-                            ['name' => 'P&C PP1', 'level' => 1, 'semesters' => ['Term 1', 'Term 2', 'Term 3']],
-                            ['name' => 'P&C PP2', 'level' => 2, 'semesters' => ['Term 1', 'Term 2', 'Term 3']],
+                            ['name' => 'P&C PP1', 'class_levels' => ['PP1'], 'level' => 1, 'semesters' => ['Term 1', 'Term 2', 'Term 3']],
+                            ['name' => 'P&C PP2', 'class_levels' => ['PP2'], 'level' => 2, 'semesters' => ['Term 1', 'Term 2', 'Term 3']],
                         ]
                     ]
                 ]
@@ -101,8 +101,8 @@ class UnitsSeeder extends Seeder
 <p>The aim of Christian Religious Education activities at the pre-school level, is to develop awareness and appreciation of the generosity, love and care of God. This will enable the learner to acquire the qualities of sharing, respect, kindness, getting along with others and the ability to differentiate good from evil.</p>
 <p>Christian Religious Education is a unique subject in the curriculum because it touches on core aspects of the society. Christian Religious Education is concerned with both the academic and moral development of the individual learner. The teaching of CRE therefore, cannot be separated from the daily life situations which affect the physical, moral, emotional and spiritual growth of the learner. In the present society, the learner is faced with various challenges in life. The CRE Curriculum aims at equipping the learner with spiritual, intellectual and moral development to be able to deal with these challenges.</p></p>',
                         'levels' => [
-        ['name' => 'CRE PP1', 'level' => 1, 'semesters' => ['Term 1', 'Term 2', 'Term 3']],
-        ['name' => 'CRE PP2', 'level' => 2, 'semesters' => ['Term 1', 'Term 2', 'Term 3']],
+        ['name' => 'CRE PP1', 'class_levels' => ['PP1'], 'level' => 1, 'semesters' => ['Term 1', 'Term 2', 'Term 3']],
+        ['name' => 'CRE PP2', 'class_levels' => ['PP2'], 'level' => 2, 'semesters' => ['Term 1', 'Term 2', 'Term 3']],
     ]
                     ],
                     [
@@ -112,8 +112,8 @@ class UnitsSeeder extends Seeder
                         'name' => 'Islamic Religious Education',
                         'description' => '<p>Religious activities at the pre-primary level comprise learning about the supernatural being (Allah S.W.T.). The aim of Islamic religious education activities at the pre-primary level is to develop awareness and appreciation of the generosity, love and care of Allah (S.W.T.) to all His creation. This will enable children acquire the values of sharing, care, respect, love, empathy, obedience, kindness, being social, helping those in need and the ability to tell right from wrong. These activities are geared towards the continuous moral and spiritual development of young children. Children need to participate in activities that integrate religion and moral values. Teachers should help them appreciate people of different religious backgrounds and inculcate these values at an early age so that they can grow up as upright members of the society.</p>',
                         'levels' => [
-                            ['name' => 'IRE PP1', 'level' => 1, 'semesters' => ['Term 1', 'Term 2', 'Term 3']],
-                            ['name' => 'IRE PP2', 'level' => 2, 'semesters' => ['Term 1', 'Term 2', 'Term 3']],
+                            ['name' => 'IRE PP1', 'class_levels' => ['PP1'], 'level' => 1, 'semesters' => ['Term 1', 'Term 2', 'Term 3']],
+                            ['name' => 'IRE PP2', 'class_levels' => ['PP2'], 'level' => 2, 'semesters' => ['Term 1', 'Term 2', 'Term 3']],
                         ]
 
                     ],
@@ -127,8 +127,8 @@ class UnitsSeeder extends Seeder
 <p>The teaching of HRE in PP1 level aims at nurturing faith in Paramatma and recognising self-awareness and understanding social obligations and responsibility to the immediate environment. HRE thus, enables learners to enjoy learning and living through play. It provides an opportunity to instil in children good social habits and moral values for effective living as righteous individuals and useful members of the community, Nation and as responsible global citizens. The HRE curriculum, therefore, provides avenues for holistic physical mental, emotional and spiritual growth for learners. It enables them to develop personal beliefs while appreciating the beliefs of others. HRE also covers pertinent and contemporary issues in society such as children’s rights, life skills and community service.</p>
 The learners acquire requisite competencies such as Communication and Collaboration, Imagination and Creativity, Digital Literacy, Critical Thinking and Problem solving, Learning to Learn and Self-efficacy.</p></p>',
                         'levels' => [
-                            ['name' => 'HRE PP1', 'level' => 1, 'semesters' => ['Term 1', 'Term 2', 'Term 3']],
-                            ['name' => 'HRE PP2', 'level' => 2, 'semesters' => ['Term 1', 'Term 2', 'Term 3']],
+                            ['name' => 'HRE PP1', 'class_levels' => ['PP1'], 'level' => 1, 'semesters' => ['Term 1', 'Term 2', 'Term 3']],
+                            ['name' => 'HRE PP2', 'class_levels' => ['PP2'], 'level' => 2, 'semesters' => ['Term 1', 'Term 2', 'Term 3']],
                         ]
                     ]
                 ]
@@ -145,8 +145,8 @@ The learners acquire requisite competencies such as Communication and Collaborat
                         'name' => 'Pastoral Programmes of Instruction',
                         'description' => '',
                         'levels' => [
-                            ['name' => 'PPI PP1', 'level' => 1, 'semesters' => ['Term 1', 'Term 2', 'Term 3']],
-                            ['name' => 'PPI PP2', 'level' => 2, 'semesters' => ['Term 1', 'Term 2', 'Term 3']],
+                            ['name' => 'PPI PP1', 'class_levels' => ['PP1'], 'level' => 1, 'semesters' => ['Term 1', 'Term 2', 'Term 3']],
+                            ['name' => 'PPI PP2', 'class_levels' => ['PP2'], 'level' => 2, 'semesters' => ['Term 1', 'Term 2', 'Term 3']],
                         ]
                     ]
                 ]
@@ -180,6 +180,9 @@ The learners acquire requisite competencies such as Communication and Collaborat
                     foreach ($semesters as $semester) {
                         $unitLevelSaved->semesters()->save(Semester::where('name', $semester)->first());
                     }
+                  foreach ($unitLevel['class_levels'] as $classLevel) {
+                    $unitLevelSaved->taughtInClassLevels()->save(\Okotieno\SchoolCurriculum\Models\ClassLevel::where('abbreviation', $classLevel)->first());
+                  }
                 }
             }
 

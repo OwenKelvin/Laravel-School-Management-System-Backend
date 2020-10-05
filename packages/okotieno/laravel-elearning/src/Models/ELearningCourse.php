@@ -18,6 +18,7 @@ class ELearningCourse extends Model
   protected $fillable = [
     'name',
     'class_level_id',
+    'unit_level_id',
     'academic_year_id',
     'unit_id',
     'topic_number_style_id',

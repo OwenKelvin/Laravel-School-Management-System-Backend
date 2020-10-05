@@ -1443,7 +1443,7 @@ class PermissionAndRolesSeeder extends Seeder
         ];
 //
         foreach ($permissions as $index => $permission) {
-            echo ($index + 1) . " of". sizeof($permissions). "\n";
+            echo ($index + 1) . " of ". sizeof($permissions). "\r";
             if ($permission_saved = Permission::where('name', $permission['permission'])->first()) {
 
             } else {

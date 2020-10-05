@@ -21,6 +21,14 @@ class OnlineAssessment extends Model
     'title',
     'available_at',
     'closing_at',
-    'period'
+    'period',
+    'exam_paper_id'
   ];
+  protected $appends = ['exam_paper_name'];
+  public function examPaper() {
+    return $this->belongsTo(ExamPaper::class);
+  }
+  public function getExamPaperNameAttribute() {
+    return $this->examPaper->name;
+  }
 }

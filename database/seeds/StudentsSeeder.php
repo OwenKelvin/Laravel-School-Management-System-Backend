@@ -26,7 +26,7 @@ class StudentsSeeder extends Seeder
 
         $students = Student::all();
         foreach ($students as $key => $student) {
-            echo ($key + 1) . " of " . $students->count();
+            echo ($key + 1) . " of " . $students->count()."\r";
             $maxAcademicYear = $academicYears->count();
             $maxClassLevel = $classLevels->count();
             $activeYears = rand(1,2);
