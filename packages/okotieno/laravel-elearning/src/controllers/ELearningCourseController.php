@@ -39,6 +39,7 @@ class ELearningCourseController extends Controller
         'class_level_name' => $temp->classLevelName,
         'class_level_abbreviation' => $temp->classLevelAbbreviation,
         'class_level_id' => $temp->class_level_id,
+        'unit_level_id' => $temp->unit_level_id,
         'academic_year_id' => $temp->academic_year_id,
         'academic_year_name' => $temp->academicYearName,
         'topic_numbering_style' => $temp->topicNumberingStyleName,
@@ -73,6 +74,7 @@ class ELearningCourseController extends Controller
       'name' => $request->name,
       'description' => $request->description,
       'class_level_id' => $request->class_level_id,
+      'unit_level_id' => $request->unit_level_id,
       'academic_year_id' => $request->academic_year_id,
       'unit_id' => $request->unit_id,
       'topic_number_style_id' => TopicNumberStyle::firstOrCreate(['name' => $request->numbering])->id
@@ -93,7 +95,9 @@ class ELearningCourseController extends Controller
    */
   public function show($eLearningCourse)
   {
+
     $eLearningCourse = ELearningCourse::find($eLearningCourse);
+//    return $eLearningCourse->classLevel;
     $topics = $eLearningCourse->topics()->whereNull('e_learning_topic_id')->get();
     foreach ($topics as $topic) {
       $topic->subTopics;
@@ -110,6 +114,7 @@ class ELearningCourseController extends Controller
       'unit_id' => $eLearningCourse->unit_id,
       'unit_name' => $eLearningCourse->unit_name,
       'class_level_id' => $eLearningCourse->class_level_id,
+      'unit_level_id' => $eLearningCourse->unit_level_id,
       'class_level_abbreviation' => $eLearningCourse->class_level_abbreviation,
       'class_level_name' =>  $eLearningCourse->class_level_name,
       'topic_number_style_name' => $eLearningCourse->topic_number_style_name,
@@ -142,6 +147,7 @@ class ELearningCourseController extends Controller
     $eLearningCourse->update([
       'academic_year_id' => $request->academic_year_id,
       'class_level_id' => $request->class_level_id,
+      'unit_level_id' => $request->unit_level_id,
       'unit_id' => $request->unit_id,
       'description' => $request->description,
       'name' => $request->name,
