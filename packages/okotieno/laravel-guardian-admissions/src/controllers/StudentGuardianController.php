@@ -37,6 +37,7 @@ class StudentGuardianController extends Controller
      */
     public function store(CreateGuardianRequest $request)
     {
+
         $student = Student::where('student_school_id_number', $request->student_id)->first();
         $user = $student->createGuardian($request);
         return $user;

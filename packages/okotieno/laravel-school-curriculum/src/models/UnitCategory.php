@@ -1,6 +1,6 @@
 <?php
 
-namespace Okotieno\SchoolCurriculum;
+namespace Okotieno\SchoolCurriculum\Models;
 
 use App\Traits\canBeActive;
 use Illuminate\Database\Eloquent\Model;

@@ -14,8 +14,8 @@ class CreateClassLevelUnitLevelTable extends Migration
     public function up()
     {
         Schema::create('class_level_unit_level', function (Blueprint $table) {
-            $table->integer('class_level_id');
-            $table->integer('unit_level_id');
+            $table->integer('class_level_id')->unsigned();
+            $table->integer('unit_level_id')->unsigned();
 
         });
     }

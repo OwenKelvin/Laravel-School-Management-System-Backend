@@ -25,16 +25,14 @@ class AuthServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        // if(!headers_sent()){
-        //     header('Access-Control-Allow-Origin: http://localhost:4200');
-        // }
-        
         $this->registerPolicies();
+        
+        Gate::before(function ($user, $ability) {
+            return $user->hasRole('super admin') ? true : null;
+        });
+        
         Passport::routes(null, ['prefix' => 'api/oauth']);
-        // Passport::routes(null, ['middleware' => [\Barryvdh\Cors\HandleCors::class]]);
-        // Route::group(['middleware' => 'cors'], function() {
-        //     Passport::routes();
-        // });
+        
         
     }
 }

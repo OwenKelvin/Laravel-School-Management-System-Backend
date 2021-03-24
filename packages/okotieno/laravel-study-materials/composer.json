@@ -1,0 +1,16 @@
+{
+    "name": "okotieno/laravel-study-materials",
+    "description": "Laravel Package for Uploading and viewing Study materials",
+    "authors": [
+        {
+            "name": "okotieno",
+            "email": "okotieno@yahoo.com"
+        }
+    ],
+    "require": {},
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}

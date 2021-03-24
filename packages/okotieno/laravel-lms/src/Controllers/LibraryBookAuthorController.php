@@ -37,24 +37,25 @@ class LibraryBookAuthorController extends Controller
      */
     public function store(StoreLibraryBookAuthorRequest $request)
     {
-        LibraryBookAuthor::create([
+        $createdBook = LibraryBookAuthor::create([
             'name' => $request->name
         ]);
         return response()->json([
             'saved' => true,
             'message' => 'Author saved Successfully',
+            'data' => $createdBook
         ]);
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param LibraryBookAuthor $libraryBookAuthor
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(LibraryBookAuthor $libraryBookAuthor)
     {
-        //
+        return response()->json($libraryBookAuthor);
     }
 
     /**
@@ -81,17 +82,23 @@ class LibraryBookAuthorController extends Controller
         return response()->json([
             'saved' => true,
             'message' => 'Author Updated Successfully',
+            'data' => LibraryBookAuthor::find($libraryBookAuthor->id)
         ]);
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param LibraryBookAuthor $libraryBookAuthor
      * @return \Illuminate\Http\Response
+     * @throws \Exception
      */
-    public function destroy($id)
+    public function destroy( LibraryBookAuthor $libraryBookAuthor)
     {
-        //
+        $libraryBookAuthor->delete();
+        return response()->json([
+            'saved' => true,
+            'message' => 'Author Updated Successfully',
+        ]);
     }
 }

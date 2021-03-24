@@ -3,36 +3,55 @@
 namespace Okotieno\SchoolCurriculum\Controllers;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 use Okotieno\SchoolCurriculum\Requests\CreateClassLevelRequest;
 use Okotieno\SchoolCurriculum\Models\ClassLevel;
 use Okotieno\SchoolCurriculum\Requests\UpdateClassLevelRequest;
-use Okotieno\SchoolCurriculum\UnitCategory;
+
 
 class ClassLevelController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+  /**
+   * Display a listing of the resource.
+   *
+   * @param Request $request
+   * @return JsonResponse
+   */
     public function index(Request $request)
     {
-
         $classLevels = ClassLevel::all();
         if ($request->units) {
             foreach ($classLevels as $classLevel) {
                 $classLevel->units;
             }
         }
+        if ($request->include_levels) {
+            foreach ($classLevels as $key => $classLevel) {
+                if ($request->academic_year_id) {
+                    $classLevels[$key]['unit_levels'] = $classLevel->unitLevels()
+                      -> wherePivot('academic_year_id', '=', $request->academic_year_id)->get();
+                    foreach ($classLevels[$key]['unit_levels'] as $key1 => $unitLevel) {
+                        $classLevels[$key]['unit_levels'][$key1]->semesters;
+                    }
+                } else {
 
+                    foreach ($classLevel->unitLevels as $key1 => $unitLevel) {
+                        $classLevel->unitLevels['unit_levels'][$key1]->semesters;
+                    }
+                }
+
+
+            }
+        }
         return response()->json($classLevels);
     }
 
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function create()
     {
@@ -43,11 +62,12 @@ class ClassLevelController extends Controller
      * Store a newly created resource in storage.
      *
      * @param CreateClassLevelRequest $request
-     * @return Request|CreateUnitRequest
+     * @return JsonResponse
      */
     public function store(CreateClassLevelRequest $request)
     {
         return response()->json(ClassLevel::createClassLevel($request));
+
     }
 
     /**
@@ -55,7 +75,7 @@ class ClassLevelController extends Controller
      *
      * @param ClassLevel $classLevel
      * @param Request $request
-     * @return \Illuminate\Http\Response
+     * @return JsonResponse
      */
     public function show(ClassLevel $classLevel, Request $request)
     {
@@ -66,7 +86,7 @@ class ClassLevelController extends Controller
      * Show the form for editing the specified resource.
      *
      * @param  int $id
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function edit($id)
     {
@@ -78,7 +98,7 @@ class ClassLevelController extends Controller
      *
      * @param ClassLevel $classLevel
      * @param  \Illuminate\Http\Request $request
-     * @return \Illuminate\Http\Response
+     * @return JsonResponse
      */
     public function update(ClassLevel $classLevel, UpdateClassLevelRequest $request)
     {

@@ -24,7 +24,7 @@ class CreateGuardianRequest extends FormRequest
     public function rules()
     {
         return [
-            'student_id' => 'required',
+            // 'student_id' => 'required',
             'first_name' => 'required',
             'last_name' => 'required',
             'email' => 'required',

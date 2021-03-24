@@ -5,7 +5,7 @@ namespace Okotieno\SchoolCurriculum\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Okotieno\SchoolCurriculum\Requests\CreateUnitCategoryRequest;
-use Okotieno\SchoolCurriculum\UnitCategory;
+use Okotieno\SchoolCurriculum\Models\UnitCategory;
 
 class UnitCategoryController extends Controller
 {

@@ -4,15 +4,14 @@ namespace Okotieno\SchoolCurriculum\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Illuminate\Http\Request;
 use Okotieno\SchoolCurriculum\Requests\UpdateClassLevelRequest;
 use Okotieno\SchoolCurriculum\Requests\CreateClassLevelRequest;
-use Okotieno\SchoolCurriculum\Unit;
-use Okotieno\SchoolCurriculum\UnitLevel;
+use Okotieno\SchoolCurriculum\Traits\TaughtUnitLevels;
+
 
 class ClassLevel extends Model
 {
-    use softDeletes;
+    use softDeletes, TaughtUnitLevels;
     protected $fillable = ['name', 'abbreviation', 'active'];
     public $timestamps = false;
     protected $hidden = ['deleted_at'];
@@ -39,7 +38,10 @@ class ClassLevel extends Model
         ]);
         return $classLevel;
     }
-    public function subjectLevels() {
-        return $this->belongsToMany(UnitLevel::class);
+
+
+  public function unitLevels() {
+        return $this->belongsToMany(UnitLevel::class, 'academic_year_unit_allocations')
+            ->withPivot('academic_year_id');
     }
 }

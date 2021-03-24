@@ -6,5 +6,7 @@ Route::middleware(['auth:api', 'bindings'])->group(function () {
     });
 
     Route::get('/api/academic-years/all', 'Okotieno\\AcademicYear\\Controllers\\AcademicYearApiController@getAll');
-
+    Route::post('/api/academic-years/{academicYear}/unit-levels', 'Okotieno\\AcademicYear\\Controllers\\AcademicYearUnitLevelController@store');
+    Route::get('/api/academic-years/{academicYear}/unit-levels', 'Okotieno\\AcademicYear\\Controllers\\AcademicYearUnitLevelController@index');
+    Route::get('/api/academic-years/{academicYear}/semesters', 'Okotieno\\AcademicYear\\Controllers\\AcademicYearApiController@semesters');
 });

@@ -1,0 +1,16 @@
+{
+    "name": "okotieno/teacher",
+    "description": "Laravel Package for Support Staff Admission",
+    "authors": [
+        {
+            "name": "okotieno",
+            "email": "okotieno@yahoo.com"
+        }
+    ],
+    "require": {},
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}

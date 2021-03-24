@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Traits\canBeActive;
 use Illuminate\Http\Request;
 use Okotieno\Religion\Models\Religion;
-use Okotieno\SchoolCurriculum\UnitCategory;
+use Okotieno\SchoolCurriculum\Models\UnitCategory;
 
 class SchoolCurriculumApiController extends Controller
 {

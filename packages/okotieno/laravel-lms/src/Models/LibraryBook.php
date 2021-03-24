@@ -2,12 +2,14 @@
 
 namespace Okotieno\LMS\Models;
 
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Collection;
 use Illuminate\Database\Eloquent\Model;
 use DB;
 
 class LibraryBook extends Model
 {
+    use SoftDeletes;
     protected $fillable = ['title', 'publisher', 'publication_date', 'ISBN'];
 
     public static function filter($request)

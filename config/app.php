@@ -178,6 +178,19 @@ return [
         Okotieno\SchoolCurriculum\SchoolCurriculumServiceProvider::class,
         Okotieno\Students\StudentsServiceProvider::class,
         Okotieno\Procurement\ProcurementServiceProvider::class,
+        Okotieno\TeacherAdmissions\TeacherAdmissionsServiceProvider::class,
+        Okotieno\Teachers\TeachersServiceProvider::class,
+        Okotieno\Guardians\GuardiansServiceProvider::class,
+        Okotieno\SchoolAccounts\SchoolAccountsServiceProvider::class,
+        Okotieno\SchoolExams\SchoolExamsServiceProvider::class,
+        Okotieno\StudyMaterials\StudyMaterialServiceProvider::class,
+        Okotieno\PermissionsAndRoles\PermissionsAndRolesServiceProvider::class,
+        Okotieno\SupportStaffAdmissions\SupportStaffAdmissionsServiceProvider::class,
+        Okotieno\ELearning\ELearningServiceProvider::class,
+        Okotieno\Files\FilesServiceProvider::class,
+        Okotieno\TimeTable\TimeTableServiceProvider::class,
+        Okotieno\SchoolInfrastructure\SchoolInfrastructureServiceProvider::class,
+        Okotieno\SchoolStreams\SchoolStreamServiceProvider::class,
 
         /*
          * Application Service Providers...

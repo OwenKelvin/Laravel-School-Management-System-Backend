@@ -16,6 +16,7 @@ class CreateLibraryBookAuthorsTable extends Migration
         Schema::create('library_book_authors', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

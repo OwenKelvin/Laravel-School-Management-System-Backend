@@ -16,6 +16,7 @@ class CreateUnitLevelsTable extends Migration
         Schema::create('unit_levels', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->integer('level');
             $table->integer('unit_id');
             $table->softDeletes();
             // $table->timestamps();

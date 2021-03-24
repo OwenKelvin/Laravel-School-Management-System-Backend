@@ -15,9 +15,9 @@ class CreateAcademicYearUnitAllocationsTable extends Migration
     {
         Schema::create('academic_year_unit_allocations', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('unit_level_id');
-            $table->integer('academic_year_id');
-            $table->integer('class_level_id');
+            $table->integer('unit_level_id')->unsigned();
+            $table->integer('academic_year_id')->unsigned();
+            $table->integer('class_level_id')->unsigned();
             $table->timestamps();
         });
     }

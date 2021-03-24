@@ -23,6 +23,7 @@ class CreateLibraryBooksTable extends Migration
             $table->double('max_borrowing_hours')->default(6);
             $table->double('overdue_charge_per_hour')->default(6);
             $table->integer('minimum_reserve')->default(0);
+            $table->softDeletes();
             $table->timestamps();
         });
 

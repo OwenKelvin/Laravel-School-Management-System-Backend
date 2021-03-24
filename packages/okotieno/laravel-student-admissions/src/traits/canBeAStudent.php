@@ -46,7 +46,7 @@ trait canBeAStudent
 
     /**
      * @param $request
-     * @return \Illuminate\Http\JsonResponse
+     * @return array
      */
     public static function createStudent($request)
     {
@@ -58,19 +58,11 @@ trait canBeAStudent
             'birth_cert_number' => $request->birth_cert_number,
             'date_of_birth' => new Carbon($request->date_of_birth),
             'religion_id' => $request->religion_id,
-            'gender_id' => $request->religion_id
+            'gender_id' => $request->gender_id
         ]);
 
-        if ($request->student_school_id_number != null && $request->student_school_id_number != '') {
-            $idNumber = $request->student_school_id_number;
-        } else {
-            $idNumber = Student::generateIdNumber();
-        }
-
-        $user->student()->create([
-            'student_school_id_number' => $idNumber
-        ]);
-        return response()->json([
+        $user->makeStudent($request->student_school_id_number);
+        return [
             'id' => $user->id,
             'first_name' => $user->first_name,
             'last_name' => $user->last_name,
@@ -84,11 +76,22 @@ trait canBeAStudent
             'gender_id' => $user->gender_id,
             'religion_id' => $user->religion_id,
             'student_id' => $user->student->student_school_id_number
-        ]);
+        ];
     }
 
     public function student()
     {
         return $this->hasOne(Student::class);
+    }
+
+    public function makeStudent($idNumber = null)
+    {
+        if ($idNumber == null || $idNumber == '') {
+            $idNumber = Student::generateIdNumber();
+        }
+        $this->student()->create([
+            'student_school_id_number' => $idNumber
+        ]);
+        $this->assignRole('student');
     }
 }

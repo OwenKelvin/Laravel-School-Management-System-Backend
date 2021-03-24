@@ -24,17 +24,17 @@ class CreateSyncModelsTable extends Migration
         DB::table('sync_models')->insert([ // TODO move to config file
             [
                 'name' => 'Students',
-                'model_class' => App\Models\Student::class,
+                'model_class' => \Okotieno\StudentAdmissions\Models\Student::class,
                 'api_link' => env('COUNTY_SYNC_LINK') .'/api/students'
             ],
             [
                 'name' => 'Guardians',
-                'model_class' => App\Models\Guardian::class,
+                'model_class' => \Okotieno\GuardianAdmissions\Models\Guardian::class,
                 'api_link' => env('SYNC_GUARDIAN_API').'/api/guardians'
             ],
             [
                 'name' => 'Teachers',
-                'model_class' => App\Models\Teacher::class,
+                'model_class' => \Okotieno\Teachers\Models\Teacher::class,
                 'api_link' => env('SYNC_TEACHER_API').'/api/teachers'
             ],
         ]);

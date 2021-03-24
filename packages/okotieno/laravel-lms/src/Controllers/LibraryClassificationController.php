@@ -15,7 +15,7 @@ class LibraryClassificationController extends Controller
      */
     public function index()
     {
-        //
+        return response()->json(LibraryClassification::all());
     }
 
     /**

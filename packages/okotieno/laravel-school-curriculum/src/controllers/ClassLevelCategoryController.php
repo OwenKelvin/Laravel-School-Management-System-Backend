@@ -3,6 +3,7 @@
 namespace Okotieno\SchoolCurriculum\Controllers;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Okotieno\SchoolCurriculum\Requests\CreateClassLevelCategoryRequest;
 use Okotieno\SchoolCurriculum\Models\ClassLevelCategory;
@@ -12,7 +13,7 @@ class ClassLevelCategoryController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return JsonResponse
      */
     public function index()
     {
@@ -32,8 +33,8 @@ class ClassLevelCategoryController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param CreateUnitRequest $request
-     * @return Request|CreateUnitRequest
+     * @param CreateClassLevelCategoryRequest $request
+     * @return JsonResponse
      */
     public function store(CreateClassLevelCategoryRequest $request)
     {
@@ -45,7 +46,7 @@ class ClassLevelCategoryController extends Controller
      *
      * @param ClassLevelCategory $classLevelCategory
      * @param Request $request
-     * @return \Illuminate\Http\Response
+     * @return JsonResponse
      */
     public function show(ClassLevelCategory $classLevelCategory, Request $request)
     {
@@ -69,9 +70,9 @@ class ClassLevelCategoryController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request $request
-     * @param ClassLevelCategory $unit
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @param ClassLevelCategory $classLevelCategory
+     * @return JsonResponse
      */
     public function update(Request $request, ClassLevelCategory $classLevelCategory)
     {
@@ -81,7 +82,7 @@ class ClassLevelCategoryController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param ClassLevelCategory $unit
+     * @param ClassLevelCategory $classLevelCategory
      * @return void
      * @throws \Exception
      */

@@ -41,7 +41,6 @@ class LibraryBookController extends Controller
      */
     public function store(StoreLibraryBookRequest $request)
     {
-
         $created_book = LibraryBook::create([
             'title' => $request->title,
             'ISBN' => $request->ISBN,
@@ -62,13 +61,16 @@ class LibraryBookController extends Controller
         return response()->json([
             'saved' => true,
             'message' => 'Book saved Successfully',
-            'book' => [
+            'data' => [
                 'id' => $created_book->id,
                 'title' => $created_book->title,
                 'ISBN' => $created_book->ISBN,
                 'publisher' => $created_book->publisher,
                 'publication_date' => $created_book->publication_date,
                 'category' => $created_book->library_class_id,
+                'tags' => $created_book->libraryBookTags,
+                'publishers' => $created_book->libraryBookPublishers,
+                'libraryClasses' => $created_book->libraryClasses
             ]
         ]);
     }
@@ -79,20 +81,25 @@ class LibraryBookController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(LibraryBook $libraryBook)
     {
-        //
+        $libraryBook->libraryBookAuthors;
+        $libraryBook->libraryBookItems;
+        $libraryBook->libraryBookPublishers;
+        $libraryBook->libraryBookTags;
+        $libraryBook->libraryClasses;
+        return response()->json($libraryBook);
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param LibraryBook $libraryBook
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit()
     {
-        //
+        return view('okotieno.lms.books.edit_books');
     }
 
     /**

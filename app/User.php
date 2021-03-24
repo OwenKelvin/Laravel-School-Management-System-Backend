@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Traits\canSaveFileDocument;
 use Okotieno\Procurement\Traits\canProcure;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -11,8 +12,12 @@ use Okotieno\Gender\Traits\hasGender;
 use Okotieno\Religion\Traits\hasReligion;
 use Okotieno\NamePrefix\Traits\hasNamePrefix;
 use Okotieno\GuardianAdmissions\Traits\canBeAGuardian;
+use Okotieno\SchoolExams\Traits\hasSchoolExams;
+use Okotieno\StudyMaterials\Traits\canUploadStudyMaterials;
 use Spatie\Permission\Traits\HasRoles;
 use Okotieno\StudentAdmissions\Traits\canBeAStudent;
+use Okotieno\TeacherAdmissions\Traits\canBeATeacher;
+use App\Traits\HasPasswordToken;
 
 class User extends Authenticatable
 {
@@ -20,11 +25,16 @@ class User extends Authenticatable
         Notifiable,
         HasRoles,
         canBeAStudent,
+        canBeATeacher,
         canBeAGuardian,
         hasNamePrefix,
         hasGender,
         hasReligion,
-        canProcure
+        canProcure,
+        hasSchoolExams,
+        canUploadStudyMaterials,
+        canSaveFileDocument,
+        HasPasswordToken
         ;
 
     /**

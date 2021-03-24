@@ -47,14 +47,8 @@ class ProcurementRequestController extends Controller
         ]);
         return response()->json([
             'saved' => true,
-            'message' => 'Book saved Successfully',
-            'book' => [
-                'id' => $created_request->id,
-                'name' => $created_request->title,
-                'procurement_items_category_id' => $created_request->ISBN,
-                'quantity_description' => $created_request->publisher,
-                'description' => $created_request->publication_date
-            ]
+            'message' => 'Procurement Request created Successfully',
+            'data' => $created_request
         ]);
     }
 
@@ -91,7 +85,13 @@ class ProcurementRequestController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $updated = ProcurementRequest::find($id);
+        $updated ->update($request->all());
+        return response()->json([
+            'saved' => true,
+            'message' => 'Procurement Request updated Successfully',
+            'data' => $updated
+        ]);
     }
 
     /**

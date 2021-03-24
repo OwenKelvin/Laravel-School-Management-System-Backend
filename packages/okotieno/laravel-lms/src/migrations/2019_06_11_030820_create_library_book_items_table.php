@@ -19,6 +19,7 @@ class CreateLibraryBookItemsTable extends Migration
             $table->date('procurement_date');
             $table->integer('library_book_id');
             $table->boolean('reserved')->default(false);
+            $table->softDeletes();
             $table->timestamps();
         });
     }

@@ -20,7 +20,7 @@ class CreateUnitsTable extends Migration
             $table->boolean('default')->default(true);
             $table->string('name');
             $table->string('abbreviation');
-            $table->longText('essence_statement')->nullable();
+            $table->longText('description')->nullable();
             $table->softDeletes();
         });
     }

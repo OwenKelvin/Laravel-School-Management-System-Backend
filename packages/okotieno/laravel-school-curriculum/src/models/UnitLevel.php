@@ -1,20 +1,27 @@
 <?php
 
-namespace Okotieno\SchoolCurriculum;
+namespace Okotieno\SchoolCurriculum\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Okotieno\SchoolCurriculum\Traits\TaughtInClassLevel;
 
 class UnitLevel extends Model
 {
-    use softDeletes;
-    protected $fillable = ['name'];
-    public $timestamps = false;
-    protected $hidden = ['deleted_at'];
+  use softDeletes, TaughtInClassLevel;
 
-    public function unit()
-    {
-        return $this->belongsTo(Unit::class);
-    }
+  protected $fillable = ['name', 'level'];
+  public $timestamps = false;
+  protected $hidden = ['deleted_at'];
+
+  public function unit()
+  {
+    return $this->belongsTo(Unit::class);
+  }
+
+  public function semesters()
+  {
+    return $this->belongsToMany(Semester::class);
+  }
 
 }

@@ -38,6 +38,7 @@
         "psr-4": {
             "App\\": "app/",
             "Okotieno\\StudentAdmissions\\": "packages/okotieno/laravel-student-admissions/src/",
+            "Okotieno\\TeacherAdmissions\\": "packages/okotieno/laravel-teacher-admissions/src/",
             "Okotieno\\GuardianAdmissions\\": "packages/okotieno/laravel-guardian-admissions/src/",
             "Okotieno\\DataSync\\": "packages/okotieno/laravel-data-sync/src/",
             "Okotieno\\LMS\\": "packages/okotieno/laravel-lms/src/",
@@ -48,7 +49,19 @@
             "Okotieno\\AcademicYear\\": "packages/okotieno/academic-year/src/",
             "Okotieno\\SchoolCurriculum\\": "packages/okotieno/laravel-school-curriculum/src/",
             "Okotieno\\Students\\": "packages/okotieno/laravel-students/src/",
-            "Okotieno\\Procurement\\": "packages/okotieno/laravel-procurements/src/"
+            "Okotieno\\Teachers\\": "packages/okotieno/laravel-teachers/src/",
+            "Okotieno\\Guardians\\": "packages/okotieno/laravel-guardians/src/",
+            "Okotieno\\Procurement\\": "packages/okotieno/laravel-procurements/src/",
+            "Okotieno\\SchoolAccounts\\": "packages/okotieno/laravel-school-accounts/src/",
+            "Okotieno\\SchoolExams\\": "packages/okotieno/laravel-school-exams/src/",
+            "Okotieno\\StudyMaterials\\": "packages/okotieno/laravel-study-materials/src/",
+            "Okotieno\\PermissionsAndRoles\\": "packages/okotieno/laravel-permissions-and-roles/src/",
+            "Okotieno\\SupportStaffAdmissions\\": "packages/okotieno/laravel-support-staff-admissions/src/",
+            "Okotieno\\ELearning\\": "packages/okotieno/laravel-elearning/src/",
+            "Okotieno\\Files\\": "packages/okotieno/laravel-files/src/",
+            "Okotieno\\TimeTable\\": "packages/okotieno/laravel-school-timetable/src/",
+            "Okotieno\\SchoolInfrastructure\\": "packages/okotieno/laravel-school-infrastructures/src/",
+            "Okotieno\\SchoolStreams\\": "packages/okotieno/laravel-school-streams/src/"
         },
         "classmap": [
             "database/seeds",

@@ -27,6 +27,7 @@ class ClassLevelCategory extends Model
     {
         $classLevelCategory->name = $request->name;
         $classLevelCategory->active = $request->active;
+        $classLevelCategory->description = $request->description;
         $classLevelCategory->save();
 
         return $classLevelCategory;
