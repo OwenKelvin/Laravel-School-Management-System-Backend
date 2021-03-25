@@ -27,6 +27,9 @@ class TopicOnlineAssessmentController  extends Controller
     {
         return response()->json();
     }
+    public function show($topicId, OnlineAssessment $onlineAssessment) {
+      return $onlineAssessment;
+    }
 
     public function store(ELearningTopic $eLearningTopic, Request $request) {
       return response()->json([
