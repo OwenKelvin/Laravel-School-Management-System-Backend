@@ -19,13 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcd9c95a-1bb8-4d1f-8881-52547adc3c99" name="Default Changelist" comment="User can delete online assessment">
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/.idea/Controllers.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/controllers/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="dcd9c95a-1bb8-4d1f-8881-52547adc3c99" name="Default Changelist" comment="User create assessment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/okotieno/laravel-elearning/src/controllers/TopicOnlineAssessmentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/okotieno/laravel-elearning/src/controllers/TopicOnlineAssessmentController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +39,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PackageJsonUpdateNotifier">
-    <dismissed value="$PROJECT_DIR$/package.json" />
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -165,7 +165,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editorconfig.notification" value="c" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../GARIAMBAH/invoicing-backend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/packages/okotieno/laravel-school-curriculum/src/Controllers" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -179,6 +179,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -239,6 +240,11 @@
       <envs />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.php-s" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -255,6 +261,11 @@
       <workItem from="1598665722475" duration="9425000" />
       <workItem from="1598697919074" duration="30419000" />
       <workItem from="1599371727381" duration="58658000" />
+      <workItem from="1616562847041" duration="313000" />
+      <workItem from="1616563165751" duration="816000" />
+      <workItem from="1616567812499" duration="1267000" />
+      <workItem from="1616792153039" duration="2051000" />
+      <workItem from="1616922044980" duration="5521000" />
     </task>
     <task id="LOCAL-00001" summary="User can save stream">
       <created>1598607354438</created>
@@ -354,14 +365,7 @@
       <option name="project" value="LOCAL" />
       <updated>1601870118398</updated>
     </task>
-    <task id="LOCAL-00015" summary="User can delete online assessment">
-      <created>1602129628395</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1602129628395</updated>
-    </task>
-    <option name="localTasksCounter" value="16" />
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -393,62 +397,7 @@
     <MESSAGE value="Fixed error in publisher" />
     <MESSAGE value="User can save unit allocations" />
     <MESSAGE value="User create assessment" />
-    <MESSAGE value="User can delete online assessment" />
-    <option name="LAST_COMMIT_MESSAGE" value="User can delete online assessment" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601397374961">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1601397374961" />
-    <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1604588178662">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="463" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1604588178662" />
-    <state width="1323" height="129" key="GridCell.Tab.0.bottom" timestamp="1600191948525">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1323" height="129" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1600191948525" />
-    <state width="1323" height="129" key="GridCell.Tab.0.center" timestamp="1600191948525">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1323" height="129" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1600191948525" />
-    <state width="1323" height="129" key="GridCell.Tab.0.left" timestamp="1600191948525">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1323" height="129" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1600191948525" />
-    <state width="1323" height="129" key="GridCell.Tab.0.right" timestamp="1600191948525">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1323" height="129" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1600191948525" />
-    <state x="409" y="106" key="NewPhpClassDialog" timestamp="1601396638947">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="409" y="106" key="NewPhpClassDialog/0.0.1366.768@0.0.1366.768" timestamp="1601396638947" />
-    <state x="184" y="28" width="1110" height="711" key="SettingsEditor" timestamp="1600963768306">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="184" y="28" width="1110" height="711" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1600963768306" />
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1602129635859">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1602129635859" />
-    <state x="500" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1601573603428">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="500" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.768@0.0.1366.768" timestamp="1601573603428" />
-    <state x="390" y="119" width="698" height="582" key="find.popup" timestamp="1608309095957">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="390" y="119" width="698" height="582" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1608309095957" />
-    <state x="339" y="172" key="run.anything.popup" timestamp="1601775360125">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1601775360125" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1608308776660">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1608308776660" />
+    <option name="LAST_COMMIT_MESSAGE" value="User create assessment" />
   </component>
   <component name="atlassian-ide-plugin-workspace-issues">
     <option name="view">
