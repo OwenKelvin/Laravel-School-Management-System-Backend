@@ -1,10 +1,10 @@
 <?php
 
-namespace Okotieno\LMS\Request;
+namespace Okotieno\LMS\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class StoreLibraryBookReturnRequest extends FormRequest
+class StoreLibraryBookTagRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -13,7 +13,7 @@ class StoreLibraryBookReturnRequest extends FormRequest
      */
     public function authorize()
     {
-        return auth()->user()->can('mark library book returned');
+        return auth()->user()->can('add library book');
     }
 
     /**
@@ -24,19 +24,20 @@ class StoreLibraryBookReturnRequest extends FormRequest
     public function rules()
     {
         return [
-            'ref' => 'required',
+
+            'name' => 'required|unique:library_book_tags',
         ];
     }
     public function messages()
     {
         return [
-            'ref.required' => 'The book Unique Reference is required',
+            'name.required' => 'The Tag name is required',
         ];
     }
     protected function failedAuthorization()
     {
         throw new \Illuminate\Auth\Access\AuthorizationException(
-            'You are not authorised to mark a library book as returned'
+            'You are not authorised to Create a Tag'
         );
     }
 }

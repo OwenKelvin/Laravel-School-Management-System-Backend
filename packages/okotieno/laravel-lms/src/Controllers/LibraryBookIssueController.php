@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\User;
 use Illuminate\Http\Request;
 use Okotieno\LMS\Models\LibraryBookItem;
-use Okotieno\LMS\Request\StoreLibraryBookIssueRequest;
+use Okotieno\LMS\Requests\StoreLibraryBookIssueRequest;
 
 class LibraryBookIssueController extends Controller
 {

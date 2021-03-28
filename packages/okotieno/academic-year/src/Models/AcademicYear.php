@@ -9,6 +9,9 @@ use Okotieno\SchoolAccounts\Traits\hasFinancialYearPlans;
 use Okotieno\SchoolCurriculum\Models\ClassLevel;
 use Okotieno\TimeTable\Traits\HasTimeTables;
 
+/**
+ * @property mixed name
+ */
 class AcademicYear extends Model
 {
     use hasFinancialYearPlans, HasTimeTables;

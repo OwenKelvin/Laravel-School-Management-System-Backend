@@ -8,7 +8,7 @@ use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Okotieno\LMS\Models\LibraryBookPublisher;
-use Okotieno\LMS\Request\StoreLibraryBookPublisherRequest;
+use Okotieno\LMS\Requests\StoreLibraryBookPublisherRequest;
 
 class LibraryBookPublisherController extends Controller
 {

@@ -1,17 +1,10 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: oko
- * Date: 1/10/2020
- * Time: 7:59 PM
- */
 
-namespace Okotieno\Procurement\Request;
-
+namespace Okotieno\LMS\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class ProcurementTenderCreateRequest extends FormRequest
+class UpdateLibraryBookItemRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -20,7 +13,7 @@ class ProcurementTenderCreateRequest extends FormRequest
      */
     public function authorize()
     {
-        return auth()->user()->can('create procurement tender');
+        return auth()->user()->can('add library book');
     }
 
     /**
@@ -31,21 +24,19 @@ class ProcurementTenderCreateRequest extends FormRequest
     public function rules()
     {
         return [
-            'expiry_datetime' => 'required',
-            'procurement_request_id' => 'required'
+            'ref' => 'required',
         ];
     }
     public function messages()
     {
         return [
-            'expiry_datetime.required' => 'Expiry DateTime is required',
-            'procurement_request_id.required' => 'Procurement request is required'
+            'ref.required' => 'The book Unique Reference is required',
         ];
     }
     protected function failedAuthorization()
     {
         throw new \Illuminate\Auth\Access\AuthorizationException(
-            'You are not authorised to create a procurement tender'
+            'You are not authorised to update library book item'
         );
     }
 }

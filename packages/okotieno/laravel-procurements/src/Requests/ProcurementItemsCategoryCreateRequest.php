@@ -6,12 +6,12 @@
  * Time: 7:59 PM
  */
 
-namespace Okotieno\Procurement\Request;
+namespace Okotieno\Procurement\Requests;
 
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class ProcurementVendorCreateRequest extends FormRequest
+class ProcurementItemsCategoryCreateRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -20,7 +20,7 @@ class ProcurementVendorCreateRequest extends FormRequest
      */
     public function authorize()
     {
-        return auth()->user()->can('create procurement vendor');
+        return auth()->user()->can('make procurement item category');
     }
 
     /**
@@ -32,20 +32,18 @@ class ProcurementVendorCreateRequest extends FormRequest
     {
         return [
             'name' => 'required',
-            'procurement_items_categories' => 'required'
         ];
     }
     public function messages()
     {
         return [
-            'name.required' => 'Name of item to be procured is required',
-            'procurement_items_categories.required' => 'Item Category is required'
+            'name.required' => 'Item Category name is required',
         ];
     }
     protected function failedAuthorization()
     {
         throw new \Illuminate\Auth\Access\AuthorizationException(
-            'You are not authorised to make a procurement request'
+            'You are not authorised to create a procurement item category'
         );
     }
 }

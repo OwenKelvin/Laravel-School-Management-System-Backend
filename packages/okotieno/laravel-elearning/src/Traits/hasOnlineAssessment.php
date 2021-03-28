@@ -24,9 +24,9 @@ trait hasOnlineAssessment
     return OnlineAssessment::where('e_learning_topic_id', $this->id)->get();
   }
 
-  public function saveOnlineAssessment($request)
+  public function saveOnlineAssessment($eLearningTopic, $request)
   {
-    $course = ELearningCourse::find($this->e_learning_course_id);
+    $course = ELearningCourse::find($eLearningTopic->e_learning_course_id);
     $examPaper = ExamPaper::create([
       'name' => $request['name'],
       'unit_level_id' => $course->unit_level_id,

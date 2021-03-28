@@ -5,8 +5,8 @@ namespace Okotieno\Procurement\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Okotieno\Procurement\Models\ProcurementRequest;
-use Okotieno\Procurement\Request\ProcurementRequestApprovalCreateRequest;
-use Okotieno\Procurement\Request\ProcurementRequestCreateRequest;
+use Okotieno\ProcurementProcurementRequestApprovalCreateRequest;
+use Okotieno\ProcurementProcurementRequestCreateRequest;
 
 class ProcurementRequestApprovalController extends Controller
 {

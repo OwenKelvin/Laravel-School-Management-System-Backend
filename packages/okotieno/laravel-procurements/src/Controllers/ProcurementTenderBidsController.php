@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Okotieno\Procurement\Models\ProcurementBid;
 use Okotieno\Procurement\Models\ProcurementTender;
-use Okotieno\Procurement\Request\ProcurementBidCreateRequest;
+use Okotieno\Procurement\Requests\ProcurementBidCreateRequest;
 
 class ProcurementTenderBidsController extends Controller
 {

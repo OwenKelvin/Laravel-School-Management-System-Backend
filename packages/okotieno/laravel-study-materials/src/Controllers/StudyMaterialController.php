@@ -3,13 +3,9 @@
 namespace Okotieno\StudyMaterials\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\User;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
 use Okotieno\StudyMaterials\Models\StudyMaterial;
 use Okotieno\StudyMaterials\Models\StudyMaterialDoc;
-use Okotieno\StudyMaterials\Request\CreateStudyMaterialDocRequest;
-use Okotieno\StudyMaterials\Request\CreateStudyMaterialRequest;
+use Okotieno\StudyMaterials\Requests\CreateStudyMaterialRequest;
 
 class StudyMaterialController extends Controller
 {

@@ -1,10 +1,17 @@
 <?php
+/**
+ * Created by IntelliJ IDEA.
+ * User: oko
+ * Date: 1/10/2020
+ * Time: 7:59 PM
+ */
 
-namespace Okotieno\LMS\Request;
+namespace Okotieno\Procurement\Requests;
+
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class StoreLibraryBookAuthorRequest extends FormRequest
+class ProcurementRequestApprovalCreateRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -13,7 +20,7 @@ class StoreLibraryBookAuthorRequest extends FormRequest
      */
     public function authorize()
     {
-        return auth()->user()->can('add library book');
+        return auth()->user()->can('approve procurement request');
     }
 
     /**
@@ -24,19 +31,21 @@ class StoreLibraryBookAuthorRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required',
+            'approve' => 'required',
+            'procurement_request_id' => 'required'
         ];
     }
     public function messages()
     {
         return [
-            'name.required' => 'The Author\'s name is required',
+            'approve.required' => 'Approve/Reject field is required',
+            'procurement_request_id.required' => 'Id of Item to approve is required'
         ];
     }
     protected function failedAuthorization()
     {
         throw new \Illuminate\Auth\Access\AuthorizationException(
-            'You are not authorised to Create a Publisher'
+            'You are not authorised to approve a procurement request'
         );
     }
 }

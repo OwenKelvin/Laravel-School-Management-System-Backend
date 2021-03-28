@@ -16,8 +16,8 @@ use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Okotieno\PermissionsAndRoles\Models\Role;
-use Okotieno\SupportStaffAdmissions\Request\CreateSupportStaffRequest;
-use Okotieno\TeacherAdmissions\Request\CreateTeacherRequest;
+use Okotieno\SupportStaffAdmissions\Requests\CreateSupportStaffRequest;
+use Okotieno\TeacherAdmissions\Requests\CreateTeacherRequest;
 
 class SupportStaffAdmissionsController extends Controller
 {

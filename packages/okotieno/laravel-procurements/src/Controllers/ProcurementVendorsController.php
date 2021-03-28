@@ -6,15 +6,16 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Okotieno\Procurement\Models\ProcurementItemsCategory;
 use Okotieno\Procurement\Models\ProcurementVendor;
-use Okotieno\Procurement\Request\ProcurementRequestCreateRequest;
-use Okotieno\Procurement\Request\ProcurementVendorCreateRequest;
+use Okotieno\Procurement\Requests\ProcurementRequestCreateRequest;
+//use Okotieno\Procurement\Requests\ProcurementProcurementVendorCreateRequest;
+use Okotieno\Procurement\Requests\ProcurementVendorCreateRequest;
 
 class ProcurementVendorsController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse
      */
     public function index()
     {
@@ -35,7 +36,7 @@ class ProcurementVendorsController extends Controller
      * Store a newly created resource in storage.
      *
      * @param ProcurementRequestCreateRequest $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse
      */
     public function store(ProcurementVendorCreateRequest $request)
     {
@@ -119,7 +120,7 @@ class ProcurementVendorsController extends Controller
      * Remove the specified resource from storage.
      *
      * @param $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse
      */
     public function destroy($id)
     {

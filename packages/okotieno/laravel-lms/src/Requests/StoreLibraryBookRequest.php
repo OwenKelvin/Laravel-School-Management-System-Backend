@@ -1,6 +1,6 @@
 <?php
 
-namespace Okotieno\LMS\Request;
+namespace Okotieno\LMS\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

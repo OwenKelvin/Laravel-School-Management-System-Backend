@@ -15,7 +15,7 @@ use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Okotieno\ELearning\Models\ELearningCourse;
 use Okotieno\ELearning\Models\TopicNumberStyle;
-use Okotieno\ELearning\Request\StoreELearningCourseRequest;
+use Okotieno\ELearning\Requests\StoreELearningCourseRequest;
 
 class ELearningCourseController extends Controller
 {

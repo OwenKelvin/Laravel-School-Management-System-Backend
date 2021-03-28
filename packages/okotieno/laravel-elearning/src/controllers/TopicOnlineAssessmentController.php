@@ -32,10 +32,11 @@ class TopicOnlineAssessmentController  extends Controller
     }
 
     public function store(ELearningTopic $eLearningTopic, Request $request) {
+      return $eLearningTopic;
       return response()->json([
         'saved' => true,
         'message' => 'Successfully Created online Assessment',
-        $eLearningTopic->saveOnlineAssessment($request->all())
+        $eLearningTopic->saveOnlineAssessment($eLearningTopic, $request->all())
       ]);
     }
     public function destroy(ELearningTopic $eLearningTopic, OnlineAssessment $onlineAssessment) {

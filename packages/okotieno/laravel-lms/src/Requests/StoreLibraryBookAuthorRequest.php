@@ -1,10 +1,10 @@
 <?php
 
-namespace Okotieno\LMS\Request;
+namespace Okotieno\LMS\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class StoreLibraryBookTagRequest extends FormRequest
+class StoreLibraryBookAuthorRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,20 +24,19 @@ class StoreLibraryBookTagRequest extends FormRequest
     public function rules()
     {
         return [
-
-            'name' => 'required|unique:library_book_tags',
+            'name' => 'required',
         ];
     }
     public function messages()
     {
         return [
-            'name.required' => 'The Tag name is required',
+            'name.required' => 'The Author\'s name is required',
         ];
     }
     protected function failedAuthorization()
     {
         throw new \Illuminate\Auth\Access\AuthorizationException(
-            'You are not authorised to Create a Tag'
+            'You are not authorised to Create a Publisher'
         );
     }
 }

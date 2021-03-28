@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\User;
 use Illuminate\Http\Request;
 use Okotieno\Procurement\Models\ProcurementRequest;
-use Okotieno\Procurement\Request\ProcurementRequestCreateRequest;
+use Okotieno\ProcurementProcurementRequestCreateRequest;
 
 class ProcurementRequestApiController extends Controller
 {

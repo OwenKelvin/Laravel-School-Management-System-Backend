@@ -1,17 +1,10 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: oko
- * Date: 1/10/2020
- * Time: 7:59 PM
- */
 
-namespace Okotieno\Procurement\Request;
-
+namespace Okotieno\LMS\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class ProcurementItemsCategoryCreateRequest extends FormRequest
+class StoreLibraryBookPublisherRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -20,7 +13,7 @@ class ProcurementItemsCategoryCreateRequest extends FormRequest
      */
     public function authorize()
     {
-        return auth()->user()->can('make procurement item category');
+        return auth()->user()->can('add library book');
     }
 
     /**
@@ -37,13 +30,13 @@ class ProcurementItemsCategoryCreateRequest extends FormRequest
     public function messages()
     {
         return [
-            'name.required' => 'Item Category name is required',
+            'name.required' => 'The Author\'s name is required',
         ];
     }
     protected function failedAuthorization()
     {
         throw new \Illuminate\Auth\Access\AuthorizationException(
-            'You are not authorised to create a procurement item category'
+            'You are not authorised to Create an Author'
         );
     }
 }

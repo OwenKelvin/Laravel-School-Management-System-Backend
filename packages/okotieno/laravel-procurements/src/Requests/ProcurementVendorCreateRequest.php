@@ -6,12 +6,12 @@
  * Time: 7:59 PM
  */
 
-namespace Okotieno\Procurement\Request;
+namespace Okotieno\Procurement\Requests;
 
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class ProcurementBidCreateRequest extends FormRequest
+class ProcurementVendorCreateRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -20,7 +20,7 @@ class ProcurementBidCreateRequest extends FormRequest
      */
     public function authorize()
     {
-        return auth()->user()->can('create procurement bid');
+        return auth()->user()->can('create procurement vendor');
     }
 
     /**
@@ -31,24 +31,21 @@ class ProcurementBidCreateRequest extends FormRequest
     public function rules()
     {
         return [
-            'price_per_unit' => 'required',
-            'vendor_id' => 'required',
-            'unit_description' => 'required'
+            'name' => 'required',
+            'procurement_items_categories' => 'required'
         ];
     }
     public function messages()
     {
         return [
-            'price_per_unit.required' => 'Price Per Unit field is required',
-            'price_per_unit.double' => 'Price Per Unit field is invalid',
-            'vendor_id.required' => 'Vendor field is invalid',
-            'unit_description.required' => 'Unit Description field is required',
+            'name.required' => 'Name of item to be procured is required',
+            'procurement_items_categories.required' => 'Item Category is required'
         ];
     }
     protected function failedAuthorization()
     {
         throw new \Illuminate\Auth\Access\AuthorizationException(
-            'You are not authorised to create a procurement tender'
+            'You are not authorised to make a procurement request'
         );
     }
 }

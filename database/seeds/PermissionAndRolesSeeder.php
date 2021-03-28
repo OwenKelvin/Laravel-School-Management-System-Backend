@@ -1464,7 +1464,7 @@ class PermissionAndRolesSeeder extends Seeder
             \App\User::create([
                 'first_name' => 'Admin',
                 'last_name' => 'Admin',
-                'email' => 'info@furahacapital.com'
+                'email' => 'info@furahasolutions.tech'
             ])->setPassword('Password1')->assignRole('super admin');
         } catch (Exception $e) {
         }

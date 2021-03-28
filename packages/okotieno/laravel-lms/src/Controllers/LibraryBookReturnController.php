@@ -7,7 +7,7 @@ use App\User;
 use Illuminate\Http\Request;
 use Okotieno\LMS\Models\LibraryBook;
 use Okotieno\LMS\Models\LibraryBookItem;
-use Okotieno\LMS\Request\StoreLibraryBookReturnRequest;
+use Okotieno\LMS\Requests\StoreLibraryBookReturnRequest;
 
 class LibraryBookReturnController extends Controller
 {

@@ -12,7 +12,7 @@ namespace Okotieno\ELearning\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Okotieno\ELearning\Models\ELearningCourseContent;
-use Okotieno\ELearning\Request\StoreELearningCourseContentRequest;
+use Okotieno\ELearningStoreELearningCourseContentRequest;
 use Okotieno\StudyMaterials\Models\StudyMaterial;
 
 class ELearningCourseContentController extends Controller

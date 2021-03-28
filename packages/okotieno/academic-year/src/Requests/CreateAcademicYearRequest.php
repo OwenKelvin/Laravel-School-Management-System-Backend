@@ -4,6 +4,12 @@ namespace Okotieno\AcademicYear\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
+/**
+ * @property mixed name
+ * @property mixed start_date
+ * @property mixed end_date
+ * @property mixed class_levels
+ */
 class CreateAcademicYearRequest extends FormRequest
 {
     /**
@@ -11,7 +17,7 @@ class CreateAcademicYearRequest extends FormRequest
      *
      * @return bool
      */
-    public function authorize()
+    public function authorize(): bool
     {
         return auth()->user()->can('create academic year');
     }

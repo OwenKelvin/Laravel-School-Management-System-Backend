@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
-use Okotieno\StudyMaterials\Request\CreateStudyMaterialDocRequest;
+use Okotieno\StudyMaterials\Requests\CreateStudyMaterialDocRequest;
 
 class StudyMaterialFilesController extends Controller
 {

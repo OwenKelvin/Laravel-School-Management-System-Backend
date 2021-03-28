@@ -7,8 +7,8 @@ use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Okotieno\LMS\Models\LibraryBook;
 use Okotieno\LMS\Models\LibraryBookItem;
-use Okotieno\LMS\Request\StoreLibraryBookItemRequest;
-use Okotieno\LMS\Request\UpdateLibraryBookItemRequest;
+use Okotieno\LMS\Requests\StoreLibraryBookItemRequest;
+use Okotieno\LMS\Requests\UpdateLibraryBookItemRequest;
 
 class LibraryBookItemController extends Controller
 {

@@ -5,7 +5,7 @@ namespace Okotieno\Procurement\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Okotieno\Procurement\Models\ProcurementRequest;
-use Okotieno\Procurement\Request\ProcurementRequestCreateRequest;
+use Okotieno\Procurement\Requests\ProcurementRequestCreateRequest;
 
 class ProcurementRequestController extends Controller
 {
@@ -47,7 +47,7 @@ class ProcurementRequestController extends Controller
         ]);
         return response()->json([
             'saved' => true,
-            'message' => 'Procurement Request created Successfully',
+            'message' => 'Procurement Requests created Successfully',
             'data' => $created_request
         ]);
     }
@@ -89,7 +89,7 @@ class ProcurementRequestController extends Controller
         $updated ->update($request->all());
         return response()->json([
             'saved' => true,
-            'message' => 'Procurement Request updated Successfully',
+            'message' => 'Procurement Requests updated Successfully',
             'data' => $updated
         ]);
     }
@@ -105,7 +105,7 @@ class ProcurementRequestController extends Controller
         ProcurementRequest::destroy($id);
         return response()->json([
             'saved' => true,
-            'message' => 'Procurement Request deleted successfully'
+            'message' => 'Procurement Requests deleted successfully'
         ]);
     }
 }

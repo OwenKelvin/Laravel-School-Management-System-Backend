@@ -7,14 +7,17 @@ use Okotieno\ELearning\Traits\hasELearningContents;
 use Okotieno\ELearning\Traits\hasLearningOutcomes;
 use Okotieno\ELearning\Traits\hasTopicNumbers;
 use Okotieno\ELearning\Traits\hasOnlineAssessment;
+use Okotieno\ELearning\Traits\hasELearningCourse;
 
 class ELearningTopic extends Model
 {
     use hasTopicNumbers,
         hasLearningOutcomes,
         hasELearningContents,
-        hasOnlineAssessment;
-    protected $fillable = [
+        hasOnlineAssessment,
+        hasELearningCourse;
+
+  protected $fillable = [
         'description',
         'e_learning_course_id',
         'e_learning_topic_id',

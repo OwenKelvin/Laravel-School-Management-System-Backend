@@ -5,7 +5,6 @@ namespace App;
 use App\Traits\canSaveFileDocument;
 use Okotieno\Procurement\Traits\canProcure;
 use Illuminate\Notifications\Notifiable;
-use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Laravel\Passport\HasApiTokens;
 use Okotieno\Gender\Traits\hasGender;

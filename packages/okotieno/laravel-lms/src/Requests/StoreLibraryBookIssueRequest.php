@@ -1,10 +1,10 @@
 <?php
 
-namespace Okotieno\LMS\Request;
+namespace Okotieno\LMS\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class UpdateLibraryBookItemRequest extends FormRequest
+class StoreLibraryBookIssueRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -13,7 +13,7 @@ class UpdateLibraryBookItemRequest extends FormRequest
      */
     public function authorize()
     {
-        return auth()->user()->can('add library book');
+        return auth()->user()->can('issue library book');
     }
 
     /**
@@ -24,19 +24,21 @@ class UpdateLibraryBookItemRequest extends FormRequest
     public function rules()
     {
         return [
+            'id_number' => 'required',
             'ref' => 'required',
         ];
     }
     public function messages()
     {
         return [
+            'id_number.required' => 'User School Id Number is required',
             'ref.required' => 'The book Unique Reference is required',
         ];
     }
     protected function failedAuthorization()
     {
         throw new \Illuminate\Auth\Access\AuthorizationException(
-            'You are not authorised to update library book item'
+            'You are not authorised to issue a library book'
         );
     }
 }

@@ -7,7 +7,7 @@ use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Okotieno\Procurement\Models\ProcurementRequest;
 use Okotieno\Procurement\Models\ProcurementTender;
-use Okotieno\Procurement\Request\ProcurementTenderCreateRequest;
+use Okotieno\Procurement\Requests\ProcurementTenderCreateRequest;
 
 class ProcurementTenderController extends Controller
 {
