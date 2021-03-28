@@ -4,7 +4,7 @@ namespace Okotieno\StudentAdmissions;
 
 use Illuminate\Support\ServiceProvider;
 
-class StudentAdmissionsServicesProvider extends ServiceProvider
+class StudentAdmissionsServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap services.

@@ -166,7 +166,7 @@ return [
          * Package Service Providers...
          */
         Spatie\Permission\PermissionServiceProvider::class,
-        Okotieno\StudentAdmissions\StudentAdmissionsServicesProvider::class,
+        Okotieno\StudentAdmissions\StudentAdmissionsServiceProvider::class,
         Okotieno\GuardianAdmissions\GuardiansAdmissionServiceProvider::class,
         Okotieno\LMS\LMSServiceProvider::class,
         Okotieno\DataSync\DataSyncProvider::class,

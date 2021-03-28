@@ -1,6 +1,6 @@
 <?php
 
-namespace Okotieno\TeacherAdmissions\Request;
+namespace Okotieno\TeacherAdmissions\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

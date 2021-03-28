@@ -1,10 +1,10 @@
 <?php
 
-namespace Okotieno\SchoolCurriculum\traits;
+namespace Okotieno\SchoolCurriculum\Traits;
 
 use Okotieno\SchoolCurriculum\Models\Course;
 
-trait takesCourses
+trait TakesCourses
 {
     public function courses()
     {

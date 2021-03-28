@@ -1,10 +1,10 @@
 <?php
 
-namespace Okotieno\SchoolCurriculum\traits;
+namespace Okotieno\SchoolCurriculum\Traits;
 
 use Okotieno\StudentAdmissions\Models\Student;
 
-trait takenByStudents
+trait TakenByStudents
 {
     public function students()
     {

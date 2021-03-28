@@ -1,10 +1,10 @@
 <?php
 
-namespace Okotieno\ELearning\Requests;
+namespace Okotieno\SchoolCurriculum\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class StoreELearningCourseRequest extends FormRequest
+class UpdateClassLevelRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -13,7 +13,7 @@ class StoreELearningCourseRequest extends FormRequest
      */
     public function authorize()
     {
-        return auth()->user()->can('create e-learning course');
+        return auth()->user()->can('create class level');
     }
 
     /**
@@ -25,18 +25,16 @@ class StoreELearningCourseRequest extends FormRequest
     {
         return [
             'name' => 'required',
+            'class_level_category_id' => 'required',
+            'abbr' => 'required',
         ];
     }
     public function messages()
     {
         return [
-            'name.required' => 'The Author\'s name is required',
+            'name.required'=> 'The name field is required',
+            'abbr.required' => 'The Abbreviation field required',
+            'class_level_category_id' => 'The class level category field is required'
         ];
-    }
-    protected function failedAuthorization()
-    {
-        throw new \Illuminate\Auth\Access\AuthorizationException(
-            'You are not authorised to Create a an E - Learning Course'
-        );
     }
 }

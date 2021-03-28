@@ -1,6 +1,6 @@
 <?php
 
-namespace Okotieno\SupportStaffAdmissions\Request;
+namespace Okotieno\SupportStaffAdmissions\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

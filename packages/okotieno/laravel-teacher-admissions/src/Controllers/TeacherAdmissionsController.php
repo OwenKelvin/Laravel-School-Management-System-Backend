@@ -13,7 +13,7 @@ use App\Http\Controllers\Controller;
 use App\User;
 
 use Illuminate\Http\Request;
-use Okotieno\TeacherAdmissions\Request\CreateTeacherRequest;
+use Okotieno\TeacherAdmissions\Requests\CreateTeacherRequest;
 
 class TeacherAdmissionsController extends Controller
 {
