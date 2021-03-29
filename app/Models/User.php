@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Traits\canSaveFileDocument;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Okotieno\Procurement\Traits\canProcure;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -18,6 +19,9 @@ use Okotieno\StudentAdmissions\Traits\canBeAStudent;
 use Okotieno\TeacherAdmissions\Traits\canBeATeacher;
 use App\Traits\HasPasswordToken;
 
+/**
+ * @method static find($id)
+ */
 class User extends Authenticatable
 {
     use HasApiTokens,
@@ -33,7 +37,8 @@ class User extends Authenticatable
         hasSchoolExams,
         canUploadStudyMaterials,
         canSaveFileDocument,
-        HasPasswordToken
+        HasPasswordToken,
+        HasFactory
         ;
 
     /**
