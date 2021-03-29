@@ -1,5 +1,7 @@
 <?php
 
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
 use Okotieno\AcademicYear\Models\AcademicYear;
 use Okotieno\AcademicYear\Models\AcademicYearUnitAllocation;
@@ -9,7 +11,7 @@ use Okotieno\SchoolCurriculum\Models\UnitLevel;
 class AcademicYearsSeeder extends Seeder
 {
     /**
-     * Run the database seeds.
+     * Run the database Seeders.
      *
      * @return void
      */

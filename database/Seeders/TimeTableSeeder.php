@@ -1,12 +1,14 @@
 <?php
 
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
 use Okotieno\TimeTable\Models\TimeTableTimingTemplate;
 
 class TimeTableSeeder extends Seeder
 {
     /**
-     * Run the database seeds.
+     * Run the database Seeders.
      *
      * @return void
      */

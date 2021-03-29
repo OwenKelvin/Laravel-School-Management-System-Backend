@@ -9,14 +9,12 @@
 namespace Okotieno\GuardianAdmissions\Traits;
 
 
-use App\User;
-use Carbon\Carbon;
 use Okotieno\GuardianAdmissions\Models\Guardian;
 
 trait canBeAGuardian
 {
-    public function guardian()
-    {
-        return $this->hasOne(Guardian::class);
-    }
+  public function guardian()
+  {
+    return $this->hasOne(Guardian::class);
+  }
 }

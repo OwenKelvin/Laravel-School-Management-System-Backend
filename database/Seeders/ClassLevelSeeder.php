@@ -1,11 +1,13 @@
 <?php
 
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
 
 class ClassLevelSeeder extends Seeder
 {
     /**
-     * Run the database seeds.
+     * Run the database Seeders.
      *
      * @return void
      */

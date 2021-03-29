@@ -10,7 +10,7 @@ namespace Okotieno\ELearning\Controllers;
 
 
 use App\Http\Controllers\Controller;
-use App\User;
+use App\Models\User;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Okotieno\ELearning\Models\ELearningCourse;
@@ -116,7 +116,7 @@ class ELearningCourseController extends Controller
       'class_level_id' => $eLearningCourse->class_level_id,
       'unit_level_id' => $eLearningCourse->unit_level_id,
       'class_level_abbreviation' => $eLearningCourse->class_level_abbreviation,
-      'class_level_name' =>  $eLearningCourse->class_level_name,
+      'class_level_name' => $eLearningCourse->class_level_name,
       'topic_number_style_name' => $eLearningCourse->topic_number_style_name,
       'topics' => $topics,
     ]);
@@ -143,7 +143,7 @@ class ELearningCourseController extends Controller
   public function update($eLearningCourse, Request $request)
   {
 
-    $eLearningCourse =  ELearningCourse::find($eLearningCourse);
+    $eLearningCourse = ELearningCourse::find($eLearningCourse);
     $eLearningCourse->update([
       'academic_year_id' => $request->academic_year_id,
       'class_level_id' => $request->class_level_id,

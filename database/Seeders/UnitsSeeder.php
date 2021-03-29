@@ -1,5 +1,7 @@
 <?php
 
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
 use Okotieno\SchoolCurriculum\Models\Semester;
 use Okotieno\SchoolCurriculum\Models\UnitCategory;
@@ -7,7 +9,7 @@ use Okotieno\SchoolCurriculum\Models\UnitCategory;
 class UnitsSeeder extends Seeder
 {
     /**
-     * Run the database seeds.
+     * Run the database Seeders.
      *
      * @return void
      */

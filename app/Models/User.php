@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use App\Traits\canSaveFileDocument;
 use Okotieno\Procurement\Traits\canProcure;

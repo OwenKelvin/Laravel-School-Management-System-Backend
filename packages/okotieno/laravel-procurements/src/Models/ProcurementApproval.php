@@ -9,14 +9,13 @@
 namespace Okotieno\Procurement\Models;
 
 
-use App\User;
 use Illuminate\Database\Eloquent\Model;
 
 class ProcurementApproval extends Model
 {
-    protected $fillable = [
-        'approved',
-        'approved_at',
-        'approved_by'
-    ];
+  protected $fillable = [
+    'approved',
+    'approved_at',
+    'approved_by'
+  ];
 }

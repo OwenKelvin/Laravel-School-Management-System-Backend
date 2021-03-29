@@ -10,7 +10,7 @@ namespace Okotieno\Teachers\Controllers;
 
 
 use App\Http\Controllers\Controller;
-use App\User;
+use App\Models\User;
 
 use Illuminate\Http\Request;
 use Okotieno\AcademicYear\Models\AcademicYearUnitAllocation;

@@ -3,14 +3,13 @@
 namespace Okotieno\Procurement\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\User;
-use Illuminate\Http\Request;
-use Okotieno\Procurement\Models\ProcurementRequest;
+use App\Models\User;
 use Okotieno\ProcurementProcurementRequestCreateRequest;
 
 class ProcurementRequestApiController extends Controller
 {
-   public function myRequests() {
-       return User::find(auth()->id())->procurementRequests;
-   }
+  public function myRequests()
+  {
+    return User::find(auth()->id())->procurementRequests;
+  }
 }

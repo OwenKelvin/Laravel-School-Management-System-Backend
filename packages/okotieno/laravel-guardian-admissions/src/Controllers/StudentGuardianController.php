@@ -5,7 +5,7 @@ namespace Okotieno\GuardianAdmissions\Controllers;
 use App\Http\Controllers\Controller;
 use Okotieno\StudentAdmissions\Models\Student;
 use Okotieno\GuardianAdmissions\Requests\User\CreateGuardianRequest;
-use App\User;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class StudentGuardianController extends Controller
