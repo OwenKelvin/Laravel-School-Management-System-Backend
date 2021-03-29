@@ -17,7 +17,7 @@ Route::middleware(['auth:api', 'bindings'])->group(function () {
     });
     Route::prefix('unit-categories')->group(function () {
       // Route::get('/', SchoolCurriculumApiController@get');
-      Route::get('/all', SchoolCurriculumApiController::class,'getAll');
+      Route::get('/all', [SchoolCurriculumApiController::class,'getAll']);
     });
 
     Route::resource('unit-levels', UnitLevelController::class);

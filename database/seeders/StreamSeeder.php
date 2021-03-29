@@ -7,7 +7,7 @@ use Illuminate\Database\Seeder;
 class StreamSeeder extends Seeder
 {
     /**
-     * Run the database Seeders.
+     * Run the database seeders.
      *
      * @return void
      */

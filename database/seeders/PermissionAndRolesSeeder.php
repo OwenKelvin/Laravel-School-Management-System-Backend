@@ -9,7 +9,7 @@ use Spatie\Permission\Models\Role;
 class PermissionAndRolesSeeder extends Seeder
 {
   /**
-   * Run the database Seeders.
+   * Run the database seeders.
    *
    * @return void
    */

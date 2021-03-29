@@ -11,7 +11,7 @@ use Okotieno\SchoolCurriculum\Models\UnitLevel;
 class AcademicYearsSeeder extends Seeder
 {
     /**
-     * Run the database Seeders.
+     * Run the database seeders.
      *
      * @return void
      */

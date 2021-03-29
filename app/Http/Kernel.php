@@ -41,8 +41,7 @@ class Kernel extends HttpKernel
     TrimStrings::class,
     ConvertEmptyStringsToNull::class,
     TrustProxies::class,
-    // \App\Http\Middleware\PreflightResponse::class,
-    HandleCors::class,
+    \Fruitcake\Cors\HandleCors::class
   ];
 
   /**
@@ -63,8 +62,7 @@ class Kernel extends HttpKernel
 
     'api' => [
       'throttle:60,1',
-      'bindings',
-      HandleCors::class,
+      'bindings'
     ],
   ];
 

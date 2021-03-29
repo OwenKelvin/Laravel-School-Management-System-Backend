@@ -8,7 +8,7 @@ use Okotieno\TimeTable\Models\TimeTableTimingTemplate;
 class TimeTableSeeder extends Seeder
 {
     /**
-     * Run the database Seeders.
+     * Run the database seeders.
      *
      * @return void
      */

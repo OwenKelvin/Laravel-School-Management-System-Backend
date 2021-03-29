@@ -1,5 +1,7 @@
 <?php
 
+namespace Database\Seeders;
+
 use App\Models\User;
 use Illuminate\Database\Seeder;
 use Okotieno\AcademicYear\Models\AcademicYear;
@@ -10,13 +12,13 @@ use Okotieno\StudentAdmissions\Models\Student;
 class StudentsSeeder extends Seeder
 {
   /**
-   * Run the database Seeders.
+   * Run the database seeders.
    *
    * @return void
    */
   public function run()
   {
-    $users = factory(App\Models\User::class, 40)->create();
+    $users = User::factory()->count(40)->create();
     foreach ($users as $user) {
       User::find($user->id)->makeStudent();
     }

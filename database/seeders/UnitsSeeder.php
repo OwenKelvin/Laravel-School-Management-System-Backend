@@ -9,7 +9,7 @@ use Okotieno\SchoolCurriculum\Models\UnitCategory;
 class UnitsSeeder extends Seeder
 {
     /**
-     * Run the database Seeders.
+     * Run the database seeders.
      *
      * @return void
      */
