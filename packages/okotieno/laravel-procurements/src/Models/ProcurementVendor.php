@@ -9,21 +9,24 @@
 namespace Okotieno\Procurement\Models;
 
 
-use App\User;
 use Illuminate\Database\Eloquent\Model;
 
 class ProcurementVendor extends Model
 {
-    protected $fillable = [
-        'name',
-        'description',
-        'physical_address',
-        'active'
-    ];
-    public function contacts() {
-        return $this->hasMany(ProcurementVendorContact::class);
-    }
-    public function delivers() {
-        return $this->belongsToMany(ProcurementItemsCategory::class);
-    }
+  protected $fillable = [
+    'name',
+    'description',
+    'physical_address',
+    'active'
+  ];
+
+  public function contacts()
+  {
+    return $this->hasMany(ProcurementVendorContact::class);
+  }
+
+  public function delivers()
+  {
+    return $this->belongsToMany(ProcurementItemsCategory::class);
+  }
 }

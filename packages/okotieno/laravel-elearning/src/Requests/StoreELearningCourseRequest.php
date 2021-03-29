@@ -1,6 +1,6 @@
 <?php
 
-namespace Okotieno\ELearning\Request;
+namespace Okotieno\ELearning\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

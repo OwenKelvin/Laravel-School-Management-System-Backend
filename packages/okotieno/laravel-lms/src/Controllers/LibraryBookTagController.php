@@ -5,7 +5,7 @@ namespace Okotieno\LMS\Controllers;
 use App\Http\Controllers\Controller;
 use Okotieno\LMS\Models\LibraryBookTag;
 use Illuminate\Http\Request;
-use Okotieno\LMS\Request\StoreLibraryBookTagRequest;
+use Okotieno\LMS\Requests\StoreLibraryBookTagRequest;
 
 class LibraryBookTagController extends Controller
 {

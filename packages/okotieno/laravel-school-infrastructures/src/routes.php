@@ -1,7 +1,9 @@
 <?php
 
+use Okotieno\SchoolInfrastructure\Controllers\RoomsController;
+
 Route::middleware(['auth:api', 'bindings'])->group(function () {
     Route::resource(
         '/api/school-rooms',
-        'Okotieno\\SchoolInfrastructure\\Controllers\\RoomsController');
+        RoomsController::class);
 });

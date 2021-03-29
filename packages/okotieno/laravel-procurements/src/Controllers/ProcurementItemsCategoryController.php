@@ -6,8 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Okotieno\Procurement\Models\ProcurementItemsCategory;
 use Okotieno\Procurement\Models\ProcurementRequest;
-use Okotieno\Procurement\Request\ProcurementItemsCategoryCreateRequest;
-use Okotieno\Procurement\Request\ProcurementRequestCreateRequest;
+use Okotieno\Procurement\Requests\ProcurementItemsCategoryCreateRequest;
+use Okotieno\Procurement\Requests\ProcurementRequestCreateRequest;
 
 class ProcurementItemsCategoryController extends Controller
 {

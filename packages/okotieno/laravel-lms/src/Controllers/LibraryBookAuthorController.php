@@ -5,7 +5,7 @@ namespace Okotieno\LMS\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Okotieno\LMS\Models\LibraryBookAuthor;
-use Okotieno\LMS\Request\StoreLibraryBookAuthorRequest;
+use Okotieno\LMS\Requests\StoreLibraryBookAuthorRequest;
 
 class LibraryBookAuthorController extends Controller
 {

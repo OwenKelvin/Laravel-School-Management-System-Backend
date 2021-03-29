@@ -9,15 +9,14 @@
 namespace Okotieno\Procurement\Models;
 
 
-use App\User;
 use Illuminate\Database\Eloquent\Model;
 
 class ProcurementFulfill extends Model
 {
-    protected $fillable = [
-        'procurement_tender_id',
-        'entered_by',
-        'fulfilled',
-        'comment'
-    ];
+  protected $fillable = [
+    'procurement_tender_id',
+    'entered_by',
+    'fulfilled',
+    'comment'
+  ];
 }

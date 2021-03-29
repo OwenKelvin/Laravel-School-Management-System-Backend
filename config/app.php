@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'debug' => env('APP_DEBUG', false),
+    'debug' => env('APP_DEBUG', true),
 
     /*
     |--------------------------------------------------------------------------
@@ -101,7 +101,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | This locale will be used by the Faker PHP library when generating fake
-    | data for your database seeds. For example, this will be used to get
+    | data for your database seeders. For example, this will be used to get
     | localized telephone numbers, street address information and more.
     |
     */
@@ -166,7 +166,7 @@ return [
          * Package Service Providers...
          */
         Spatie\Permission\PermissionServiceProvider::class,
-        Okotieno\StudentAdmissions\StudentAdmissionsServicesProvider::class,
+        Okotieno\StudentAdmissions\StudentAdmissionsServiceProvider::class,
         Okotieno\GuardianAdmissions\GuardiansAdmissionServiceProvider::class,
         Okotieno\LMS\LMSServiceProvider::class,
         Okotieno\DataSync\DataSyncProvider::class,
@@ -241,7 +241,7 @@ return [
         'Queue' => Illuminate\Support\Facades\Queue::class,
         'Redirect' => Illuminate\Support\Facades\Redirect::class,
         'Redis' => Illuminate\Support\Facades\Redis::class,
-        'Request' => Illuminate\Support\Facades\Request::class,
+        'Requests' => Illuminate\Support\Facades\Request::class,
         'Response' => Illuminate\Support\Facades\Response::class,
         'Route' => Illuminate\Support\Facades\Route::class,
         'Schema' => Illuminate\Support\Facades\Schema::class,

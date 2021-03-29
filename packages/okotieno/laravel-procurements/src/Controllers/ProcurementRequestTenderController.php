@@ -5,15 +5,15 @@ namespace Okotieno\Procurement\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Okotieno\Procurement\Models\ProcurementRequest;
-use Okotieno\Procurement\Request\ProcurementRequestApprovalCreateRequest;
-use Okotieno\Procurement\Request\ProcurementRequestCreateRequest;
+use Okotieno\Procurement\Requests\ProcurementRequestApprovalCreateRequest;
+use Okotieno\Procurement\Requests\ProcurementRequestCreateRequest;
 
 class ProcurementRequestTenderController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse
      */
     public function index()
     {
@@ -34,7 +34,7 @@ class ProcurementRequestTenderController extends Controller
      * Store a newly created resource in storage.
      *
      * @param ProcurementRequestCreateRequest $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse
      */
     public function store(ProcurementRequestApprovalCreateRequest $request)
     {

@@ -1,22 +1,32 @@
 <?php
 
+use Okotieno\SchoolCurriculum\Controllers\ClassLevelCategoryController;
+use Okotieno\SchoolCurriculum\Controllers\ClassLevelController;
+use Okotieno\SchoolCurriculum\Controllers\ClassLevelUnitLevelsController;
+use Okotieno\SchoolCurriculum\Controllers\SchoolCurriculumApiController;
+use Okotieno\SchoolCurriculum\Controllers\SemesterController;
+use Okotieno\SchoolCurriculum\Controllers\UnitApiController;
+use Okotieno\SchoolCurriculum\Controllers\UnitCategoryController;
+use Okotieno\SchoolCurriculum\Controllers\UnitController;
+use Okotieno\SchoolCurriculum\Controllers\UnitLevelController;
+
 Route::middleware(['auth:api', 'bindings'])->group(function () {
   Route::prefix('api/curriculum')->group(function () {
     Route::prefix('units')->group(function () {
-      Route::get('/all', 'Okotieno\\SchoolCurriculum\\Controllers\\UnitApiController@getAll');
+      Route::get('/all', [UnitApiController::class,'getAll']);
     });
     Route::prefix('unit-categories')->group(function () {
-      // Route::get('/', 'Okotieno\\SchoolCurriculum\\Controllers\\SchoolCurriculumApiController@get');
-      Route::get('/all', 'Okotieno\\SchoolCurriculum\\Controllers\\SchoolCurriculumApiController@getAll');
+      // Route::get('/', SchoolCurriculumApiController@get');
+      Route::get('/all', [SchoolCurriculumApiController::class,'getAll']);
     });
 
-    Route::resource('unit-levels', 'Okotieno\\SchoolCurriculum\\Controllers\\UnitLevelController');
-    Route::resource('units', 'Okotieno\\SchoolCurriculum\\Controllers\\UnitController');
-    Route::resource('unit-categories', 'Okotieno\\SchoolCurriculum\\Controllers\\UnitCategoryController');
-    Route::resource('class-levels/unit-levels', 'Okotieno\\SchoolCurriculum\\Controllers\\ClassLevelUnitLevelsController');
-    Route::resource('class-levels', 'Okotieno\\SchoolCurriculum\\Controllers\\ClassLevelController');
-    Route::resource('class-level-categories', 'Okotieno\\SchoolCurriculum\\Controllers\\ClassLevelCategoryController');
-    Route::resource('semesters', 'Okotieno\\SchoolCurriculum\\Controllers\\SemesterController');
+    Route::resource('unit-levels', UnitLevelController::class);
+    Route::resource('units', UnitController::class);
+    Route::resource('unit-categories', UnitCategoryController::class);
+    Route::resource('class-levels/unit-levels', ClassLevelUnitLevelsController::class);
+    Route::resource('class-levels', ClassLevelController::class);
+    Route::resource('class-level-categories', ClassLevelCategoryController::class);
+    Route::resource('semesters', SemesterController::class);
 
   });
 });

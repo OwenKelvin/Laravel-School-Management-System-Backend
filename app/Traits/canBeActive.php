@@ -2,9 +2,6 @@
 
 namespace App\Traits;
 
-use App\User;
-use Illuminate\Database\Eloquent\Model;
-
 trait canBeActive
 {
     public static function scopeActive($query)

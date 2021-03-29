@@ -9,7 +9,7 @@ use Okotieno\LMS\Models\LibraryBookAuthor;
 use Okotieno\LMS\Models\LibraryBookPublisher;
 use Okotieno\LMS\Models\LibraryBookTag;
 use Okotieno\LMS\Models\LibraryClass;
-use Okotieno\LMS\Request\StoreLibraryBookRequest;
+use Okotieno\LMS\Requests\StoreLibraryBookRequest;
 
 class LibraryBookController extends Controller
 {
