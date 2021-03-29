@@ -12,6 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+  return view('welcome');
 });
 
+Route::name('login')->get('login', function () {
+  return response()->json(['error' => 'unauthenticated']);
+});

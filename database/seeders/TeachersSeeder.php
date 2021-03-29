@@ -14,9 +14,9 @@ class TeachersSeeder extends Seeder
    */
   public function run()
   {
-    $users = User::factory()->count(20)->make();
+    $users = User::factory()->count(20)->create();
     foreach ($users as $user) {
-      \App\Models\User::find($user->id)->makeTeacher();
+      User::find($user->id)->makeTeacher();
     }
   }
 }

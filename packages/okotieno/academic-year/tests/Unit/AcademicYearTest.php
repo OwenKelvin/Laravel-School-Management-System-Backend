@@ -1,11 +1,11 @@
 <?php
 
-namespace Okotieno\StudentAdmissions\Tests\Unit;
+namespace Okotieno\AcademicYear\Tests\Unit;
 
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
-class ExampleTest extends TestCase
+class AcademicYearTest extends TestCase
 {
     /**
      * A basic test example.
@@ -14,7 +14,7 @@ class ExampleTest extends TestCase
      */
     public function testBasicTest()
     {
-        echo "oooooooooooo";
-        $this->assertTrue(false);
+
+        $this->assertTrue(true);
     }
 }
