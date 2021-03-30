@@ -199,3 +199,91 @@ ___
 }
 ```
 </details>
+
+
+### Academics
+
+```endpoint
+GET /api/e-learning/course-content/topics/:id/online-assessments
+```
+#### parameters
+
+|     Parameter   |  Description |
+|:--------------- |:------------|
+| `:id`            | (*Required* , *Integer*, *URL param*) <br /> The topic id for the online assessment  
+
+```endpoint
+POST /api/e-learning/course-content/topics/:id/online-assessments
+```
+#### parameters
+
+|     Parameter   |  Description |
+|:--------------- |:------------|
+| `:id`            | (*Required* , *Integer*, *URL param*) <br /> The topic id for the online assessment  
+| `available_at`   | (*Required* , *Timestamp*) <br /> Time assessment can be accessed
+| `closing_at`     | (*Required* , *Timestamp*) <br /> Time assessment will be closed
+| `period`         | (*Required* , *String*, *URL param*) <br /> Time to take assessment once it starts 
+| `name`           | (*Required* , *String*, *URL param*) <br /> Name of assessment 
+
+<details>
+  <summary>Sample request body</summary>
+
+```json5
+{
+  "available_at": "2021-01-02T08:00",
+  "closing_at": "2021-01-02T09:00",
+  "period": "PT1H",
+  "name": "LA Cat 1 2021 Term 1",
+  "_method": "POST"
+}
+```
+</details>
+
+#### Responses
+1) Status 201 OK
+<details>
+  <summary>Sample response</summary>
+
+```json5
+{
+  "id": 1,
+  "description": "Introduction",
+  "e_learning_topic_id": null,
+  "e_learning_course_id": 1,
+  "topic_number_style_id": 1,
+  "created_at": "2021-03-28T15:40:00.000000Z",
+  "updated_at": "2021-03-28T15:40:00.000000Z",
+  "topic_number_style_name": "Chapter",
+  "expected_learning_outcomes": [
+    {
+      "id": 1,
+      "description": "Define LA",
+      "e_learning_topic_id": 1,
+      "position": 0,
+      "created_at": "2021-03-28T15:49:58.000000Z",
+      "updated_at": "2021-03-28T15:49:58.000000Z"
+    }
+  ],
+  "learning_content_materials": [],
+  "online_assessments": [],
+  "topic_number_style": {
+    "id": 1,
+    "name": "Chapter",
+    "default": 1,
+    "active": 1,
+    "deleted_at": null
+  },
+  "learning_outcomes": [
+    {
+      "id": 1,
+      "description": "Define LA",
+      "e_learning_topic_id": 1,
+      "position": 0,
+      "created_at": "2021-03-28T15:49:58.000000Z",
+      "updated_at": "2021-03-28T15:49:58.000000Z"
+    }
+  ],
+  "e_learning_contents": []
+}
+```
+</details>

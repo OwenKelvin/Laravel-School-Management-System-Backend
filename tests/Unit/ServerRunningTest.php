@@ -6,7 +6,7 @@ use App\Models\User;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Query\Builder;
-use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\DB;
@@ -14,8 +14,9 @@ use Tests\TestCase;
 
 class ServerRunningTest extends TestCase
 {
-  use RefreshDatabase;
+
   use WithFaker;
+  use DatabaseTransactions;
 
   /**
    * @var Model|Builder|object|null
@@ -130,7 +131,7 @@ class ServerRunningTest extends TestCase
       'password' => 'Invalid password',
       'scope' => '',
     ]);
-    $response->assertStatus(401);
+    $response->assertStatus(400);
   }
 
   /**

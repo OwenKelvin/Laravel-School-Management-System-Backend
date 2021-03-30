@@ -1444,6 +1444,14 @@ class PermissionAndRolesSeeder extends Seeder
           'guardian',
         ]
       ],
+      [
+        'permission' => 'create online assessment',
+        'roles' => [
+          'teacher',
+          'class teacher',
+          'dean of students'
+        ]
+      ],
     ];
 //
     foreach ($permissions as $index => $permission) {

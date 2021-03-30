@@ -12,12 +12,12 @@ namespace Okotieno\ELearning\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Okotieno\ELearning\Models\ELearningTopic;
-use Okotieno\ELearning\Requests\StoreLearningOutcomeRequest;
+use Okotieno\ELearning\Requests\StoreTopicOnlineAssessmentRequest;
 
 
 class TopicLearningOutcomeController extends Controller
 {
-  public function store(StoreLearningOutcomeRequest $request, ELearningTopic $eLearningTopic)
+  public function store(StoreTopicOnlineAssessmentRequest $request, ELearningTopic $eLearningTopic)
   {
     return response()->json([
       'saved' => true,
